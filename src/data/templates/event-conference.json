@@ -1,0 +1,485 @@
+{
+    "id": "event-conference",
+    "name": "Event & Conference",
+    "description": "Landing page for events, conferences, and webinars",
+    "category": "Events",
+    "thumbnail": "/templates/event-conference.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "TechSummit 2024",
+                        "he": "TechSummit 2024"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Speakers",
+                                "he": "Speakers"
+                            },
+                            "href": "#speakers"
+                        },
+                        {
+                            "label": {
+                                "en": "Schedule",
+                                "he": "Schedule"
+                            },
+                            "href": "#schedule"
+                        },
+                        {
+                            "label": {
+                                "en": "Tickets",
+                                "he": "Tickets"
+                            },
+                            "href": "#tickets"
+                        },
+                        {
+                            "label": {
+                                "en": "Venue",
+                                "he": "Venue"
+                            },
+                            "href": "#venue"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Get Tickets",
+                        "he": "Get Tickets"
+                    },
+                    "ctaLink": "#tickets",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "The Future of Technology",
+                        "he": "The Future of Technology"
+                    },
+                    "subtitle": {
+                        "en": "March 15-17, 2024 • San Francisco, CA. Join 5,000+ innovators, founders, and tech leaders.",
+                        "he": "March 15-17, 2024 • San Francisco, CA. Join 5,000+ innovators, founders, and tech leaders."
+                    },
+                    "primaryButtonText": {
+                        "en": "Get Your Tickets",
+                        "he": "Get Your Tickets"
+                    },
+                    "primaryButtonLink": "#tickets",
+                    "secondaryButtonText": {
+                        "en": "View Speakers",
+                        "he": "View Speakers"
+                    },
+                    "secondaryButtonLink": "#speakers"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "World-Class Speakers",
+                                "he": "World-Class Speakers"
+                            }
+                        },
+                        {
+                            "value": "5000+",
+                            "label": {
+                                "en": "Attendees Expected",
+                                "he": "Attendees Expected"
+                            }
+                        },
+                        {
+                            "value": "3",
+                            "label": {
+                                "en": "Days of Innovation",
+                                "he": "Days of Innovation"
+                            }
+                        },
+                        {
+                            "value": "100+",
+                            "label": {
+                                "en": "Sessions & Workshops",
+                                "he": "Sessions & Workshops"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "What to Expect",
+                        "he": "What to Expect"
+                    },
+                    "subtitle": {
+                        "en": "Three days packed with insights and connections",
+                        "he": "Three days packed with insights and connections"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🎤",
+                            "title": {
+                                "en": "Keynote Speakers",
+                                "he": "Keynote Speakers"
+                            },
+                            "description": {
+                                "en": "Industry leaders sharing cutting-edge insights",
+                                "he": "Industry leaders sharing cutting-edge insights"
+                            }
+                        },
+                        {
+                            "icon": "🛠️",
+                            "title": {
+                                "en": "Hands-on Workshops",
+                                "he": "Hands-on Workshops"
+                            },
+                            "description": {
+                                "en": "Learn practical skills from experts",
+                                "he": "Learn practical skills from experts"
+                            }
+                        },
+                        {
+                            "icon": "🤝",
+                            "title": {
+                                "en": "Networking Events",
+                                "he": "Networking Events"
+                            },
+                            "description": {
+                                "en": "Connect with peers and potential partners",
+                                "he": "Connect with peers and potential partners"
+                            }
+                        },
+                        {
+                            "icon": "🚀",
+                            "title": {
+                                "en": "Startup Pitch",
+                                "he": "Startup Pitch"
+                            },
+                            "description": {
+                                "en": "Watch innovative startups compete",
+                                "he": "Watch innovative startups compete"
+                            }
+                        },
+                        {
+                            "icon": "🎉",
+                            "title": {
+                                "en": "After Parties",
+                                "he": "After Parties"
+                            },
+                            "description": {
+                                "en": "Exclusive evening events and entertainment",
+                                "he": "Exclusive evening events and entertainment"
+                            }
+                        },
+                        {
+                            "icon": "🎁",
+                            "title": {
+                                "en": "Swag & Prizes",
+                                "he": "Swag & Prizes"
+                            },
+                            "description": {
+                                "en": "Premium gifts for all attendees",
+                                "he": "Premium gifts for all attendees"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Pricing",
+                "props": {
+                    "title": {
+                        "en": "Choose Your Pass",
+                        "he": "Choose Your Pass"
+                    },
+                    "subtitle": {
+                        "en": "Early bird pricing ends soon!",
+                        "he": "Early bird pricing ends soon!"
+                    },
+                    "backgroundColor": "gray",
+                    "tiers": [
+                        {
+                            "name": {
+                                "en": "General",
+                                "he": "General"
+                            },
+                            "price": "$299",
+                            "description": {
+                                "en": "Essential access",
+                                "he": "Essential access"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Main stage access",
+                                        "he": "Main stage access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Expo hall",
+                                        "he": "Expo hall"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Workshops",
+                                        "he": "Workshops"
+                                    },
+                                    "included": false
+                                },
+                                {
+                                    "text": {
+                                        "en": "VIP networking",
+                                        "he": "VIP networking"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Get Pass",
+                                "he": "Get Pass"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Pro",
+                                "he": "Pro"
+                            },
+                            "price": "$599",
+                            "description": {
+                                "en": "Full experience",
+                                "he": "Full experience"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in General",
+                                        "he": "Everything in General"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "All workshops",
+                                        "he": "All workshops"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Networking lunch",
+                                        "he": "Networking lunch"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "VIP lounge",
+                                        "he": "VIP lounge"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Get Pass",
+                                "he": "Get Pass"
+                            },
+                            "popular": true,
+                            "badge": "Best Value"
+                        },
+                        {
+                            "name": {
+                                "en": "VIP",
+                                "he": "VIP"
+                            },
+                            "price": "$999",
+                            "description": {
+                                "en": "Ultimate access",
+                                "he": "Ultimate access"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Pro",
+                                        "he": "Everything in Pro"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "VIP lounge access",
+                                        "he": "VIP lounge access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Speaker meet & greet",
+                                        "he": "Speaker meet & greet"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Front row seating",
+                                        "he": "Front row seating"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Go VIP",
+                                "he": "Go VIP"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "Frequently Asked Questions",
+                        "he": "Frequently Asked Questions"
+                    },
+                    "backgroundColor": "white",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "What's included in my ticket?",
+                                "he": "What's included in my ticket?"
+                            },
+                            "answer": {
+                                "en": "Your ticket includes access to all sessions for your pass level, lunch, and conference materials.",
+                                "he": "Your ticket includes access to all sessions for your pass level, lunch, and conference materials."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Is there a refund policy?",
+                                "he": "Is there a refund policy?"
+                            },
+                            "answer": {
+                                "en": "Full refunds available up to 30 days before the event. 50% refund within 30 days.",
+                                "he": "Full refunds available up to 30 days before the event. 50% refund within 30 days."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Where is the venue?",
+                                "he": "Where is the venue?"
+                            },
+                            "answer": {
+                                "en": "Moscone Center, San Francisco. Easily accessible by public transit.",
+                                "he": "Moscone Center, San Francisco. Easily accessible by public transit."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Don't Miss Out!",
+                        "he": "Don't Miss Out!"
+                    },
+                    "subtitle": {
+                        "en": "Early bird pricing ends January 31st. Secure your spot now.",
+                        "he": "Early bird pricing ends January 31st. Secure your spot now."
+                    },
+                    "primaryButtonText": {
+                        "en": "Register Now",
+                        "he": "Register Now"
+                    },
+                    "primaryButtonLink": "#tickets",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "TechSummit 2024",
+                        "he": "TechSummit 2024"
+                    },
+                    "description": {
+                        "en": "The premier technology conference.",
+                        "he": "The premier technology conference."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Event",
+                                "he": "Event"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Schedule",
+                                        "he": "Schedule"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Speakers",
+                                        "he": "Speakers"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Venue",
+                                        "he": "Venue"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 TechSummit. All rights reserved.",
+                        "he": "© 2024 TechSummit. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

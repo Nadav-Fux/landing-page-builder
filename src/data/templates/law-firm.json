@@ -1,0 +1,365 @@
+{
+    "id": "law-firm",
+    "name": "Law Firm",
+    "description": "Professional landing page for law firms and legal services",
+    "category": "Legal",
+    "thumbnail": "/templates/law-firm.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "Sterling Law",
+                        "he": "Sterling Law"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Practice Areas",
+                                "he": "Practice Areas"
+                            },
+                            "href": "#services"
+                        },
+                        {
+                            "label": {
+                                "en": "Attorneys",
+                                "he": "Attorneys"
+                            },
+                            "href": "#team"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Free Consultation",
+                        "he": "Free Consultation"
+                    },
+                    "ctaLink": "#contact",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Trusted Legal Excellence",
+                        "he": "Trusted Legal Excellence"
+                    },
+                    "subtitle": {
+                        "en": "Award-winning attorneys fighting for your rights. Over 30 years of combined experience in complex litigation.",
+                        "he": "Award-winning attorneys fighting for your rights. Over 30 years of combined experience in complex litigation."
+                    },
+                    "primaryButtonText": {
+                        "en": "Free Case Review",
+                        "he": "Free Case Review"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "secondaryButtonText": {
+                        "en": "Our Practice Areas",
+                        "he": "Our Practice Areas"
+                    },
+                    "secondaryButtonLink": "#services"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "dark",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "$500M+",
+                            "label": {
+                                "en": "Recovered for Clients",
+                                "he": "Recovered for Clients"
+                            }
+                        },
+                        {
+                            "value": "5000+",
+                            "label": {
+                                "en": "Cases Won",
+                                "he": "Cases Won"
+                            }
+                        },
+                        {
+                            "value": "30+",
+                            "label": {
+                                "en": "Years Experience",
+                                "he": "שנות ניסיון"
+                            }
+                        },
+                        {
+                            "value": "99%",
+                            "label": {
+                                "en": "Success Rate",
+                                "he": "שיעור הצלחה"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Practice Areas",
+                        "he": "Practice Areas"
+                    },
+                    "subtitle": {
+                        "en": "Comprehensive legal services for your needs",
+                        "he": "Comprehensive legal services for your needs"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "⚖️",
+                            "title": {
+                                "en": "Personal Injury",
+                                "he": "Personal Injury"
+                            },
+                            "description": {
+                                "en": "Accident victims deserve justice and compensation",
+                                "he": "Accident victims deserve justice and compensation"
+                            }
+                        },
+                        {
+                            "icon": "💼",
+                            "title": {
+                                "en": "Business Law",
+                                "he": "Business Law"
+                            },
+                            "description": {
+                                "en": "Protecting your business interests",
+                                "he": "Protecting your business interests"
+                            }
+                        },
+                        {
+                            "icon": "👨‍👩‍👧",
+                            "title": {
+                                "en": "Family Law",
+                                "he": "Family Law"
+                            },
+                            "description": {
+                                "en": "Compassionate guidance through difficult times",
+                                "he": "Compassionate guidance through difficult times"
+                            }
+                        },
+                        {
+                            "icon": "🏠",
+                            "title": {
+                                "en": "Real Estate",
+                                "he": "Real Estate"
+                            },
+                            "description": {
+                                "en": "Property transactions and disputes",
+                                "he": "Property transactions and disputes"
+                            }
+                        },
+                        {
+                            "icon": "📋",
+                            "title": {
+                                "en": "Estate Planning",
+                                "he": "Estate Planning"
+                            },
+                            "description": {
+                                "en": "Secure your family's future",
+                                "he": "Secure your family's future"
+                            }
+                        },
+                        {
+                            "icon": "⚔️",
+                            "title": {
+                                "en": "Criminal Defense",
+                                "he": "Criminal Defense"
+                            },
+                            "description": {
+                                "en": "Aggressive defense of your rights",
+                                "he": "Aggressive defense of your rights"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Client Testimonials",
+                        "he": "Client Testimonials"
+                    },
+                    "subtitle": {
+                        "en": "What our clients say about us",
+                        "he": "What our clients say about us"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 2,
+                    "testimonials": [
+                        {
+                            "name": "John M.",
+                            "content": {
+                                "en": "They fought hard for my case and got me 3x what the insurance offered. Forever grateful.",
+                                "he": "They fought hard for my case and got me 3x what the insurance offered. Forever grateful."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Patricia S.",
+                            "content": {
+                                "en": "Professional, compassionate, and thorough. They made a difficult divorce process much easier.",
+                                "he": "Professional, compassionate, and thorough. They made a difficult divorce process much easier."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Get the Justice You Deserve",
+                        "he": "Get the Justice You Deserve"
+                    },
+                    "subtitle": {
+                        "en": "Free, confidential consultation. No fees unless we win.",
+                        "he": "Free, confidential consultation. No fees unless we win."
+                    },
+                    "primaryButtonText": {
+                        "en": "Request Free Consultation",
+                        "he": "Request Free Consultation"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "variant": "dark",
+                    "showIcon": false
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Free Case Evaluation",
+                        "he": "Free Case Evaluation"
+                    },
+                    "subtitle": {
+                        "en": "Tell us about your situation",
+                        "he": "Tell us about your situation"
+                    },
+                    "backgroundColor": "white",
+                    "submitButtonText": {
+                        "en": "Submit for Review",
+                        "he": "Submit for Review"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "phone": true,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "Sterling Law",
+                        "he": "Sterling Law"
+                    },
+                    "description": {
+                        "en": "Fighting for justice since 1994.",
+                        "he": "Fighting for justice since 1994."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Practice Areas",
+                                "he": "Practice Areas"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Personal Injury",
+                                        "he": "Personal Injury"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Business Law",
+                                        "he": "Business Law"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Family Law",
+                                        "he": "Family Law"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Contact",
+                                "he": "Contact"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "123 Legal Ave",
+                                        "he": "123 Legal Ave"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "(555) 123-4567",
+                                        "he": "(555) 123-4567"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 Sterling Law. All rights reserved.",
+                        "he": "© 2024 Sterling Law. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

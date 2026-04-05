@@ -1,0 +1,430 @@
+{
+    "id": "ecommerce-product",
+    "name": "E-commerce Product",
+    "description": "Product landing page for selling physical or digital products",
+    "category": "E-commerce",
+    "thumbnail": "/templates/ecommerce-product.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "LUXE",
+                        "he": "LUXE"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Products",
+                                "he": "Products"
+                            },
+                            "href": "#products"
+                        },
+                        {
+                            "label": {
+                                "en": "Features",
+                                "he": "תכונות"
+                            },
+                            "href": "#features"
+                        },
+                        {
+                            "label": {
+                                "en": "Reviews",
+                                "he": "Reviews"
+                            },
+                            "href": "#reviews"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Shop Now",
+                        "he": "Shop Now"
+                    },
+                    "ctaLink": "#buy",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Premium Wireless Headphones",
+                        "he": "Premium Wireless Headphones"
+                    },
+                    "subtitle": {
+                        "en": "Experience crystal-clear audio with 40 hours of battery life, active noise cancellation, and studio-quality sound.",
+                        "he": "Experience crystal-clear audio with 40 hours of battery life, active noise cancellation, and studio-quality sound."
+                    },
+                    "primaryButtonText": {
+                        "en": "Buy Now - $299",
+                        "he": "Buy Now - $299"
+                    },
+                    "primaryButtonLink": "#buy",
+                    "secondaryButtonText": {
+                        "en": "Watch Video",
+                        "he": "Watch Video"
+                    },
+                    "secondaryButtonLink": "#video"
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Why Choose LUXE",
+                        "he": "Why Choose LUXE"
+                    },
+                    "subtitle": {
+                        "en": "Premium features for the discerning audiophile",
+                        "he": "Premium features for the discerning audiophile"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🎧",
+                            "title": {
+                                "en": "40-Hour Battery",
+                                "he": "40-Hour Battery"
+                            },
+                            "description": {
+                                "en": "Listen all day and night without recharging",
+                                "he": "Listen all day and night without recharging"
+                            }
+                        },
+                        {
+                            "icon": "🔇",
+                            "title": {
+                                "en": "Active Noise Cancellation",
+                                "he": "Active Noise Cancellation"
+                            },
+                            "description": {
+                                "en": "Block out the world and focus on your music",
+                                "he": "Block out the world and focus on your music"
+                            }
+                        },
+                        {
+                            "icon": "🎵",
+                            "title": {
+                                "en": "Hi-Res Audio",
+                                "he": "Hi-Res Audio"
+                            },
+                            "description": {
+                                "en": "Studio-quality 24-bit audio for true audiophiles",
+                                "he": "Studio-quality 24-bit audio for true audiophiles"
+                            }
+                        },
+                        {
+                            "icon": "📱",
+                            "title": {
+                                "en": "Multi-Device Connect",
+                                "he": "Multi-Device Connect"
+                            },
+                            "description": {
+                                "en": "Seamlessly switch between your phone, laptop, and tablet",
+                                "he": "Seamlessly switch between your phone, laptop, and tablet"
+                            }
+                        },
+                        {
+                            "icon": "✨",
+                            "title": {
+                                "en": "Premium Materials",
+                                "he": "Premium Materials"
+                            },
+                            "description": {
+                                "en": "Memory foam cushions and lightweight titanium frame",
+                                "he": "Memory foam cushions and lightweight titanium frame"
+                            }
+                        },
+                        {
+                            "icon": "🛡️",
+                            "title": {
+                                "en": "2-Year Warranty",
+                                "he": "2-Year Warranty"
+                            },
+                            "description": {
+                                "en": "Full coverage for peace of mind",
+                                "he": "Full coverage for peace of mind"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "dark",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "40hrs",
+                            "label": {
+                                "en": "Battery Life",
+                                "he": "Battery Life"
+                            }
+                        },
+                        {
+                            "value": "30dB",
+                            "label": {
+                                "en": "Noise Reduction",
+                                "he": "Noise Reduction"
+                            }
+                        },
+                        {
+                            "value": "200g",
+                            "label": {
+                                "en": "Ultra Light",
+                                "he": "Ultra Light"
+                            }
+                        },
+                        {
+                            "value": "4.9/5",
+                            "label": {
+                                "en": "Customer Rating",
+                                "he": "Customer Rating"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Customers Say",
+                        "he": "What Customers Say"
+                    },
+                    "subtitle": {
+                        "en": "Join thousands of happy customers",
+                        "he": "Join thousands of happy customers"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Alex P.",
+                            "role": {
+                                "en": "Music Producer",
+                                "he": "Music Producer"
+                            },
+                            "content": {
+                                "en": "The sound quality is absolutely incredible. Best headphones I've ever owned.",
+                                "he": "The sound quality is absolutely incredible. Best headphones I've ever owned."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Maria S.",
+                            "role": {
+                                "en": "Remote Worker",
+                                "he": "Remote Worker"
+                            },
+                            "content": {
+                                "en": "The noise cancellation is a game-changer for my focus. Worth every penny!",
+                                "he": "The noise cancellation is a game-changer for my focus. Worth every penny!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "James L.",
+                            "role": {
+                                "en": "Frequent Traveler",
+                                "he": "Frequent Traveler"
+                            },
+                            "content": {
+                                "en": "40 hours of battery means I never have to worry about charging during flights.",
+                                "he": "40 hours of battery means I never have to worry about charging during flights."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "Frequently Asked Questions",
+                        "he": "Frequently Asked Questions"
+                    },
+                    "subtitle": {
+                        "en": "Everything you need to know",
+                        "he": "Everything you need to know"
+                    },
+                    "backgroundColor": "white",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "What's included in the box?",
+                                "he": "What's included in the box?"
+                            },
+                            "answer": {
+                                "en": "You'll receive the headphones, a premium carrying case, USB-C charging cable, 3.5mm audio cable, and airplane adapter.",
+                                "he": "You'll receive the headphones, a premium carrying case, USB-C charging cable, 3.5mm audio cable, and airplane adapter."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Do they work with my phone?",
+                                "he": "Do they work with my phone?"
+                            },
+                            "answer": {
+                                "en": "Yes! They work with any Bluetooth device including iPhone, Android, laptops, tablets, and gaming consoles.",
+                                "he": "Yes! They work with any Bluetooth device including iPhone, Android, laptops, tablets, and gaming consoles."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "How long does shipping take?",
+                                "he": "How long does shipping take?"
+                            },
+                            "answer": {
+                                "en": "Free standard shipping takes 3-5 business days. Express shipping (1-2 days) is available at checkout.",
+                                "he": "Free standard shipping takes 3-5 business days. Express shipping (1-2 days) is available at checkout."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "What's your return policy?",
+                                "he": "What's your return policy?"
+                            },
+                            "answer": {
+                                "en": "We offer a 30-day money-back guarantee. If you're not completely satisfied, return them for a full refund.",
+                                "he": "We offer a 30-day money-back guarantee. If you're not completely satisfied, return them for a full refund."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Ready to Experience Premium Sound?",
+                        "he": "Ready to Experience Premium Sound?"
+                    },
+                    "subtitle": {
+                        "en": "Free shipping on all orders. 30-day money-back guarantee.",
+                        "he": "Free shipping on all orders. 30-day money-back guarantee."
+                    },
+                    "primaryButtonText": {
+                        "en": "Buy Now - $299",
+                        "he": "Buy Now - $299"
+                    },
+                    "primaryButtonLink": "#buy",
+                    "secondaryButtonText": {
+                        "en": "",
+                        "he": ""
+                    },
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "LUXE",
+                        "he": "LUXE"
+                    },
+                    "description": {
+                        "en": "Premium audio products for discerning ears.",
+                        "he": "Premium audio products for discerning ears."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Shop",
+                                "he": "Shop"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Headphones",
+                                        "he": "Headphones"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Earbuds",
+                                        "he": "Earbuds"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Accessories",
+                                        "he": "Accessories"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Support",
+                                "he": "Support"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Help Center",
+                                        "he": "Help Center"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Contact Us",
+                                        "he": "Contact Us"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Returns",
+                                        "he": "Returns"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "youtube",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 LUXE Audio. All rights reserved.",
+                        "he": "© 2024 LUXE Audio. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

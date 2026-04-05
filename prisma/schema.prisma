@@ -1,0 +1,192 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// User accounts for authentication
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+// User sessions for authentication
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Main user model
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  passwordResetToken String?
+  passwordResetExpiry DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts      Account[]
+  sessions      Session[]
+  projects      Project[]
+  templates     Template[]
+  usage         Usage?
+}
+
+// Email verification tokens
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// Landing page projects
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  content     String?  // GrapesJS JSON content (stored as string) - deprecated
+  html        String?  // Legacy HTML content - deprecated
+  css         String?  // Legacy CSS content - deprecated
+  puckData    String?  // Puck editor JSON data (stored as string)
+  status      String   @default("DRAFT") // DRAFT, PUBLISHED, ARCHIVED
+  isPublic    Boolean  @default(false)
+  isTemplate  Boolean  @default(false)
+  thumbnail   String?
+  tags        String?  // Comma-separated tags for SQLite
+  meta        String?  // JSON string
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userId      String
+  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deployments Deployment[]
+
+  @@index([userId])
+  @@index([status])
+  @@index([isTemplate])
+}
+
+// Template gallery
+model Template {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  category    String
+  tags        String?  // Comma-separated
+  thumbnail   String
+  preview     String?
+  content     String?  // GrapesJS JSON as string - deprecated
+  puckData    String?  // Puck editor JSON data (stored as string)
+  isPremium   Boolean  @default(false)
+  downloads   Int      @default(0)
+  rating      Float    @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userId      String
+  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([category])
+  @@index([isActive])
+  @@index([isPremium])
+}
+
+// Deployment records
+model Deployment {
+  id          String   @id @default(cuid())
+  projectId   String
+  url         String?
+  status      String   @default("PENDING") // PENDING, BUILDING, DEPLOYED, FAILED, CANCELLED
+  platform    String   // VERCEL, NETLIFY, CUSTOM
+  customDomain String?
+  ssl         Boolean  @default(false)
+  deployedAt  DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  project     Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([status])
+  @@index([platform])
+}
+
+// Usage tracking
+model Usage {
+  id               String   @id @default(cuid())
+  userId           String   @unique
+  pagesCreated     Int      @default(0)
+  pagesDeployed    Int      @default(0)
+  aiGenerations    Int      @default(0)
+  templateDownloads Int     @default(0)
+  storageUsed      Int      @default(0) // in bytes
+  bandwidthUsed    Int      @default(0) // in bytes
+  lastReset        DateTime @default(now())
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  user             User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Analytics data
+model Analytics {
+  id        String   @id @default(cuid())
+  projectId String
+  event     String
+  data      String?  // JSON string
+  userAgent String?
+  ip        String?
+  country   String?
+  city      String?
+  referrer  String?
+  createdAt DateTime @default(now())
+
+  @@index([projectId])
+  @@index([event])
+  @@index([createdAt])
+}
+
+// Form submissions
+model FormSubmission {
+  id        String   @id @default(cuid())
+  projectId String
+  formName  String
+  data      String   // JSON string
+  email     String?
+  status    String   @default("NEW") // NEW, READ, PROCESSED, SPAM
+  createdAt DateTime @default(now())
+
+  @@index([projectId])
+  @@index([status])
+  @@index([createdAt])
+}

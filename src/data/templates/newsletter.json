@@ -1,0 +1,238 @@
+{
+    "id": "newsletter",
+    "name": "Newsletter",
+    "description": "Simple landing page for newsletter signups",
+    "category": "Marketing",
+    "thumbnail": "/templates/newsletter.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "The Weekly Digest",
+                        "he": "The Weekly Digest"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Archive",
+                                "he": "Archive"
+                            },
+                            "href": "#archive"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Subscribe",
+                        "he": "Subscribe"
+                    },
+                    "ctaLink": "#subscribe",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Stay Ahead of the Curve",
+                        "he": "Stay Ahead of the Curve"
+                    },
+                    "subtitle": {
+                        "en": "Weekly insights on tech, business, and innovation. Join 50,000+ subscribers who start their week with us.",
+                        "he": "Weekly insights on tech, business, and innovation. Join 50,000+ subscribers who start their week with us."
+                    },
+                    "primaryButtonText": {
+                        "en": "Subscribe Free",
+                        "he": "Subscribe Free"
+                    },
+                    "primaryButtonLink": "#subscribe",
+                    "secondaryButtonText": {
+                        "en": "Read Sample Issue",
+                        "he": "Read Sample Issue"
+                    },
+                    "secondaryButtonLink": "#sample"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 3,
+                    "stats": [
+                        {
+                            "value": "50K+",
+                            "label": {
+                                "en": "Subscribers",
+                                "he": "Subscribers"
+                            }
+                        },
+                        {
+                            "value": "200+",
+                            "label": {
+                                "en": "Issues Published",
+                                "he": "Issues Published"
+                            }
+                        },
+                        {
+                            "value": "45%",
+                            "label": {
+                                "en": "Open Rate",
+                                "he": "Open Rate"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "What You'll Get",
+                        "he": "What You'll Get"
+                    },
+                    "subtitle": {
+                        "en": "Every Monday in your inbox",
+                        "he": "Every Monday in your inbox"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "📰",
+                            "title": {
+                                "en": "Curated News",
+                                "he": "Curated News"
+                            },
+                            "description": {
+                                "en": "Top stories you need to know",
+                                "he": "Top stories you need to know"
+                            }
+                        },
+                        {
+                            "icon": "💡",
+                            "title": {
+                                "en": "Insights",
+                                "he": "Insights"
+                            },
+                            "description": {
+                                "en": "Analysis and perspectives",
+                                "he": "Analysis and perspectives"
+                            }
+                        },
+                        {
+                            "icon": "🔗",
+                            "title": {
+                                "en": "Resources",
+                                "he": "Resources"
+                            },
+                            "description": {
+                                "en": "Tools and links we love",
+                                "he": "Tools and links we love"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Reader Reviews",
+                        "he": "Reader Reviews"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Alex K.",
+                            "content": {
+                                "en": "The only newsletter I actually read every week.",
+                                "he": "The only newsletter I actually read every week."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Sarah M.",
+                            "content": {
+                                "en": "Saves me hours of reading. Highly curated and valuable.",
+                                "he": "Saves me hours of reading. Highly curated and valuable."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Mike P.",
+                            "content": {
+                                "en": "Started reading 2 years ago. Haven't missed an issue since.",
+                                "he": "Started reading 2 years ago. Haven't missed an issue since."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Join 50,000+ Readers",
+                        "he": "Join 50,000+ Readers"
+                    },
+                    "subtitle": {
+                        "en": "Free, unsubscribe anytime. No spam, ever.",
+                        "he": "Free, unsubscribe anytime. No spam, ever."
+                    },
+                    "primaryButtonText": {
+                        "en": "Subscribe Now",
+                        "he": "Subscribe Now"
+                    },
+                    "primaryButtonLink": "#subscribe",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "The Weekly Digest",
+                        "he": "The Weekly Digest"
+                    },
+                    "description": {
+                        "en": "Your weekly dose of insights.",
+                        "he": "Your weekly dose of insights."
+                    },
+                    "backgroundColor": "dark",
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 The Weekly Digest.",
+                        "he": "© 2024 The Weekly Digest."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

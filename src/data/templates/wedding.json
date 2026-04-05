@@ -1,0 +1,312 @@
+{
+    "id": "wedding",
+    "name": "Wedding & Events",
+    "description": "Elegant landing page for wedding planners and event services",
+    "category": "Events",
+    "thumbnail": "/templates/wedding.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "Elegance Events",
+                        "he": "Elegance Events"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Services",
+                                "he": "שירותים"
+                            },
+                            "href": "#services"
+                        },
+                        {
+                            "label": {
+                                "en": "Gallery",
+                                "he": "Gallery"
+                            },
+                            "href": "#gallery"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Free Consultation",
+                        "he": "Free Consultation"
+                    },
+                    "ctaLink": "#contact",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Your Dream Wedding Awaits",
+                        "he": "Your Dream Wedding Awaits"
+                    },
+                    "subtitle": {
+                        "en": "Full-service wedding planning that turns your vision into an unforgettable celebration of love.",
+                        "he": "Full-service wedding planning that turns your vision into an unforgettable celebration of love."
+                    },
+                    "primaryButtonText": {
+                        "en": "Start Planning",
+                        "he": "Start Planning"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "secondaryButtonText": {
+                        "en": "View Gallery",
+                        "he": "View Gallery"
+                    },
+                    "secondaryButtonLink": "#gallery"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gray",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "500+",
+                            "label": {
+                                "en": "Weddings Planned",
+                                "he": "Weddings Planned"
+                            }
+                        },
+                        {
+                            "value": "10+",
+                            "label": {
+                                "en": "Years Experience",
+                                "he": "שנות ניסיון"
+                            }
+                        },
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "Venue Partners",
+                                "he": "Venue Partners"
+                            }
+                        },
+                        {
+                            "value": "5★",
+                            "label": {
+                                "en": "Reviews",
+                                "he": "Reviews"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Our Services",
+                        "he": "השירותים שלנו"
+                    },
+                    "subtitle": {
+                        "en": "Everything you need for the perfect day",
+                        "he": "Everything you need for the perfect day"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "💍",
+                            "title": {
+                                "en": "Full Planning",
+                                "he": "Full Planning"
+                            },
+                            "description": {
+                                "en": "End-to-end wedding coordination",
+                                "he": "End-to-end wedding coordination"
+                            }
+                        },
+                        {
+                            "icon": "📅",
+                            "title": {
+                                "en": "Day-of Coordination",
+                                "he": "Day-of Coordination"
+                            },
+                            "description": {
+                                "en": "Seamless execution on your day",
+                                "he": "Seamless execution on your day"
+                            }
+                        },
+                        {
+                            "icon": "🎨",
+                            "title": {
+                                "en": "Design & Decor",
+                                "he": "Design & Decor"
+                            },
+                            "description": {
+                                "en": "Beautiful, personalized aesthetics",
+                                "he": "Beautiful, personalized aesthetics"
+                            }
+                        },
+                        {
+                            "icon": "🏰",
+                            "title": {
+                                "en": "Venue Selection",
+                                "he": "Venue Selection"
+                            },
+                            "description": {
+                                "en": "Find your perfect location",
+                                "he": "Find your perfect location"
+                            }
+                        },
+                        {
+                            "icon": "🎵",
+                            "title": {
+                                "en": "Vendor Management",
+                                "he": "Vendor Management"
+                            },
+                            "description": {
+                                "en": "Top-tier vendor partnerships",
+                                "he": "Top-tier vendor partnerships"
+                            }
+                        },
+                        {
+                            "icon": "✈️",
+                            "title": {
+                                "en": "Destination Weddings",
+                                "he": "Destination Weddings"
+                            },
+                            "description": {
+                                "en": "Dream ceremonies worldwide",
+                                "he": "Dream ceremonies worldwide"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Happy Couples",
+                        "he": "Happy Couples"
+                    },
+                    "backgroundColor": "white",
+                    "columns": 2,
+                    "testimonials": [
+                        {
+                            "name": "Emily & James",
+                            "content": {
+                                "en": "They made our wedding absolutely magical. Every detail was perfect. Can't recommend enough!",
+                                "he": "They made our wedding absolutely magical. Every detail was perfect. Can't recommend enough!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Sofia & Michael",
+                            "content": {
+                                "en": "Stress-free planning from start to finish. Our guests are still talking about how beautiful it was.",
+                                "he": "Stress-free planning from start to finish. Our guests are still talking about how beautiful it was."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Let's Create Magic Together",
+                        "he": "Let's Create Magic Together"
+                    },
+                    "subtitle": {
+                        "en": "Schedule a complimentary consultation to discuss your vision.",
+                        "he": "Schedule a complimentary consultation to discuss your vision."
+                    },
+                    "primaryButtonText": {
+                        "en": "Book Consultation",
+                        "he": "Book Consultation"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Get In Touch",
+                        "he": "Get In Touch"
+                    },
+                    "subtitle": {
+                        "en": "Tell us about your special day",
+                        "he": "Tell us about your special day"
+                    },
+                    "backgroundColor": "gray",
+                    "submitButtonText": {
+                        "en": "Send Message",
+                        "he": "Send Message"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "phone": true,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "Elegance Events",
+                        "he": "Elegance Events"
+                    },
+                    "description": {
+                        "en": "Creating unforgettable celebrations.",
+                        "he": "Creating unforgettable celebrations."
+                    },
+                    "backgroundColor": "dark",
+                    "socialLinks": [
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "facebook",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 Elegance Events.",
+                        "he": "© 2024 Elegance Events."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

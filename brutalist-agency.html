@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO.X | עיצוב שדופן</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono:wght@400;500;700&family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --red: #ff0000;
+            --yellow: #ffff00;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background: var(--white);
+            color: var(--black);
+            overflow-x: hidden;
+        }
+
+        /* Brutalist borders */
+        .border-thick {
+            border: 4px solid var(--black);
+        }
+
+        .border-dashed {
+            border: 3px dashed var(--black);
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--yellow);
+            border-bottom: 4px solid var(--black);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--black);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            transform: rotate(-2deg);
+        }
+
+        .nav {
+            display: flex;
+            gap: 0;
+        }
+
+        .nav a {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.875rem;
+            color: var(--black);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-left: 3px solid var(--black);
+            transition: all 0.2s;
+        }
+
+        .nav a:first-child {
+            border-left: none;
+        }
+
+        .nav a:hover {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 6rem 2rem 2rem;
+            gap: 2rem;
+        }
+
+        .hero-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem;
+            background: var(--white);
+            border: 4px solid var(--black);
+            position: relative;
+        }
+
+        .hero-tag {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.75rem;
+            background: var(--red);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            margin-bottom: 2rem;
+            transform: rotate(-1deg);
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 900;
+            line-height: 0.9;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 span {
+            display: block;
+            background: var(--black);
+            color: var(--white);
+            padding: 0 1rem;
+            transform: rotate(1deg);
+            display: inline-block;
+        }
+
+        .hero-text {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-bottom: 2rem;
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.875rem;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--black);
+            color: var(--white);
+            padding: 1.5rem 3rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: 4px solid var(--black);
+            transition: all 0.2s;
+        }
+
+        .hero-cta:hover {
+            background: var(--white);
+            color: var(--black);
+            transform: translate(-5px, -5px);
+            box-shadow: 5px 5px 0 var(--red);
+        }
+
+        .hero-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .hero-stat {
+            background: var(--yellow);
+            border: 4px solid var(--black);
+            padding: 2rem;
+            text-align: center;
+            transform: rotate(2deg);
+        }
+
+        .hero-stat:nth-child(2) {
+            transform: rotate(-1deg);
+            background: var(--white);
+        }
+
+        .hero-stat:nth-child(3) {
+            transform: rotate(1.5deg);
+            background: var(--red);
+            color: var(--white);
+        }
+
+        .hero-stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-stat-label {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        /* Marquee */
+        .marquee {
+            background: var(--black);
+            color: var(--white);
+            padding: 1.5rem 0;
+            overflow: hidden;
+            border-top: 4px solid var(--black);
+            border-bottom: 4px solid var(--black);
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scroll 20s linear infinite;
+            white-space: nowrap;
+        }
+
+        .marquee-item {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 0 2rem;
+            text-transform: uppercase;
+        }
+
+        @keyframes scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        /* Services */
+        .services {
+            padding: 4rem 2rem;
+            background: var(--yellow);
+            border-top: 4px solid var(--black);
+            border-bottom: 4px solid var(--black);
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 2rem;
+            background: var(--black);
+            color: var(--white);
+            display: inline-block;
+            transform: rotate(-1deg);
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 4px solid var(--black);
+            padding: 2rem;
+            position: relative;
+            transition: all 0.2s;
+        }
+
+        .service-card::before {
+            content: attr(data-number);
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: 40px;
+            height: 40px;
+            background: var(--red);
+            color: var(--white);
+            font-family: 'Rubik Mono', monospace;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-card:hover {
+            transform: translate(-10px, -10px);
+            box-shadow: 10px 10px 0 var(--black);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .service-card p {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        /* Work */
+        .work {
+            padding: 4rem 2rem;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .work-item {
+            position: relative;
+            border: 4px solid var(--black);
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            background: var(--white);
+            transition: all 0.2s;
+        }
+
+        .work-item:nth-child(odd) {
+            background: var(--yellow);
+        }
+
+        .work-item::before {
+            content: attr(data-project);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .work-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 0 10px var(--red);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--black);
+            color: var(--white);
+            padding: 4rem 2rem;
+            border-top: 4px solid var(--black);
+            border-bottom: 4px solid var(--black);
+        }
+
+        .testimonials .section-title {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: var(--white);
+            color: var(--black);
+            border: 4px solid var(--white);
+            padding: 2rem;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            font-size: 5rem;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.875rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            padding-top: 2rem;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .testimonial-role {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--red);
+        }
+
+        /* Contact */
+        .contact {
+            padding: 4rem 2rem;
+            background: var(--yellow);
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: var(--white);
+            border: 4px solid var(--black);
+            padding: 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 3px solid var(--black);
+            font-family: 'Heebo', sans-serif;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background: var(--yellow);
+            transform: translate(-3px, -3px);
+            box-shadow: 3px 3px 0 var(--black);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.5rem;
+            background: var(--black);
+            color: var(--white);
+            border: 4px solid var(--black);
+            font-family: 'Rubik Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: var(--red);
+            transform: translate(-3px, -3px);
+            box-shadow: 3px 3px 0 var(--black);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 4px solid var(--black);
+        }
+
+        .footer-text {
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--white);
+            font-family: 'Rubik Mono', monospace;
+            font-size: 0.75rem;
+            transition: all 0.2s;
+        }
+
+        .footer-links a:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        /* Glitch effect */
+        .glitch {
+            position: relative;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch::before {
+            animation: glitch-1 0.3s infinite linear alternate-reverse;
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+            color: var(--red);
+        }
+
+        .glitch::after {
+            animation: glitch-2 0.3s infinite linear alternate-reverse;
+            clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+            color: var(--yellow);
+        }
+
+        @keyframes glitch-1 {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-5px); }
+        }
+
+        @keyframes glitch-2 {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(5px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-sidebar {
+                flex-direction: row;
+            }
+
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">STUDIO.X</div>
+        <nav class="nav">
+            <a href="#services">שירותים</a>
+            <a href="#work">עבודות</a>
+            <a href="#testimonials">המלצות</a>
+            <a href="#contact">צור קשר</a>
+        </nav>
+    </header>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span class="marquee-item">עיצוב ◆ מיתוג ◆ ווב ◆ אפליקציות ◆ דברים יפים ◆ יצירתיות ◆ עיצוב ◆ מיתוג ◆ ווב ◆ אפליקציות</span>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-main">
+            <div class="hero-tag">🔥 זמינים לפרויקטים חדשים</div>
+            <h1 class="glitch" data-text="אנחנו מעצבים דברים">
+                אנחנו מעצבים
+                <span>דברים</span>
+            </h1>
+            <p class="hero-text">
+                // לא סתם עוד סטודיו עיצוב. אנחנו יוצרים חוויות דיגיטליות שמשאירות רושם ומשאירות אנשים. בלי בולשיט, בלי באלינג, רק עיצוב טהור.
+            </p>
+            <a href="#contact" class="hero-cta">
+                בואו נדבר →
+            </a>
+        </div>
+        <div class="hero-sidebar">
+            <div class="hero-stat">
+                <div class="hero-stat-number">150+</div>
+                <div class="hero-stat-label">פרויקטים</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-number">50+</div>
+                <div class="hero-stat-label">לקוחות מרוצים</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-number">10+</div>
+                <div class="hero-stat-label">שנות ניסיון</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="section-title">השירותים שלנו</div>
+        <div class="services-grid">
+            <div class="service-card" data-number="01">
+                <h3>עיצוב ממשקים</h3>
+                <p>עיצוב UI/UX לאפליקציות ואתרים. מחקר משתמשים ועד פיקסלים מוכנים לפיתוח.</p>
+            </div>
+            <div class="service-card" data-number="02">
+                <h3>מיתוג וזהות</h3>
+                <p>לוגו, שפה חזותית, ועוד כל מה שצריך כדי שהמותג שלך יבלוט.</p>
+            </div>
+            <div class="service-card" data-number="03">
+                <h3>עיצוב גרפי</h3>
+                <p>פוסטרים, אריזות, סושיאל מדיה, וכל מה שבין.</p>
+            </div>
+            <div class="service-card" data-number="04">
+                <h3>פיתוח ווב</h3>
+                <p>אתרים מהירים, רספונסיביים, ועובדים טוב. React, Vue, או Vanilla JS – אנחנו עושים את זה.</p>
+            </div>
+            <div class="service-card" data-number="05">
+                <h3>אנימציה</h3>
+                <p>אנימציות 2D, מושן, ואינטראקטיביות שמחייה את הממשק שלך.</p>
+            </div>
+            <div class="service-card" data-number="06">
+                <h3>ייעוץ</h3>
+                <p>צריך עזרה עם העיצוב שלך? אנחנו כאן לייעץ ולהדריך.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="section-title">עבודות נבחרות</div>
+        <div class="work-grid">
+            <div class="work-item" data-project="ברנדינג / 2024">
+                🎯
+            </div>
+            <div class="work-item" data-project="אתר / 2024">
+                🌐
+            </div>
+            <div class="work-item" data-project="אפליקציה / 2023">
+                📱
+            </div>
+            <div class="work-item" data-project="אריזה / 2023">
+                📦
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title">מה הלקוחות אומרים</div>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p class="testimonial-text">"לעבוד איתם זה חוויה. הם מקצועיים, מהירים, והתוצאות תמיד עולות על הציפיות. ממליץ בחום!"</p>
+                <div class="testimonial-author">דני לוי</div>
+                <div class="testimonial-role">מייסד, TechStart</div>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"הם לקחו את החזון שלנו והפכו אותו למציאות. העיצוב פשוט יפה, והוא עובד מצוין."</p>
+                <div class="testimonial-author">מיכל כהן</div>
+                <div class="testimonial-role">מנכ\"ל, DesignHub</div>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"תקשורת מעולה, תהליך ברור, ותוצאות שעובדות. מה עוד אפשר לבקש?"</p>
+                <div class="testimonial-author">יוסי רוזן</div>
+                <div class="testimonial-role">בעלים, LocalBiz</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="section-title">צרו קשר</div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>שם מלא *</label>
+                    <input type="text" required placeholder="הקלידו את שמכם">
+                </div>
+                <div class="form-group">
+                    <label>אימייל *</label>
+                    <input type="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label>הודעה *</label>
+                    <textarea required placeholder="ספרו לנו במה מדובר..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">שלח הודעה →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">© 2024 STUDIO.X. כל הזכויות שמורות. הוקם באהבה וקפה רבה.</p>
+        <div class="footer-links">
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://dribbble.com">Dribbble</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        // Glitch effect on hover
+        const glitchElements = document.querySelectorAll('.glitch');
+        glitchElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                el.style.animation = 'none';
+                setTimeout(() => {
+                    el.style.animation = '';
+                }, 50);
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('תודה! נחזור אליכם בהקדם האפשרי.');
+            this.reset();
+        });
+
+        // Add some randomness on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.service-card, .testimonial').forEach((el, index) => {
+                const rotation = (Math.random() - 0.5) * 4;
+                el.style.transform = `rotate(${rotation}deg)`;
+            });
+        });
+    </script>
+</body>
+</html>

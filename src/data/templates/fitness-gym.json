@@ -1,0 +1,527 @@
+{
+    "id": "fitness-gym",
+    "name": "Fitness & Gym",
+    "description": "Bold landing page for gyms, fitness studios, and personal trainers",
+    "category": "Fitness",
+    "thumbnail": "/templates/fitness-gym.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "POWERFIT",
+                        "he": "POWERFIT"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Programs",
+                                "he": "Programs"
+                            },
+                            "href": "#programs"
+                        },
+                        {
+                            "label": {
+                                "en": "Trainers",
+                                "he": "Trainers"
+                            },
+                            "href": "#trainers"
+                        },
+                        {
+                            "label": {
+                                "en": "Pricing",
+                                "he": "מחירים"
+                            },
+                            "href": "#pricing"
+                        },
+                        {
+                            "label": {
+                                "en": "Location",
+                                "he": "Location"
+                            },
+                            "href": "#location"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Start Free Trial",
+                        "he": "Start Free Trial"
+                    },
+                    "ctaLink": "#trial",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Transform Your Body. Transform Your Life.",
+                        "he": "Transform Your Body. Transform Your Life."
+                    },
+                    "subtitle": {
+                        "en": "Join the #1 rated gym in the city. State-of-the-art equipment, expert trainers, and a community that pushes you to be your best.",
+                        "he": "Join the #1 rated gym in the city. State-of-the-art equipment, expert trainers, and a community that pushes you to be your best."
+                    },
+                    "primaryButtonText": {
+                        "en": "Start 7-Day Free Trial",
+                        "he": "Start 7-Day Free Trial"
+                    },
+                    "primaryButtonLink": "#trial",
+                    "secondaryButtonText": {
+                        "en": "View Programs",
+                        "he": "View Programs"
+                    },
+                    "secondaryButtonLink": "#programs"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "10K+",
+                            "label": {
+                                "en": "Members",
+                                "he": "Members"
+                            }
+                        },
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "Expert Trainers",
+                                "he": "Expert Trainers"
+                            }
+                        },
+                        {
+                            "value": "24/7",
+                            "label": {
+                                "en": "Open Hours",
+                                "he": "Open Hours"
+                            }
+                        },
+                        {
+                            "value": "4.9★",
+                            "label": {
+                                "en": "Rating",
+                                "he": "דירוג"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Our Programs",
+                        "he": "Our Programs"
+                    },
+                    "subtitle": {
+                        "en": "Something for every fitness goal",
+                        "he": "Something for every fitness goal"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "💪",
+                            "title": {
+                                "en": "Strength Training",
+                                "he": "Strength Training"
+                            },
+                            "description": {
+                                "en": "Build muscle and increase power with our comprehensive strength programs",
+                                "he": "Build muscle and increase power with our comprehensive strength programs"
+                            },
+                            "badge": "Popular"
+                        },
+                        {
+                            "icon": "🏃",
+                            "title": {
+                                "en": "HIIT Classes",
+                                "he": "HIIT Classes"
+                            },
+                            "description": {
+                                "en": "High-intensity interval training to maximize fat burn in minimal time",
+                                "he": "High-intensity interval training to maximize fat burn in minimal time"
+                            }
+                        },
+                        {
+                            "icon": "🧘",
+                            "title": {
+                                "en": "Yoga & Pilates",
+                                "he": "Yoga & Pilates"
+                            },
+                            "description": {
+                                "en": "Improve flexibility, balance, and mental wellness",
+                                "he": "Improve flexibility, balance, and mental wellness"
+                            }
+                        },
+                        {
+                            "icon": "🥊",
+                            "title": {
+                                "en": "Boxing & MMA",
+                                "he": "Boxing & MMA"
+                            },
+                            "description": {
+                                "en": "Learn self-defense while getting an incredible workout",
+                                "he": "Learn self-defense while getting an incredible workout"
+                            }
+                        },
+                        {
+                            "icon": "🚴",
+                            "title": {
+                                "en": "Cycling Studio",
+                                "he": "Cycling Studio"
+                            },
+                            "description": {
+                                "en": "Indoor cycling classes with music and motivation",
+                                "he": "Indoor cycling classes with music and motivation"
+                            }
+                        },
+                        {
+                            "icon": "🏊",
+                            "title": {
+                                "en": "Swimming Pool",
+                                "he": "Swimming Pool"
+                            },
+                            "description": {
+                                "en": "Olympic-sized pool with lanes for all skill levels",
+                                "he": "Olympic-sized pool with lanes for all skill levels"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Pricing",
+                "props": {
+                    "title": {
+                        "en": "Membership Plans",
+                        "he": "Membership Plans"
+                    },
+                    "subtitle": {
+                        "en": "Invest in your health today",
+                        "he": "Invest in your health today"
+                    },
+                    "backgroundColor": "gray",
+                    "tiers": [
+                        {
+                            "name": {
+                                "en": "Basic",
+                                "he": "Basic"
+                            },
+                            "price": "$29",
+                            "period": "/month",
+                            "description": {
+                                "en": "Access to gym floor",
+                                "he": "Access to gym floor"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Gym equipment access",
+                                        "he": "Gym equipment access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Locker room & showers",
+                                        "he": "Locker room & showers"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Group classes",
+                                        "he": "Group classes"
+                                    },
+                                    "included": false
+                                },
+                                {
+                                    "text": {
+                                        "en": "Personal training",
+                                        "he": "Personal training"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Get Started",
+                                "he": "התחל עכשיו"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Premium",
+                                "he": "Premium"
+                            },
+                            "price": "$59",
+                            "period": "/month",
+                            "description": {
+                                "en": "Full gym access",
+                                "he": "Full gym access"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Gym equipment access",
+                                        "he": "Gym equipment access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Locker room & showers",
+                                        "he": "Locker room & showers"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Unlimited group classes",
+                                        "he": "Unlimited group classes"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "1 PT session/month",
+                                        "he": "1 PT session/month"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Start Free Trial",
+                                "he": "Start Free Trial"
+                            },
+                            "popular": true,
+                            "badge": "Best Value"
+                        },
+                        {
+                            "name": {
+                                "en": "Elite",
+                                "he": "Elite"
+                            },
+                            "price": "$99",
+                            "period": "/month",
+                            "description": {
+                                "en": "VIP experience",
+                                "he": "VIP experience"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Premium",
+                                        "he": "Everything in Premium"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "4 PT sessions/month",
+                                        "he": "4 PT sessions/month"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Nutrition coaching",
+                                        "he": "Nutrition coaching"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Recovery services",
+                                        "he": "Recovery services"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Go Elite",
+                                "he": "Go Elite"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Success Stories",
+                        "he": "Success Stories"
+                    },
+                    "subtitle": {
+                        "en": "Real results from real members",
+                        "he": "Real results from real members"
+                    },
+                    "backgroundColor": "white",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Mike R.",
+                            "content": {
+                                "en": "Lost 30 pounds in 3 months! The trainers here are incredible and the community keeps me motivated.",
+                                "he": "Lost 30 pounds in 3 months! The trainers here are incredible and the community keeps me motivated."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Jennifer L.",
+                            "content": {
+                                "en": "Best gym I've ever been to. The facilities are top-notch and the group classes are so much fun!",
+                                "he": "Best gym I've ever been to. The facilities are top-notch and the group classes are so much fun!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "David K.",
+                            "content": {
+                                "en": "Finally found a gym that fits my schedule. Open 24/7 and always clean. Highly recommend!",
+                                "he": "Finally found a gym that fits my schedule. Open 24/7 and always clean. Highly recommend!"
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Ready to Start Your Transformation?",
+                        "he": "Ready to Start Your Transformation?"
+                    },
+                    "subtitle": {
+                        "en": "Join now and get your first week FREE. No commitment required.",
+                        "he": "Join now and get your first week FREE. No commitment required."
+                    },
+                    "primaryButtonText": {
+                        "en": "Claim Free Trial",
+                        "he": "Claim Free Trial"
+                    },
+                    "primaryButtonLink": "#trial",
+                    "secondaryButtonText": {
+                        "en": "Tour Our Gym",
+                        "he": "Tour Our Gym"
+                    },
+                    "secondaryButtonLink": "#tour",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "POWERFIT",
+                        "he": "POWERFIT"
+                    },
+                    "description": {
+                        "en": "Your transformation starts here.",
+                        "he": "Your transformation starts here."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Programs",
+                                "he": "Programs"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Strength",
+                                        "he": "Strength"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Cardio",
+                                        "he": "Cardio"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Yoga",
+                                        "he": "Yoga"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Info",
+                                "he": "Info"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "About Us",
+                                        "he": "About Us"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Trainers",
+                                        "he": "Trainers"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Contact",
+                                        "he": "צור קשר"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "facebook",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "youtube",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 POWERFIT. All rights reserved.",
+                        "he": "© 2024 POWERFIT. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

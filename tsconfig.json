@@ -1,0 +1,144 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript for better performance and smaller bundles
+    "target": "ES2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ES2022"
+    ],
+    // App Router specific settings
+    "allowJs": true,
+    "skipLibCheck": true,
+    // Strict type checking
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    // Additional strict checks
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    // Module configuration
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    // JSX configuration
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    // Path aliases for cleaner imports
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/lib/*": [
+        "./src/lib/*"
+      ],
+      "@/hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@/types/*": [
+        "./src/types/*"
+      ],
+      "@/utils/*": [
+        "./src/utils/*"
+      ],
+      "@/styles/*": [
+        "./src/styles/*"
+      ],
+      "@/public/*": [
+        "./public/*"
+      ],
+      "@/app/*": [
+        "./src/app/*"
+      ],
+      "@/pages/*": [
+        "./src/pages/*"
+      ]
+    },
+    // Additional modern features
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
+    "verbatimModuleSyntax": false,
+    // Incremental compilation for faster builds
+    "incremental": true,
+    "tsBuildInfoFile": ".next/cache/tsconfig.tsbuildinfo",
+    // Plugin configurations
+    "plugins": [
+      {
+        "name": "next"
+      },
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    // Additional compiler options for better DX
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // Type definitions
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    // Additional settings for better development experience
+    "pretty": true,
+    "traceResolution": false,
+    "listFiles": false,
+    "listEmittedFiles": false,
+    // Advanced features
+    "useDefineForClassFields": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": false
+  },
+  // Include patterns
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    "**/*.cjs",
+    ".next/types/**/*.ts",
+    ".next/types/**/*.tsx",
+    ".next/dev/types/**/*.ts"
+  ],
+  // Exclude patterns
+  "exclude": [
+    "node_modules",
+    ".next",
+    "dist",
+    "build",
+    "coverage",
+    "test-results",
+    "playwright-report",
+    ".storybook",
+    "storybook-static",
+    "Twitter*",
+    "TWITTER*",
+    "**/Twitter*/**"
+  ],
+  // TypeScript Node configuration for build scripts
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}

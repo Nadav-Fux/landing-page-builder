@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPods Pro Max - חווית סאונד מהפכנית</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --apple-dark: #000000;
+            --apple-gray: #1d1d1f;
+            --apple-light: #f5f5f7;
+            --accent: #0071e3;
+            --accent-hover: #0077ed;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background: var(--apple-dark);
+            color: var(--apple-light);
+            overflow-x: hidden;
+        }
+
+        /* 3D Product Container */
+        .product-showcase {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-container {
+            position: relative;
+            transform-style: preserve-3d;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotateY(0deg); }
+            50% { transform: translateY(-20px) rotateY(180deg); }
+        }
+
+        .product-image {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #4a4a4a, #1a1a1a);
+            box-shadow:
+                0 0 100px rgba(255, 255, 255, 0.1),
+                inset 0 0 100px rgba(255, 255, 255, 0.05);
+            position: relative;
+            transition: all 0.5s;
+        }
+
+        .product-image::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            background: radial-gradient(circle at 70% 70%, transparent, rgba(0, 0, 0, 0.8));
+        }
+
+        .product-image::after {
+            content: '🎧';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.8));
+        }
+
+        .product-container:hover .product-image {
+            transform: scale(1.1) rotateY(360deg);
+            box-shadow:
+                0 0 150px rgba(255, 255, 255, 0.2),
+                inset 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Glow Effect */
+        .glow-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: pulse-ring 3s ease-out infinite;
+        }
+
+        .glow-ring:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .glow-ring:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        /* Product Info */
+        .product-info {
+            position: absolute;
+            text-align: center;
+            z-index: 10;
+            padding: 2rem;
+        }
+
+        .product-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .product-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, #888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .product-subtitle {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 3rem;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+
+        .product-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--apple-light);
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+        }
+
+        .product-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--accent);
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s;
+            animation: fadeInUp 1s ease-out 0.8s backwards;
+        }
+
+        .product-cta:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 113, 227, 0.4);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 2rem;
+            background: var(--apple-gray);
+        }
+
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 4rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feature-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            transition: all 0.5s;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 30px 60px rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+
+        /* Specs Section */
+        .specs {
+            padding: 8rem 2rem;
+            background: var(--apple-dark);
+        }
+
+        .specs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .specs-image {
+            position: relative;
+        }
+
+        .specs-image-main {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .specs-image-main::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.1), transparent 30%);
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .specs-list {
+            list-style: none;
+        }
+
+        .spec-item {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.5s;
+        }
+
+        .spec-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .spec-value {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Comparison Section */
+        .comparison {
+            padding: 8rem 2rem;
+            background: var(--apple-gray);
+        }
+
+        .comparison-table {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .comparison-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background 0.3s;
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-row:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-feature {
+            font-weight: 500;
+        }
+
+        .comparison-value {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .comparison-value.highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 8rem 2rem;
+            background: var(--apple-dark);
+        }
+
+        .reviews-carousel {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 2rem;
+        }
+
+        .reviews-carousel::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .reviews-carousel::-webkit-scrollbar-track {
+            background: var(--apple-gray);
+            border-radius: 4px;
+        }
+
+        .reviews-carousel::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 4px;
+        }
+
+        .review-card {
+            min-width: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            scroll-snap-align: start;
+            transition: all 0.3s;
+        }
+
+        .review-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .review-stars {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-text {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #8b5cf6);
+        }
+
+        .review-name {
+            font-weight: 600;
+        }
+
+        .review-title {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, var(--apple-dark) 0%, var(--apple-gray) 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 3rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 113, 227, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--apple-light);
+            padding: 1.25rem 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--apple-light);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .specs-container {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-header,
+            .comparison-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .review-card {
+                min-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="glow-ring"></div>
+        <div class="glow-ring"></div>
+        <div class="glow-ring"></div>
+
+        <div class="product-container">
+            <div class="product-image"></div>
+        </div>
+
+        <div class="product-info">
+            <div class="product-badge">חדש</div>
+            <h1 class="product-title">AirPods Pro Max</h1>
+            <p class="product-subtitle">חווית סאונד ברמה שלא הכרת</p>
+            <div class="product-price">₪2,499</div>
+            <a href="#" class="product-cta">
+                קנה עכשיו
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎵</div>
+                <h3>צליל ברמה מושלמת</h3>
+                <p>דרייברים מומצעים של Apple לחווית אודיו יוצאת דופן עם ביטול רעשים מתקדם</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔋</div>
+                <h3>20 שעות ניגון</h3>
+                <p>סוללה שנמשכת עד 20 שעות עם ביטול רעשים פעיל, או עד 30 שעות ללא מגע</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎧</div>
+                <h3>נוחות מקסימלית</h3>
+                <p>רצועת ראש מקשיחה קנבס עם משטחי מגע לשליטה מלאה בחוויה</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Apple H1</h3>
+                <p>צ'יפ מותאם אישית של Apple לחוויית אודיו חכמה ומתקדמת</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>התאמה אוטומטית</h3>
+                <p>מתחבר באופן אוטומטי לכל מכשירי ה-Apple שלך</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💧</div>
+                <h3>עמיד במים</h3>
+                <p>דירוג IPX5 להגנה מפני זיעה ומים</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="specs">
+        <div class="specs-container">
+            <div class="specs-image">
+                <div class="specs-image-main">🎧</div>
+            </div>
+            <ul class="specs-list">
+                <li class="spec-item">
+                    <span class="spec-label">דרייברים</span>
+                    <span class="spec-value">דינמיים 40 מ"מ</span>
+                </li>
+                <li class="spec-item">
+                    <span class="spec-label">תדר</�span>
+                    <span class="spec-value">20Hz - 20kHz</span>
+                </li>
+                <li class="spec-item">
+                    <span class="spec-label">התנגדות</span>
+                    <span class="spec-value">47 אוהם</span>
+                </li>
+                <li class="spec-item">
+                    <span class="spec-label">משקל</span>
+                    <span class="spec-value">384.8 גרם</span>
+                </li>
+                <li class="spec-item">
+                    <span class="spec-label">חיבור</span>
+                    <span class="spec-value">Bluetooth 5.0</span>
+                </li>
+                <li class="spec-item">
+                    <span class="spec-label">טווח</span>
+                    <span class="spec-value">עד 10 מטר</span>
+                </li>
+                <li class="spec-item">
+                    <span class="spec-label">זמן טעינה</span>
+                    <span class="spec-value">2.5 שעות מהירה</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="comparison">
+        <div class="comparison-table">
+            <div class="comparison-header">
+                <div>תכונה</div>
+                <div>Pro Max</div>
+                <div>Pro</div>
+            </div>
+            <div class="comparison-row">
+                <div class="comparison-feature">דרייברים</div>
+                <div class="comparison-value highlight">40 מ"מ</div>
+                <div class="comparison-value">לא זמין</div>
+            </div>
+            <div class="comparison-row">
+                <div class="comparison-feature">ביטול רעשים</div>
+                <div class="comparison-value highlight">פעיל</div>
+                <div class="comparison-value">פעיל</div>
+            </div>
+            <div class="comparison-row">
+                <div class="comparison-feature">זמן ניגון</div>
+                <div class="comparison-value highlight">20 שעות</div>
+                <div class="comparison-value">5 שעות</div>
+            </div>
+            <div class="comparison-row">
+                <div class="comparison-feature">משקל</div>
+                <div class="comparison-value highlight">384.8 גרם</div>
+                <div class="comparison-value">56.4 גרם</div>
+            </div>
+            <div class="comparison-row">
+                <div class="comparison-feature">חיבור מספרי</div>
+                <div class="comparison-value highlight">2 מכשירים</div>
+                <div class="comparison-value">2 מכשירים</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <div class="reviews-carousel">
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"האוזניות הכי טובות שהיו לי אי פעם! הצליל מדהים, הנוחות ברמה אחרת, והסוללה נמשכת כל כך הרבה זמן. שווה כל שקל!"</p>
+                <div class="review-author">
+                    <div class="review-avatar"></div>
+                    <div>
+                        <div class="review-name">יוסי לוי</div>
+                        <div class="review-title">מפתח תוכנה</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"ביטול הרעשים עובד נפלא. אני עובד איתם באוטובוס, בקפה, ובכל מקום ואני כבר לא שומע כלום מלבד המוזיקה שלי."</p>
+                <div class="review-author">
+                    <div class="review-avatar"></div>
+                    <div>
+                        <div class="review-name">דנה כהן</div>
+                        <div class="review-title">מנהלת שיווק</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"איכות הצליל פשוט ברמה אחרת. כל פרט וכל כלי נשמע בבירור מושלמת. ההשקעה משתלמת!"</p>
+                <div class="review-author">
+                    <div class="review-avatar"></div>
+                    <div>
+                        <div class="review-name">איתי רוזן</div>
+                        <div class="review-title">מפיק מוזיקלי</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"התחברות מהירה לכל מכשירי ה-Apple שלי, סוללה ענק, ועיצוב יפהפה. מושלם לנסיעות ארוכות."</p>
+                <div class="review-author">
+                    <div class="review-avatar"></div>
+                    <div>
+                        <div class="review-name">מיכל גולן</div>
+                        <div class="review-title">מעצבת גרפית</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>חוו את הצליל המושלם</h2>
+            <p>הזמנה מוקדמת החלה. הזמן את שלך עכשיו וקבל משלוח חינם</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">קנה עכשיו</a>
+                <a href="#" class="btn-secondary">למד עוד</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Feature Cards Animation on Scroll
+        const featureCards = document.querySelectorAll('.feature-card');
+
+        const featureObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    featureObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        featureCards.forEach(card => {
+            featureObserver.observe(card);
+        });
+
+        // Specs Animation on Scroll
+        const specItems = document.querySelectorAll('.spec-item');
+
+        const specObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    specObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        specItems.forEach(item => {
+            specObserver.observe(item);
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

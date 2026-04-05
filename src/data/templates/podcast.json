@@ -1,0 +1,300 @@
+{
+    "id": "podcast",
+    "name": "Podcast",
+    "description": "Landing page for podcasts and audio shows",
+    "category": "Media",
+    "thumbnail": "/templates/podcast.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "The Growth Show",
+                        "he": "The Growth Show"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Episodes",
+                                "he": "Episodes"
+                            },
+                            "href": "#episodes"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Guests",
+                                "he": "Guests"
+                            },
+                            "href": "#guests"
+                        },
+                        {
+                            "label": {
+                                "en": "Subscribe",
+                                "he": "Subscribe"
+                            },
+                            "href": "#subscribe"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Listen Now",
+                        "he": "Listen Now"
+                    },
+                    "ctaLink": "#listen",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Conversations That Inspire Growth",
+                        "he": "Conversations That Inspire Growth"
+                    },
+                    "subtitle": {
+                        "en": "Weekly interviews with entrepreneurs, creators, and thought leaders. Actionable insights for your journey.",
+                        "he": "Weekly interviews with entrepreneurs, creators, and thought leaders. Actionable insights for your journey."
+                    },
+                    "primaryButtonText": {
+                        "en": "Listen on Spotify",
+                        "he": "Listen on Spotify"
+                    },
+                    "primaryButtonLink": "#spotify",
+                    "secondaryButtonText": {
+                        "en": "Apple Podcasts",
+                        "he": "Apple Podcasts"
+                    },
+                    "secondaryButtonLink": "#apple"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "dark",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "500K+",
+                            "label": {
+                                "en": "Monthly Downloads",
+                                "he": "Monthly Downloads"
+                            }
+                        },
+                        {
+                            "value": "300+",
+                            "label": {
+                                "en": "Episodes",
+                                "he": "Episodes"
+                            }
+                        },
+                        {
+                            "value": "Top 50",
+                            "label": {
+                                "en": "Business Charts",
+                                "he": "Business Charts"
+                            }
+                        },
+                        {
+                            "value": "4.9★",
+                            "label": {
+                                "en": "Rating",
+                                "he": "דירוג"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "What You'll Learn",
+                        "he": "What You'll Learn"
+                    },
+                    "subtitle": {
+                        "en": "Topics we cover each week",
+                        "he": "Topics we cover each week"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🚀",
+                            "title": {
+                                "en": "Startup Stories",
+                                "he": "Startup Stories"
+                            },
+                            "description": {
+                                "en": "How founders built their companies",
+                                "he": "How founders built their companies"
+                            }
+                        },
+                        {
+                            "icon": "💰",
+                            "title": {
+                                "en": "Money & Finance",
+                                "he": "Money & Finance"
+                            },
+                            "description": {
+                                "en": "Wealth building strategies",
+                                "he": "Wealth building strategies"
+                            }
+                        },
+                        {
+                            "icon": "🧠",
+                            "title": {
+                                "en": "Mindset",
+                                "he": "Mindset"
+                            },
+                            "description": {
+                                "en": "Psychology of success",
+                                "he": "Psychology of success"
+                            }
+                        },
+                        {
+                            "icon": "📈",
+                            "title": {
+                                "en": "Growth Tactics",
+                                "he": "Growth Tactics"
+                            },
+                            "description": {
+                                "en": "Marketing and scaling",
+                                "he": "Marketing and scaling"
+                            }
+                        },
+                        {
+                            "icon": "⚡",
+                            "title": {
+                                "en": "Productivity",
+                                "he": "Productivity"
+                            },
+                            "description": {
+                                "en": "Work smarter, not harder",
+                                "he": "Work smarter, not harder"
+                            }
+                        },
+                        {
+                            "icon": "🌟",
+                            "title": {
+                                "en": "Leadership",
+                                "he": "Leadership"
+                            },
+                            "description": {
+                                "en": "Building great teams",
+                                "he": "Building great teams"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Listeners Say",
+                        "he": "What Listeners Say"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Chris K.",
+                            "content": {
+                                "en": "My favorite business podcast. Every episode is packed with value.",
+                                "he": "My favorite business podcast. Every episode is packed with value."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Diana M.",
+                            "content": {
+                                "en": "The interviews are so insightful. I've implemented so many ideas from this show.",
+                                "he": "The interviews are so insightful. I've implemented so many ideas from this show."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Ryan T.",
+                            "content": {
+                                "en": "Listen on my commute every day. Can't recommend it enough!",
+                                "he": "Listen on my commute every day. Can't recommend it enough!"
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Never Miss an Episode",
+                        "he": "Never Miss an Episode"
+                    },
+                    "subtitle": {
+                        "en": "Subscribe on your favorite platform and get new episodes every Tuesday.",
+                        "he": "Subscribe on your favorite platform and get new episodes every Tuesday."
+                    },
+                    "primaryButtonText": {
+                        "en": "Subscribe Now",
+                        "he": "Subscribe Now"
+                    },
+                    "primaryButtonLink": "#subscribe",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "The Growth Show",
+                        "he": "The Growth Show"
+                    },
+                    "description": {
+                        "en": "New episodes every Tuesday.",
+                        "he": "New episodes every Tuesday."
+                    },
+                    "backgroundColor": "dark",
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "youtube",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 The Growth Show.",
+                        "he": "© 2024 The Growth Show."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

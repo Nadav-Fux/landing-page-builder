@@ -1,0 +1,703 @@
+{
+    "id": "saas-startup",
+    "name": "SaaS Startup",
+    "description": "Modern landing page for SaaS products and startups",
+    "category": "SaaS",
+    "thumbnail": "/templates/saas-startup.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "SaaSify",
+                        "he": "SaaSify"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Features",
+                                "he": "תכונות"
+                            },
+                            "href": "#features"
+                        },
+                        {
+                            "label": {
+                                "en": "Pricing",
+                                "he": "מחירים"
+                            },
+                            "href": "#pricing"
+                        },
+                        {
+                            "label": {
+                                "en": "Testimonials",
+                                "he": "המלצות"
+                            },
+                            "href": "#testimonials"
+                        },
+                        {
+                            "label": {
+                                "en": "FAQ",
+                                "he": "שאלות נפוצות"
+                            },
+                            "href": "#faq"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Start Free Trial",
+                        "he": "Start Free Trial"
+                    },
+                    "ctaLink": "#pricing",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Build Better Products Faster",
+                        "he": "Build Better Products Faster"
+                    },
+                    "subtitle": {
+                        "en": "The all-in-one platform that helps teams ship 10x faster. No complex setup, just results.",
+                        "he": "The all-in-one platform that helps teams ship 10x faster. No complex setup, just results."
+                    },
+                    "primaryButtonText": {
+                        "en": "Start Free Trial",
+                        "he": "Start Free Trial"
+                    },
+                    "primaryButtonLink": "#pricing",
+                    "secondaryButtonText": {
+                        "en": "Watch Demo",
+                        "he": "Watch Demo"
+                    },
+                    "secondaryButtonLink": "#demo"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "50K+",
+                            "label": {
+                                "en": "Active Users",
+                                "he": "משתמשים פעילים"
+                            }
+                        },
+                        {
+                            "value": "99.9%",
+                            "label": {
+                                "en": "Uptime",
+                                "he": "זמן פעילות"
+                            }
+                        },
+                        {
+                            "value": "150+",
+                            "label": {
+                                "en": "Countries",
+                                "he": "מדינות"
+                            }
+                        },
+                        {
+                            "value": "4.9/5",
+                            "label": {
+                                "en": "Rating",
+                                "he": "דירוג"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Everything You Need to Scale",
+                        "he": "כל מה שצריך כדי לגדול"
+                    },
+                    "subtitle": {
+                        "en": "Powerful features that grow with your business",
+                        "he": "Powerful features that grow with your business"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "⚡",
+                            "title": {
+                                "en": "Lightning Fast",
+                                "he": "מהיר כברק"
+                            },
+                            "description": {
+                                "en": "Built for speed with cutting-edge technology",
+                                "he": "נבנה למהירות עם טכנולוגיה חדישה"
+                            },
+                            "badge": "Popular",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "🔒",
+                            "title": {
+                                "en": "Enterprise Security",
+                                "he": "אבטחה ברמה בנקאית"
+                            },
+                            "description": {
+                                "en": "Bank-grade encryption and SOC 2 compliance",
+                                "he": "הצפנה ברמה בנקאית ותאימות SOC 2"
+                            },
+                            "badge": "Secure",
+                            "badgeVariant": "secondary"
+                        },
+                        {
+                            "icon": "📊",
+                            "title": {
+                                "en": "Advanced Analytics",
+                                "he": "אנליטיקה מתקדמת"
+                            },
+                            "description": {
+                                "en": "Deep insights to make data-driven decisions",
+                                "he": "תובנות עמוקות לקבלת החלטות מבוססות נתונים"
+                            }
+                        },
+                        {
+                            "icon": "🔗",
+                            "title": {
+                                "en": "Seamless Integrations",
+                                "he": "Seamless Integrations"
+                            },
+                            "description": {
+                                "en": "Connect with 100+ tools you already use",
+                                "he": "Connect with 100+ tools you already use"
+                            }
+                        },
+                        {
+                            "icon": "🤖",
+                            "title": {
+                                "en": "AI-Powered",
+                                "he": "AI-Powered"
+                            },
+                            "description": {
+                                "en": "Smart automation that saves hours of work",
+                                "he": "Smart automation that saves hours of work"
+                            }
+                        },
+                        {
+                            "icon": "💬",
+                            "title": {
+                                "en": "24/7 Support",
+                                "he": "תמיכה 24/7"
+                            },
+                            "description": {
+                                "en": "Expert help whenever you need it",
+                                "he": "Expert help whenever you need it"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Pricing",
+                "props": {
+                    "title": {
+                        "en": "Simple, Transparent Pricing",
+                        "he": "Simple, Transparent Pricing"
+                    },
+                    "subtitle": {
+                        "en": "No hidden fees. Cancel anytime.",
+                        "he": "No hidden fees. Cancel anytime."
+                    },
+                    "backgroundColor": "gray",
+                    "tiers": [
+                        {
+                            "name": {
+                                "en": "Starter",
+                                "he": "Starter"
+                            },
+                            "price": "$29",
+                            "period": "/month",
+                            "description": {
+                                "en": "Perfect for small teams",
+                                "he": "Perfect for small teams"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Up to 5 team members",
+                                        "he": "Up to 5 team members"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "10GB storage",
+                                        "he": "10GB storage"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Basic analytics",
+                                        "he": "Basic analytics"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Email support",
+                                        "he": "Email support"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "API access",
+                                        "he": "API access"
+                                    },
+                                    "included": false
+                                },
+                                {
+                                    "text": {
+                                        "en": "Custom integrations",
+                                        "he": "Custom integrations"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Get Started",
+                                "he": "התחל עכשיו"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Professional",
+                                "he": "Professional"
+                            },
+                            "price": "$79",
+                            "period": "/month",
+                            "description": {
+                                "en": "Best for growing teams",
+                                "he": "Best for growing teams"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Up to 20 team members",
+                                        "he": "Up to 20 team members"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "100GB storage",
+                                        "he": "100GB storage"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Advanced analytics",
+                                        "he": "Advanced analytics"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Priority support",
+                                        "he": "Priority support"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "API access",
+                                        "he": "API access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Custom integrations",
+                                        "he": "Custom integrations"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Start Free Trial",
+                                "he": "Start Free Trial"
+                            },
+                            "popular": true,
+                            "badge": "Most Popular"
+                        },
+                        {
+                            "name": {
+                                "en": "Enterprise",
+                                "he": "Enterprise"
+                            },
+                            "price": "$199",
+                            "period": "/month",
+                            "description": {
+                                "en": "For large organizations",
+                                "he": "For large organizations"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Unlimited team members",
+                                        "he": "Unlimited team members"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Unlimited storage",
+                                        "he": "Unlimited storage"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Advanced analytics",
+                                        "he": "Advanced analytics"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Dedicated support",
+                                        "he": "Dedicated support"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "API access",
+                                        "he": "API access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Custom integrations",
+                                        "he": "Custom integrations"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Contact Sales",
+                                "he": "Contact Sales"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Loved by Teams Worldwide",
+                        "he": "Loved by Teams Worldwide"
+                    },
+                    "subtitle": {
+                        "en": "See what our customers are saying",
+                        "he": "See what our customers are saying"
+                    },
+                    "backgroundColor": "white",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Sarah Chen",
+                            "role": {
+                                "en": "CTO",
+                                "he": "CTO"
+                            },
+                            "company": "TechFlow",
+                            "content": {
+                                "en": "SaaSify has completely transformed how our team works. We've cut our development time in half!",
+                                "he": "SaaSify has completely transformed how our team works. We've cut our development time in half!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Michael Rodriguez",
+                            "role": {
+                                "en": "Product Manager",
+                                "he": "Product Manager"
+                            },
+                            "company": "InnovateCo",
+                            "content": {
+                                "en": "The analytics features alone are worth the price. We can finally make data-driven decisions.",
+                                "he": "The analytics features alone are worth the price. We can finally make data-driven decisions."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Emily Watson",
+                            "role": {
+                                "en": "Founder",
+                                "he": "Founder"
+                            },
+                            "company": "StartupX",
+                            "content": {
+                                "en": "Best investment we've made. Customer support is incredible and the product just works.",
+                                "he": "Best investment we've made. Customer support is incredible and the product just works."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "Frequently Asked Questions",
+                        "he": "Frequently Asked Questions"
+                    },
+                    "subtitle": {
+                        "en": "Everything you need to know",
+                        "he": "Everything you need to know"
+                    },
+                    "backgroundColor": "gray",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "How does the free trial work?",
+                                "he": "How does the free trial work?"
+                            },
+                            "answer": {
+                                "en": "Start with a 14-day free trial with full access to all features. No credit card required. Cancel anytime.",
+                                "he": "Start with a 14-day free trial with full access to all features. No credit card required. Cancel anytime."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Can I change plans later?",
+                                "he": "Can I change plans later?"
+                            },
+                            "answer": {
+                                "en": "Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect immediately.",
+                                "he": "Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect immediately."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "What payment methods do you accept?",
+                                "he": "What payment methods do you accept?"
+                            },
+                            "answer": {
+                                "en": "We accept all major credit cards, PayPal, and bank transfers for enterprise customers.",
+                                "he": "We accept all major credit cards, PayPal, and bank transfers for enterprise customers."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Is my data secure?",
+                                "he": "Is my data secure?"
+                            },
+                            "answer": {
+                                "en": "Yes! We use bank-grade encryption and are SOC 2 Type II compliant. Your data is always safe with us.",
+                                "he": "Yes! We use bank-grade encryption and are SOC 2 Type II compliant. Your data is always safe with us."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Do you offer discounts for nonprofits?",
+                                "he": "Do you offer discounts for nonprofits?"
+                            },
+                            "answer": {
+                                "en": "Yes! We offer 50% off for registered nonprofits. Contact our sales team to learn more.",
+                                "he": "Yes! We offer 50% off for registered nonprofits. Contact our sales team to learn more."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Ready to Get Started?",
+                        "he": "Ready to Get Started?"
+                    },
+                    "subtitle": {
+                        "en": "Join 50,000+ teams already using SaaSify to build better products.",
+                        "he": "Join 50,000+ teams already using SaaSify to build better products."
+                    },
+                    "primaryButtonText": {
+                        "en": "Start Your Free Trial",
+                        "he": "Start Your Free Trial"
+                    },
+                    "primaryButtonLink": "#signup",
+                    "secondaryButtonText": {
+                        "en": "Schedule a Demo",
+                        "he": "Schedule a Demo"
+                    },
+                    "secondaryButtonLink": "#demo",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "SaaSify",
+                        "he": "SaaSify"
+                    },
+                    "description": {
+                        "en": "The all-in-one platform for modern teams.",
+                        "he": "The all-in-one platform for modern teams."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Product",
+                                "he": "Product"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Features",
+                                        "he": "תכונות"
+                                    },
+                                    "href": "#features"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Pricing",
+                                        "he": "מחירים"
+                                    },
+                                    "href": "#pricing"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Integrations",
+                                        "he": "Integrations"
+                                    },
+                                    "href": "#integrations"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Changelog",
+                                        "he": "Changelog"
+                                    },
+                                    "href": "#changelog"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Company",
+                                "he": "Company"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "About",
+                                        "he": "אודות"
+                                    },
+                                    "href": "#about"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Blog",
+                                        "he": "בלוג"
+                                    },
+                                    "href": "#blog"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Careers",
+                                        "he": "Careers"
+                                    },
+                                    "href": "#careers"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Press",
+                                        "he": "Press"
+                                    },
+                                    "href": "#press"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Resources",
+                                "he": "Resources"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Documentation",
+                                        "he": "Documentation"
+                                    },
+                                    "href": "#docs"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Help Center",
+                                        "he": "Help Center"
+                                    },
+                                    "href": "#help"
+                                },
+                                {
+                                    "label": {
+                                        "en": "API Reference",
+                                        "he": "API Reference"
+                                    },
+                                    "href": "#api"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Status",
+                                        "he": "Status"
+                                    },
+                                    "href": "#status"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "github",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 SaaSify. All rights reserved.",
+                        "he": "© 2024 SaaSify. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

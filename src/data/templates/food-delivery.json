@@ -1,0 +1,503 @@
+{
+    "id": "food-delivery",
+    "name": "Food Delivery App",
+    "description": "Modern landing page for food delivery services and apps",
+    "category": "Food & Dining",
+    "thumbnail": "/templates/food-delivery.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "FeastBox",
+                        "he": "FeastBox"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Restaurants",
+                                "he": "Restaurants"
+                            },
+                            "href": "#restaurants"
+                        },
+                        {
+                            "label": {
+                                "en": "How It Works",
+                                "he": "איך זה עובד"
+                            },
+                            "href": "#how-it-works"
+                        },
+                        {
+                            "label": {
+                                "en": "Become a Driver",
+                                "he": "Become a Driver"
+                            },
+                            "href": "#driver"
+                        },
+                        {
+                            "label": {
+                                "en": "Sign In",
+                                "he": "Sign In"
+                            },
+                            "href": "#login"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Order Now",
+                        "he": "Order Now"
+                    },
+                    "ctaLink": "#order",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Food Delivery at Your Doorstep",
+                        "he": "Food Delivery at Your Doorstep"
+                    },
+                    "subtitle": {
+                        "en": "Order from the best local restaurants and get fresh, hot food delivered in 30 minutes or less.",
+                        "he": "Order from the best local restaurants and get fresh, hot food delivered in 30 minutes or less."
+                    },
+                    "primaryButtonText": {
+                        "en": "Order Now",
+                        "he": "Order Now"
+                    },
+                    "primaryButtonLink": "#order",
+                    "secondaryButtonText": {
+                        "en": "Browse Restaurants",
+                        "he": "Browse Restaurants"
+                    },
+                    "secondaryButtonLink": "#restaurants"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "500+",
+                            "label": {
+                                "en": "Restaurants",
+                                "he": "Restaurants"
+                            }
+                        },
+                        {
+                            "value": "30 min",
+                            "label": {
+                                "en": "Avg Delivery",
+                                "he": "Avg Delivery"
+                            }
+                        },
+                        {
+                            "value": "50K+",
+                            "label": {
+                                "en": "Happy Customers",
+                                "he": "Happy Customers"
+                            }
+                        },
+                        {
+                            "value": "4.8",
+                            "label": {
+                                "en": "App Rating",
+                                "he": "App Rating"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Why Choose FeastBox",
+                        "he": "Why Choose FeastBox"
+                    },
+                    "subtitle": {
+                        "en": "The best food delivery experience in town",
+                        "he": "The best food delivery experience in town"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "⚡",
+                            "title": {
+                                "en": "Lightning Fast",
+                                "he": "מהיר כברק"
+                            },
+                            "description": {
+                                "en": "Average delivery time of 30 minutes or less",
+                                "he": "Average delivery time of 30 minutes or less"
+                            },
+                            "badge": "Fast",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "🌡️",
+                            "title": {
+                                "en": "Hot & Fresh",
+                                "he": "Hot & Fresh"
+                            },
+                            "description": {
+                                "en": "Insulated delivery bags keep food at perfect temperature",
+                                "he": "Insulated delivery bags keep food at perfect temperature"
+                            },
+                            "badge": "Quality",
+                            "badgeVariant": "secondary"
+                        },
+                        {
+                            "icon": "📍",
+                            "title": {
+                                "en": "Real-Time Tracking",
+                                "he": "Real-Time Tracking"
+                            },
+                            "description": {
+                                "en": "Watch your order arrive in real-time on the map",
+                                "he": "Watch your order arrive in real-time on the map"
+                            },
+                            "badge": "Live",
+                            "badgeVariant": "destructive"
+                        },
+                        {
+                            "icon": "💳",
+                            "title": {
+                                "en": "Easy Payment",
+                                "he": "Easy Payment"
+                            },
+                            "description": {
+                                "en": "Pay with card, Apple Pay, Google Pay or cash",
+                                "he": "Pay with card, Apple Pay, Google Pay or cash"
+                            },
+                            "badge": "Flexible",
+                            "badgeVariant": "outline"
+                        },
+                        {
+                            "icon": "🎁",
+                            "title": {
+                                "en": "Rewards Program",
+                                "he": "Rewards Program"
+                            },
+                            "description": {
+                                "en": "Earn points on every order and get free deliveries",
+                                "he": "Earn points on every order and get free deliveries"
+                            },
+                            "badge": "Bonus",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "📱",
+                            "title": {
+                                "en": "Exclusive App Deals",
+                                "he": "Exclusive App Deals"
+                            },
+                            "description": {
+                                "en": "App-only discounts and special offers",
+                                "he": "App-only discounts and special offers"
+                            },
+                            "badge": "App Only",
+                            "badgeVariant": "secondary"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Download the App",
+                        "he": "Download the App"
+                    },
+                    "subtitle": {
+                        "en": "Get $5 off your first order when you download the FeastBox app",
+                        "he": "Get $5 off your first order when you download the FeastBox app"
+                    },
+                    "primaryButtonText": {
+                        "en": "Download for iOS",
+                        "he": "Download for iOS"
+                    },
+                    "primaryButtonLink": "#ios",
+                    "secondaryButtonText": {
+                        "en": "Download for Android",
+                        "he": "Download for Android"
+                    },
+                    "secondaryButtonLink": "#android",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Our Customers Say",
+                        "he": "What Our Customers Say"
+                    },
+                    "subtitle": {
+                        "en": "Join thousands of satisfied foodies",
+                        "he": "Join thousands of satisfied foodies"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Jennifer Lee",
+                            "role": {
+                                "en": "Food Blogger",
+                                "he": "Food Blogger"
+                            },
+                            "company": "@JenEats",
+                            "content": {
+                                "en": "FeastBox has the best selection of restaurants. The delivery is always on time!",
+                                "he": "FeastBox has the best selection of restaurants. The delivery is always on time!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Carlos Rivera",
+                            "role": {
+                                "en": "Busy Dad",
+                                "he": "Busy Dad"
+                            },
+                            "company": "Happy Family",
+                            "content": {
+                                "en": "A lifesaver for busy parents. Kids love the variety of options available.",
+                                "he": "A lifesaver for busy parents. Kids love the variety of options available."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Amanda Chen",
+                            "role": {
+                                "en": "Office Manager",
+                                "he": "Office Manager"
+                            },
+                            "company": "Tech Corp",
+                            "content": {
+                                "en": "Our team lunch orders are so easy now. Great for office celebrations too!",
+                                "he": "Our team lunch orders are so easy now. Great for office celebrations too!"
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "Frequently Asked Questions",
+                        "he": "Frequently Asked Questions"
+                    },
+                    "subtitle": {
+                        "en": "Everything you need to know",
+                        "he": "Everything you need to know"
+                    },
+                    "backgroundColor": "white",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "What is the delivery fee?",
+                                "he": "What is the delivery fee?"
+                            },
+                            "answer": {
+                                "en": "Delivery fee starts at $2.99 and varies by distance. Orders over $25 qualify for free delivery.",
+                                "he": "Delivery fee starts at $2.99 and varies by distance. Orders over $25 qualify for free delivery."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "How can I track my order?",
+                                "he": "How can I track my order?"
+                            },
+                            "answer": {
+                                "en": "Once your order is confirmed, you'll receive a link to track your delivery in real-time via SMS or in the app.",
+                                "he": "Once your order is confirmed, you'll receive a link to track your delivery in real-time via SMS or in the app."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "What if my food arrives cold or wrong?",
+                                "he": "What if my food arrives cold or wrong?"
+                            },
+                            "answer": {
+                                "en": "We offer a 100% satisfaction guarantee. Contact support immediately and we'll make it right with a refund or replacement.",
+                                "he": "We offer a 100% satisfaction guarantee. Contact support immediately and we'll make it right with a refund or replacement."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Do I need to tip the driver?",
+                                "he": "Do I need to tip the driver?"
+                            },
+                            "answer": {
+                                "en": "Tips are always appreciated by our drivers but never required. You can add a tip in the app or give cash directly.",
+                                "he": "Tips are always appreciated by our drivers but never required. You can add a tip in the app or give cash directly."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "FeastBox",
+                        "he": "FeastBox"
+                    },
+                    "description": {
+                        "en": "Delicious food delivered fast.",
+                        "he": "Delicious food delivered fast."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Order",
+                                "he": "Order"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Browse Restaurants",
+                                        "he": "Browse Restaurants"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Popular Foods",
+                                        "he": "Popular Foods"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Cuisines",
+                                        "he": "Cuisines"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Gift Cards",
+                                        "he": "Gift Cards"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Driver",
+                                "he": "Driver"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Become a Driver",
+                                        "he": "Become a Driver"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Driver App",
+                                        "he": "Driver App"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Earnings Calculator",
+                                        "he": "Earnings Calculator"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Driver Support",
+                                        "he": "Driver Support"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Company",
+                                "he": "Company"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "About Us",
+                                        "he": "About Us"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Careers",
+                                        "he": "Careers"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Press",
+                                        "he": "Press"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Contact",
+                                        "he": "צור קשר"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "facebook",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 FeastBox Delivery. All rights reserved.",
+                        "he": "© 2024 FeastBox Delivery. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

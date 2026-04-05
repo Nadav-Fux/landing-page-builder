@@ -1,0 +1,643 @@
+{
+    "id": "digital-marketing",
+    "name": "Digital Marketing Agency",
+    "description": "Professional landing page for digital marketing agencies",
+    "category": "Marketing",
+    "thumbnail": "/templates/digital-marketing.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "GrowthLab",
+                        "he": "GrowthLab"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Services",
+                                "he": "שירותים"
+                            },
+                            "href": "#services"
+                        },
+                        {
+                            "label": {
+                                "en": "Portfolio",
+                                "he": "Portfolio"
+                            },
+                            "href": "#portfolio"
+                        },
+                        {
+                            "label": {
+                                "en": "Results",
+                                "he": "תוצאות"
+                            },
+                            "href": "#results"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Get Proposal",
+                        "he": "Get Proposal"
+                    },
+                    "ctaLink": "#contact",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Grow Your Business Online",
+                        "he": "Grow Your Business Online"
+                    },
+                    "subtitle": {
+                        "en": "Data-driven marketing strategies that deliver real results. We help ambitious brands scale through SEO, PPC.",
+                        "he": "Data-driven marketing strategies that deliver real results. We help ambitious brands scale through SEO, PPC."
+                    },
+                    "primaryButtonText": {
+                        "en": "Schedule Free Audit",
+                        "he": "Schedule Free Audit"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "secondaryButtonText": {
+                        "en": "View Case Studies",
+                        "he": "View Case Studies"
+                    },
+                    "secondaryButtonLink": "#portfolio"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "$50M+",
+                            "label": {
+                                "en": "Client Revenue",
+                                "he": "Client Revenue"
+                            }
+                        },
+                        {
+                            "value": "500%",
+                            "label": {
+                                "en": "Avg ROI",
+                                "he": "Avg ROI"
+                            }
+                        },
+                        {
+                            "value": "200+",
+                            "label": {
+                                "en": "Clients Grown",
+                                "he": "Clients Grown"
+                            }
+                        },
+                        {
+                            "value": "8 Years",
+                            "label": {
+                                "en": "In Business",
+                                "he": "In Business"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Our Services",
+                        "he": "השירותים שלנו"
+                    },
+                    "subtitle": {
+                        "en": "Comprehensive digital solutions tailored to your goals",
+                        "he": "Comprehensive digital solutions tailored to your goals"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🔍",
+                            "title": {
+                                "en": "SEO Optimization",
+                                "he": "SEO Optimization"
+                            },
+                            "description": {
+                                "en": "Rank higher and attract organic traffic that converts",
+                                "he": "Rank higher and attract organic traffic that converts"
+                            },
+                            "badge": "Core",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "📱",
+                            "title": {
+                                "en": "Social Media",
+                                "he": "Social Media"
+                            },
+                            "description": {
+                                "en": "Build engaged communities across all platforms",
+                                "he": "Build engaged communities across all platforms"
+                            },
+                            "badge": "Trending",
+                            "badgeVariant": "secondary"
+                        },
+                        {
+                            "icon": "💰",
+                            "title": {
+                                "en": "Paid Advertising",
+                                "he": "Paid Advertising"
+                            },
+                            "description": {
+                                "en": "Maximize ROI with optimized ad campaigns",
+                                "he": "Maximize ROI with optimized ad campaigns"
+                            },
+                            "badge": "High ROI",
+                            "badgeVariant": "destructive"
+                        },
+                        {
+                            "icon": "📧",
+                            "title": {
+                                "en": "Email Marketing",
+                                "he": "Email Marketing"
+                            },
+                            "description": {
+                                "en": "Nurture leads and drive conversions",
+                                "he": "Nurture leads and drive conversions"
+                            },
+                            "badge": "Automated",
+                            "badgeVariant": "outline"
+                        },
+                        {
+                            "icon": "📝",
+                            "title": {
+                                "en": "Content Strategy",
+                                "he": "Content Strategy"
+                            },
+                            "description": {
+                                "en": "Compelling content that tells your story",
+                                "he": "Compelling content that tells your story"
+                            },
+                            "badge": "Creative",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "📊",
+                            "title": {
+                                "en": "Analytics & Reporting",
+                                "he": "Analytics & Reporting"
+                            },
+                            "description": {
+                                "en": "Transparent results with actionable insights",
+                                "he": "Transparent results with actionable insights"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Clients Say",
+                        "he": "What Clients Say"
+                    },
+                    "subtitle": {
+                        "en": "Real results from real businesses",
+                        "he": "Real results from real businesses"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "David Kim",
+                            "role": {
+                                "en": "CEO",
+                                "he": "CEO"
+                            },
+                            "company": "TechStart Inc",
+                            "content": {
+                                "en": "GrowthLab tripled our leads in just 3 months. The ROI speaks for itself.",
+                                "he": "GrowthLab tripled our leads in just 3 months. The ROI speaks for itself."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Lisa Johnson",
+                            "role": {
+                                "en": "Marketing Director",
+                                "he": "Marketing Director"
+                            },
+                            "company": "RetailMax",
+                            "content": {
+                                "en": "Best agency we've worked with. Transparent, professional, and they deliver.",
+                                "he": "Best agency we've worked with. Transparent, professional, and they deliver."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Mark Peterson",
+                            "role": {
+                                "en": "Founder",
+                                "he": "Founder"
+                            },
+                            "company": "GreenHome",
+                            "content": {
+                                "en": "Our SEO traffic increased by 400%. These guys know what they're doing.",
+                                "he": "Our SEO traffic increased by 400%. These guys know what they're doing."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Pricing",
+                "props": {
+                    "title": {
+                        "en": "Flexible Packages",
+                        "he": "Flexible Packages"
+                    },
+                    "subtitle": {
+                        "en": "Choose the plan that fits your business",
+                        "he": "Choose the plan that fits your business"
+                    },
+                    "backgroundColor": "white",
+                    "tiers": [
+                        {
+                            "name": {
+                                "en": "Starter",
+                                "he": "Starter"
+                            },
+                            "price": "$1,499",
+                            "period": "/month",
+                            "description": {
+                                "en": "For growing businesses",
+                                "he": "For growing businesses"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "SEO optimization",
+                                        "he": "SEO optimization"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Monthly reporting",
+                                        "he": "Monthly reporting"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Social media (2 platforms)",
+                                        "he": "Social media (2 platforms)"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Email campaigns",
+                                        "he": "Email campaigns"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "PPC management",
+                                        "he": "PPC management"
+                                    },
+                                    "included": false
+                                },
+                                {
+                                    "text": {
+                                        "en": "Dedicated manager",
+                                        "he": "Dedicated manager"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Start Growing",
+                                "he": "Start Growing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Scale",
+                                "he": "Scale"
+                            },
+                            "price": "$3,499",
+                            "period": "/month",
+                            "description": {
+                                "en": "For established businesses",
+                                "he": "For established businesses"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Starter",
+                                        "he": "Everything in Starter"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "PPC management",
+                                        "he": "PPC management"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Social media (4 platforms)",
+                                        "he": "Social media (4 platforms)"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Content creation",
+                                        "he": "Content creation"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Weekly reporting calls",
+                                        "he": "Weekly reporting calls"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Dedicated manager",
+                                        "he": "Dedicated manager"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Scale Faster",
+                                "he": "Scale Faster"
+                            },
+                            "popular": true,
+                            "badge": "Most Popular"
+                        },
+                        {
+                            "name": {
+                                "en": "Enterprise",
+                                "he": "Enterprise"
+                            },
+                            "price": "Custom",
+                            "period": "",
+                            "description": {
+                                "en": "For large organizations",
+                                "he": "For large organizations"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Scale",
+                                        "he": "Everything in Scale"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Custom strategies",
+                                        "he": "Custom strategies"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Dedicated account manager",
+                                        "he": "Dedicated account manager"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "24/7 support",
+                                        "he": "24/7 support"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "White-label reporting",
+                                        "he": "White-label reporting"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "On-site workshops",
+                                        "he": "On-site workshops"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Contact Us",
+                                "he": "צור קשר"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Ready to Grow?",
+                        "he": "Ready to Grow?"
+                    },
+                    "subtitle": {
+                        "en": "Get a free marketing audit and growth proposal",
+                        "he": "Get a free marketing audit and growth proposal"
+                    },
+                    "backgroundColor": "blue",
+                    "submitButtonText": {
+                        "en": "Get Free Audit",
+                        "he": "Get Free Audit"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "company": true,
+                        "subject": true,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "GrowthLab",
+                        "he": "GrowthLab"
+                    },
+                    "description": {
+                        "en": "Digital marketing agency helping businesses grow online.",
+                        "he": "Digital marketing agency helping businesses grow online."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Services",
+                                "he": "Services"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "SEO",
+                                        "he": "SEO"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "PPC",
+                                        "he": "PPC"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Social Media",
+                                        "he": "Social Media"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Content Marketing",
+                                        "he": "Content Marketing"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Company",
+                                "he": "Company"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "About Us",
+                                        "he": "About Us"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Our Team",
+                                        "he": "Our Team"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Careers",
+                                        "he": "Careers"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Contact",
+                                        "he": "צור קשר"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Resources",
+                                "he": "Resources"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Blog",
+                                        "he": "בלוג"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Case Studies",
+                                        "he": "Case Studies"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Guides",
+                                        "he": "Guides"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "FAQ",
+                                        "he": "שאלות נפוצות"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 GrowthLab Marketing. All rights reserved.",
+                        "he": "© 2024 GrowthLab Marketing. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

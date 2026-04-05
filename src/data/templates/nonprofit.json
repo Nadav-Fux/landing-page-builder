@@ -1,0 +1,406 @@
+{
+    "id": "nonprofit",
+    "name": "Nonprofit & Charity",
+    "description": "Landing page for nonprofits and charitable organizations",
+    "category": "Nonprofit",
+    "thumbnail": "/templates/nonprofit.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "Hope Foundation",
+                        "he": "Hope Foundation"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Our Mission",
+                                "he": "Our Mission"
+                            },
+                            "href": "#mission"
+                        },
+                        {
+                            "label": {
+                                "en": "Impact",
+                                "he": "Impact"
+                            },
+                            "href": "#impact"
+                        },
+                        {
+                            "label": {
+                                "en": "Programs",
+                                "he": "Programs"
+                            },
+                            "href": "#programs"
+                        },
+                        {
+                            "label": {
+                                "en": "Get Involved",
+                                "he": "Get Involved"
+                            },
+                            "href": "#involved"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Donate Now",
+                        "he": "Donate Now"
+                    },
+                    "ctaLink": "#donate",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Together, We Can Make a Difference",
+                        "he": "Together, We Can Make a Difference"
+                    },
+                    "subtitle": {
+                        "en": "Providing clean water, education, and hope to communities in need. Your support changes lives.",
+                        "he": "Providing clean water, education, and hope to communities in need. Your support changes lives."
+                    },
+                    "primaryButtonText": {
+                        "en": "Donate Today",
+                        "he": "Donate Today"
+                    },
+                    "primaryButtonLink": "#donate",
+                    "secondaryButtonText": {
+                        "en": "Learn How",
+                        "he": "Learn How"
+                    },
+                    "secondaryButtonLink": "#impact"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "1M+",
+                            "label": {
+                                "en": "Lives Impacted",
+                                "he": "Lives Impacted"
+                            }
+                        },
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "Countries",
+                                "he": "מדינות"
+                            }
+                        },
+                        {
+                            "value": "200+",
+                            "label": {
+                                "en": "Wells Built",
+                                "he": "Wells Built"
+                            }
+                        },
+                        {
+                            "value": "95%",
+                            "label": {
+                                "en": "To Programs",
+                                "he": "To Programs"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Our Programs",
+                        "he": "Our Programs"
+                    },
+                    "subtitle": {
+                        "en": "Making lasting change in communities",
+                        "he": "Making lasting change in communities"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "💧",
+                            "title": {
+                                "en": "Clean Water",
+                                "he": "Clean Water"
+                            },
+                            "description": {
+                                "en": "Building wells and water systems",
+                                "he": "Building wells and water systems"
+                            }
+                        },
+                        {
+                            "icon": "📚",
+                            "title": {
+                                "en": "Education",
+                                "he": "Education"
+                            },
+                            "description": {
+                                "en": "Schools and scholarship programs",
+                                "he": "Schools and scholarship programs"
+                            }
+                        },
+                        {
+                            "icon": "🏥",
+                            "title": {
+                                "en": "Healthcare",
+                                "he": "Healthcare"
+                            },
+                            "description": {
+                                "en": "Medical clinics and supplies",
+                                "he": "Medical clinics and supplies"
+                            }
+                        },
+                        {
+                            "icon": "🌾",
+                            "title": {
+                                "en": "Agriculture",
+                                "he": "Agriculture"
+                            },
+                            "description": {
+                                "en": "Sustainable farming training",
+                                "he": "Sustainable farming training"
+                            }
+                        },
+                        {
+                            "icon": "🏠",
+                            "title": {
+                                "en": "Housing",
+                                "he": "Housing"
+                            },
+                            "description": {
+                                "en": "Safe shelter construction",
+                                "he": "Safe shelter construction"
+                            }
+                        },
+                        {
+                            "icon": "💼",
+                            "title": {
+                                "en": "Jobs",
+                                "he": "Jobs"
+                            },
+                            "description": {
+                                "en": "Vocational training programs",
+                                "he": "Vocational training programs"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Stories of Impact",
+                        "he": "Stories of Impact"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 2,
+                    "testimonials": [
+                        {
+                            "name": "Maria",
+                            "role": {
+                                "en": "Village Elder",
+                                "he": "Village Elder"
+                            },
+                            "content": {
+                                "en": "The well changed everything for our village. Children no longer walk miles for water.",
+                                "he": "The well changed everything for our village. Children no longer walk miles for water."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Samuel",
+                            "role": {
+                                "en": "Student",
+                                "he": "Student"
+                            },
+                            "content": {
+                                "en": "Thanks to the scholarship, I'm the first in my family to attend university.",
+                                "he": "Thanks to the scholarship, I'm the first in my family to attend university."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Pricing",
+                "props": {
+                    "title": {
+                        "en": "Ways to Give",
+                        "he": "Ways to Give"
+                    },
+                    "subtitle": {
+                        "en": "Every gift makes a difference",
+                        "he": "Every gift makes a difference"
+                    },
+                    "backgroundColor": "white",
+                    "tiers": [
+                        {
+                            "name": {
+                                "en": "One-Time",
+                                "he": "One-Time"
+                            },
+                            "price": "$25",
+                            "description": {
+                                "en": "Any amount helps",
+                                "he": "Any amount helps"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Provides clean water for 1 person for a year",
+                                        "he": "Provides clean water for 1 person for a year"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Give Now",
+                                "he": "Give Now"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Monthly",
+                                "he": "Monthly"
+                            },
+                            "price": "$50",
+                            "period": "/month",
+                            "description": {
+                                "en": "Sustaining support",
+                                "he": "Sustaining support"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Funds ongoing programs",
+                                        "he": "Funds ongoing programs"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Quarterly impact reports",
+                                        "he": "Quarterly impact reports"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Become a Partner",
+                                "he": "Become a Partner"
+                            },
+                            "popular": true,
+                            "badge": "Most Impact"
+                        },
+                        {
+                            "name": {
+                                "en": "Legacy",
+                                "he": "Legacy"
+                            },
+                            "price": "Custom",
+                            "description": {
+                                "en": "Major gifts",
+                                "he": "Major gifts"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Named projects",
+                                        "he": "Named projects"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Site visits",
+                                        "he": "Site visits"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Contact Us",
+                                "he": "צור קשר"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Be Part of the Solution",
+                        "he": "Be Part of the Solution"
+                    },
+                    "subtitle": {
+                        "en": "100% of your donation goes directly to programs.",
+                        "he": "100% of your donation goes directly to programs."
+                    },
+                    "primaryButtonText": {
+                        "en": "Donate Now",
+                        "he": "Donate Now"
+                    },
+                    "primaryButtonLink": "#donate",
+                    "secondaryButtonText": {
+                        "en": "Volunteer",
+                        "he": "Volunteer"
+                    },
+                    "secondaryButtonLink": "#volunteer",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "Hope Foundation",
+                        "he": "Hope Foundation"
+                    },
+                    "description": {
+                        "en": "501(c)(3) nonprofit organization.",
+                        "he": "501(c)(3) nonprofit organization."
+                    },
+                    "backgroundColor": "dark",
+                    "socialLinks": [
+                        {
+                            "platform": "facebook",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 Hope Foundation. All rights reserved.",
+                        "he": "© 2024 Hope Foundation. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

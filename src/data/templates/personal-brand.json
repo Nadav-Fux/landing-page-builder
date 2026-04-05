@@ -1,0 +1,472 @@
+{
+    "id": "personal-brand",
+    "name": "Personal Brand & Blog",
+    "description": "Elegant landing page for personal brands, bloggers, and creators",
+    "category": "Personal",
+    "thumbnail": "/templates/personal-brand.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "Alex Rivera",
+                        "he": "Alex Rivera"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Blog",
+                                "he": "בלוג"
+                            },
+                            "href": "#blog"
+                        },
+                        {
+                            "label": {
+                                "en": "Speaking",
+                                "he": "Speaking"
+                            },
+                            "href": "#speaking"
+                        },
+                        {
+                            "label": {
+                                "en": "Newsletter",
+                                "he": "Newsletter"
+                            },
+                            "href": "#newsletter"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Subscribe",
+                        "he": "Subscribe"
+                    },
+                    "ctaLink": "#newsletter",
+                    "sticky": true,
+                    "transparent": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Hi, I'm Alex Rivera",
+                        "he": "Hi, I'm Alex Rivera"
+                    },
+                    "subtitle": {
+                        "en": "Tech writer, speaker, and digital creator helping people understand the future of technology.",
+                        "he": "Tech writer, speaker, and digital creator helping people understand the future of technology."
+                    },
+                    "primaryButtonText": {
+                        "en": "Read My Blog",
+                        "he": "Read My Blog"
+                    },
+                    "primaryButtonLink": "#blog",
+                    "secondaryButtonText": {
+                        "en": "Work With Me",
+                        "he": "Work With Me"
+                    },
+                    "secondaryButtonLink": "#contact"
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "What I Do",
+                        "he": "What I Do"
+                    },
+                    "subtitle": {
+                        "en": "Sharing insights on technology, productivity, and building an online presence",
+                        "he": "Sharing insights on technology, productivity, and building an online presence"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "✍️",
+                            "title": {
+                                "en": "Tech Writing",
+                                "he": "Tech Writing"
+                            },
+                            "description": {
+                                "en": "In-depth articles on AI, software development, and emerging technologies",
+                                "he": "In-depth articles on AI, software development, and emerging technologies"
+                            },
+                            "badge": "100+ Articles",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "🎤",
+                            "title": {
+                                "en": "Public Speaking",
+                                "he": "Public Speaking"
+                            },
+                            "description": {
+                                "en": "Keynotes and workshops at conferences worldwide",
+                                "he": "Keynotes and workshops at conferences worldwide"
+                            },
+                            "badge": "50+ Talks",
+                            "badgeVariant": "secondary"
+                        },
+                        {
+                            "icon": "🎓",
+                            "title": {
+                                "en": "Online Courses",
+                                "he": "Online Courses"
+                            },
+                            "description": {
+                                "en": "Learn skills through structured video courses",
+                                "he": "Learn skills through structured video courses"
+                            },
+                            "badge": "3 Courses",
+                            "badgeVariant": "destructive"
+                        },
+                        {
+                            "icon": "💌",
+                            "title": {
+                                "en": "Weekly Newsletter",
+                                "he": "Weekly Newsletter"
+                            },
+                            "description": {
+                                "en": "Curated tech insights delivered to your inbox",
+                                "he": "Curated tech insights delivered to your inbox"
+                            },
+                            "badge": "15K+ Subscribers",
+                            "badgeVariant": "outline"
+                        },
+                        {
+                            "icon": "🎧",
+                            "title": {
+                                "en": "Podcast Host",
+                                "he": "Podcast Host"
+                            },
+                            "description": {
+                                "en": "Interviews with industry leaders and innovators",
+                                "he": "Interviews with industry leaders and innovators"
+                            },
+                            "badge": "100+ Episodes",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "🤝",
+                            "title": {
+                                "en": "Consulting",
+                                "he": "Consulting"
+                            },
+                            "description": {
+                                "en": "Strategic advice for tech companies and creators",
+                                "he": "Strategic advice for tech companies and creators"
+                            },
+                            "badge": "Open for Work",
+                            "badgeVariant": "secondary"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What People Say",
+                        "he": "What People Say"
+                    },
+                    "subtitle": {
+                        "en": "Collaborators and readers share their thoughts",
+                        "he": "Collaborators and readers share their thoughts"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Sarah Chen",
+                            "role": {
+                                "en": "Editor",
+                                "he": "Editor"
+                            },
+                            "company": "TechWeekly",
+                            "content": {
+                                "en": "Alex has a unique ability to explain complex topics in a way that's both accurate and engaging.",
+                                "he": "Alex has a unique ability to explain complex topics in a way that's both accurate and engaging."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Marcus Johnson",
+                            "role": {
+                                "en": "Conference Organizer",
+                                "he": "Conference Organizer"
+                            },
+                            "company": "DevSummit",
+                            "content": {
+                                "en": "One of the most prepared and engaging speakers we've had. The audience loved his session!",
+                                "he": "One of the most prepared and engaging speakers we've had. The audience loved his session!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Emily Watson",
+                            "role": {
+                                "en": "Reader",
+                                "he": "Reader"
+                            },
+                            "company": "Newsletter Subscriber",
+                            "content": {
+                                "en": "Alex's newsletter is the only tech newsletter I never unsubscribe from. Always valuable insights.",
+                                "he": "Alex's newsletter is the only tech newsletter I never unsubscribe from. Always valuable insights."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "Frequently Asked Questions",
+                        "he": "Frequently Asked Questions"
+                    },
+                    "subtitle": {
+                        "en": "Common questions about working together",
+                        "he": "Common questions about working together"
+                    },
+                    "backgroundColor": "white",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "Do you accept guest posts?",
+                                "he": "Do you accept guest posts?"
+                            },
+                            "answer": {
+                                "en": "Yes! I'm always interested in featuring guest writers. Send your pitch to alex@example.com with your topic ideas.",
+                                "he": "Yes! I'm always interested in featuring guest writers. Send your pitch to alex@example.com with your topic ideas."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Can you speak at our event?",
+                                "he": "Can you speak at our event?"
+                            },
+                            "answer": {
+                                "en": "I'm available for keynotes, workshops, and panel discussions. Please contact my speaking agent at speaking@example.com.",
+                                "he": "I'm available for keynotes, workshops, and panel discussions. Please contact my speaking agent at speaking@example.com."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Do you offer consulting services?",
+                                "he": "Do you offer consulting services?"
+                            },
+                            "answer": {
+                                "en": "Yes, I work with select clients on content strategy and digital presence. Book a consultation through my calendar link.",
+                                "he": "Yes, I work with select clients on content strategy and digital presence. Book a consultation through my calendar link."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "How can I collaborate?",
+                                "he": "How can I collaborate?"
+                            },
+                            "answer": {
+                                "en": "I'm open to partnerships that align with my values. Email me at collab@example.com with your proposal.",
+                                "he": "I'm open to partnerships that align with my values. Email me at collab@example.com with your proposal."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Get In Touch",
+                        "he": "Get In Touch"
+                    },
+                    "subtitle": {
+                        "en": "Have a question or want to work together? Drop me a message!",
+                        "he": "Have a question or want to work together? Drop me a message!"
+                    },
+                    "backgroundColor": "slate",
+                    "submitButtonText": {
+                        "en": "Send Message",
+                        "he": "Send Message"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "subject": true,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "Alex Rivera",
+                        "he": "Alex Rivera"
+                    },
+                    "description": {
+                        "en": "Tech writer, speaker, and digital creator.",
+                        "he": "Tech writer, speaker, and digital creator."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Connect",
+                                "he": "Connect"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Twitter",
+                                        "he": "Twitter"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "LinkedIn",
+                                        "he": "LinkedIn"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "YouTube",
+                                        "he": "YouTube"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "GitHub",
+                                        "he": "GitHub"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Content",
+                                "he": "Content"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Blog",
+                                        "he": "בלוג"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Newsletter",
+                                        "he": "Newsletter"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Podcast",
+                                        "he": "Podcast"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Courses",
+                                        "he": "Courses"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Resources",
+                                "he": "Resources"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Speaking",
+                                        "he": "Speaking"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Media Kit",
+                                        "he": "Media Kit"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "RSS Feed",
+                                        "he": "RSS Feed"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Privacy",
+                                        "he": "Privacy"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "youtube",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 Alex Rivera. All rights reserved.",
+                        "he": "© 2024 Alex Rivera. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

@@ -1,0 +1,384 @@
+{
+    "id": "real-estate",
+    "name": "Real Estate",
+    "description": "Property listing landing page for real estate agents and agencies",
+    "category": "Real Estate",
+    "thumbnail": "/templates/real-estate.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "LuxuryHomes",
+                        "he": "LuxuryHomes"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Properties",
+                                "he": "Properties"
+                            },
+                            "href": "#properties"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Services",
+                                "he": "שירותים"
+                            },
+                            "href": "#services"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Schedule Viewing",
+                        "he": "Schedule Viewing"
+                    },
+                    "ctaLink": "#contact",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Find Your Dream Home",
+                        "he": "Find Your Dream Home"
+                    },
+                    "subtitle": {
+                        "en": "Discover luxury properties in prime locations. Expert guidance from search to settlement.",
+                        "he": "Discover luxury properties in prime locations. Expert guidance from search to settlement."
+                    },
+                    "primaryButtonText": {
+                        "en": "Browse Properties",
+                        "he": "Browse Properties"
+                    },
+                    "primaryButtonLink": "#properties",
+                    "secondaryButtonText": {
+                        "en": "Sell Your Home",
+                        "he": "Sell Your Home"
+                    },
+                    "secondaryButtonLink": "#sell"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "dark",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "500+",
+                            "label": {
+                                "en": "Properties Sold",
+                                "he": "Properties Sold"
+                            }
+                        },
+                        {
+                            "value": "$2B+",
+                            "label": {
+                                "en": "Total Sales",
+                                "he": "Total Sales"
+                            }
+                        },
+                        {
+                            "value": "15+",
+                            "label": {
+                                "en": "Years Experience",
+                                "he": "שנות ניסיון"
+                            }
+                        },
+                        {
+                            "value": "98%",
+                            "label": {
+                                "en": "Client Satisfaction",
+                                "he": "Client Satisfaction"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Why Choose Us",
+                        "he": "Why Choose Us"
+                    },
+                    "subtitle": {
+                        "en": "Your trusted partner in real estate",
+                        "he": "Your trusted partner in real estate"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🏠",
+                            "title": {
+                                "en": "Exclusive Listings",
+                                "he": "Exclusive Listings"
+                            },
+                            "description": {
+                                "en": "Access to off-market and premium properties",
+                                "he": "Access to off-market and premium properties"
+                            }
+                        },
+                        {
+                            "icon": "📊",
+                            "title": {
+                                "en": "Market Expertise",
+                                "he": "Market Expertise"
+                            },
+                            "description": {
+                                "en": "Deep knowledge of local market trends",
+                                "he": "Deep knowledge of local market trends"
+                            }
+                        },
+                        {
+                            "icon": "🤝",
+                            "title": {
+                                "en": "Personalized Service",
+                                "he": "Personalized Service"
+                            },
+                            "description": {
+                                "en": "Dedicated agent for your journey",
+                                "he": "Dedicated agent for your journey"
+                            }
+                        },
+                        {
+                            "icon": "💰",
+                            "title": {
+                                "en": "Best Prices",
+                                "he": "Best Prices"
+                            },
+                            "description": {
+                                "en": "Skilled negotiators for optimal deals",
+                                "he": "Skilled negotiators for optimal deals"
+                            }
+                        },
+                        {
+                            "icon": "📝",
+                            "title": {
+                                "en": "Full Support",
+                                "he": "Full Support"
+                            },
+                            "description": {
+                                "en": "Assistance with paperwork and legal",
+                                "he": "Assistance with paperwork and legal"
+                            }
+                        },
+                        {
+                            "icon": "🔑",
+                            "title": {
+                                "en": "Fast Closing",
+                                "he": "Fast Closing"
+                            },
+                            "description": {
+                                "en": "Streamlined process for quick results",
+                                "he": "Streamlined process for quick results"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Client Success Stories",
+                        "he": "Client Success Stories"
+                    },
+                    "subtitle": {
+                        "en": "Hear from our satisfied homeowners",
+                        "he": "Hear from our satisfied homeowners"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "The Johnson Family",
+                            "content": {
+                                "en": "Found our dream home in just 2 weeks! The team made the process incredibly smooth.",
+                                "he": "Found our dream home in just 2 weeks! The team made the process incredibly smooth."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Mark & Lisa",
+                            "content": {
+                                "en": "Sold our house above asking price. Their market knowledge is unmatched.",
+                                "he": "Sold our house above asking price. Their market knowledge is unmatched."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Sarah T.",
+                            "content": {
+                                "en": "First-time buyer and they held my hand through every step. Highly recommend!",
+                                "he": "First-time buyer and they held my hand through every step. Highly recommend!"
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Ready to Find Your Perfect Home?",
+                        "he": "Ready to Find Your Perfect Home?"
+                    },
+                    "subtitle": {
+                        "en": "Schedule a free consultation with our expert agents today.",
+                        "he": "Schedule a free consultation with our expert agents today."
+                    },
+                    "primaryButtonText": {
+                        "en": "Schedule Consultation",
+                        "he": "Schedule Consultation"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Get In Touch",
+                        "he": "Get In Touch"
+                    },
+                    "subtitle": {
+                        "en": "Tell us about your property needs",
+                        "he": "Tell us about your property needs"
+                    },
+                    "backgroundColor": "white",
+                    "submitButtonText": {
+                        "en": "Send Inquiry",
+                        "he": "Send Inquiry"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "phone": true,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "LuxuryHomes",
+                        "he": "LuxuryHomes"
+                    },
+                    "description": {
+                        "en": "Your premier real estate partner.",
+                        "he": "Your premier real estate partner."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Services",
+                                "he": "Services"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Buy",
+                                        "he": "Buy"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Sell",
+                                        "he": "Sell"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Rent",
+                                        "he": "Rent"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Areas",
+                                "he": "Areas"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Downtown",
+                                        "he": "Downtown"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Suburbs",
+                                        "he": "Suburbs"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Beach",
+                                        "he": "Beach"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "facebook",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 LuxuryHomes. All rights reserved.",
+                        "he": "© 2024 LuxuryHomes. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

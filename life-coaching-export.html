@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שחר שיאות אישית | לייף קואצ'ינג</title>
+    <meta name="description" content="תהליך משנה חיים שיעזור לך לפרוץ מחסמים, להגשים חלומות ולחיות את החיים שאתה רוצה">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary-color: #8b5cf6;
+            --accent-color: #ec4899;
+            --success-color: #10b981;
+            --text-dark: #1f2937;
+            --text-gray: #6b7280;
+            --text-light: #f9fafb;
+            --bg-white: #ffffff;
+            --bg-gray: #f9fafb;
+            --bg-dark: #111827;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Assistant', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            opacity: 0.95;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.125rem;
+            opacity: 0.9;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 2rem;
+            background: var(--bg-gray);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .badge-secondary {
+            background: var(--secondary-color);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 6rem 2rem;
+            background: var(--bg-gray);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.popular {
+            border: 3px solid var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.popular:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .pricing-card .price {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 1rem 0;
+        }
+
+        .pricing-card .period {
+            font-size: 1rem;
+            color: var(--text-gray);
+            font-weight: 400;
+        }
+
+        .pricing-card .description {
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .features-list li.included {
+            color: var(--text-dark);
+        }
+
+        .features-list li:not(.included) {
+            color: var(--text-gray);
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        .check-icon {
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        .pricing-cta {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .pricing-cta:hover {
+            transform: scale(1.02);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--bg-gray);
+            padding: 2rem;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-info h4 {
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        .author-info p {
+            font-size: 0.875rem;
+            color: var(--text-gray);
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 6rem 2rem;
+            background: var(--bg-gray);
+        }
+
+        .faq-item {
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            text-align: right;
+            background: none;
+            border: none;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Assistant', sans-serif;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-gray);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        /* Contact Form */
+        .contact {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-dark);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .pricing-card.popular {
+                transform: none;
+            }
+
+            .pricing-card.popular:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">שחר שיאות אישית</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">אודות</a></li>
+                    <li><a href="#features">שיטת העבודה</a></li>
+                    <li><a href="#testimonials">המלצות</a></li>
+                    <li><a href="#faq">שאלות נפוצות</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">קבע/י פגישת היכרות</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>גלה/י את הכוח הפנימי שלך</h1>
+            <p>תהליך משנה חיים שיעזור לך לפרוץ מחסמים, להגשים חלומות ולחיות את החיים שאת/ה רוצה/ה. מלווה אותך בכל שלב, בלבביות ובמקצועיות.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">קבע/י פגישת היכרות חינם</a>
+                <a href="#about" class="btn-secondary">למד/י עוד עליי</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-value">500+</div>
+                <div class="stat-label">מתאמנים מרוצים</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">12</div>
+                <div class="stat-label">שנות ניסיון</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">95%</div>
+                <div class="stat-label">שיעור הצלחה</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">1000+</div>
+                <div class="stat-label">שעות ליווי</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>מה תקבל/י בתהליך?</h2>
+            <p>שיטת עבודה ייחודית שמותאמת באופן אישי לך</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>הגדרת מטרות ברורות</h3>
+                <p>נגדיר יחד מטרות ספציפיות, מדידות ומושגות שיביאו אותך לתוצאות אמיתיות</p>
+                <span class="badge">הכרחי</span>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>כלים מעשיים לשינוי</h3>
+                <p>קבל/י ערכת כלים מעשית שתוכל/י ליישם מיד בחיים האישיים והמקצועיים שלך</p>
+                <span class="badge badge-secondary">מעשי</span>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <h3>ליווי אישי צמוד</h3>
+                <p>פגישות אישיות שבועיות עם משימות ותמיכה מתמדת בין הפגישות</p>
+                <span class="badge">פופולרי</span>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>זיהוי חסמים והתגברות עליהם</h3>
+                <p>נחשוף יחד את המחסומים המנטליים שמונעים ממך להתקדם ונפרוץ אותם</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>מעקב והתקדמות</h3>
+                <p>מדידה של ההתקדמות שלך לאורך כל התהליך עם כיוונים מדויקים להמשך</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌟</div>
+                <h3>בניית ביטחון עצמי</h3>
+                <p>פיתוח ביטחון עצמי אמיתי שמבוסס על הצלחות והישגים מוכחים</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="section-header">
+            <h2>חבילות ליווי</h2>
+            <p>בחר/י את החבילה שמתאימה לך. כל חבילה כוללת ליווי אישי מלא.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>התחלה</h3>
+                <div class="price">₪350<span class="period">/פגישה</span></div>
+                <p class="description">מתאים לפגישות בודדות</p>
+                <ul class="features-list">
+                    <li class="included"><span class="check-icon">✓</span> פגישה אישית אחת - 90 דק'</li>
+                    <li class="included"><span class="check-icon">✓</span> אבחון ראשוני מעמיק</li>
+                    <li class="included"><span class="check-icon">✓</span> משימות לביצוע בית</li>
+                    <li class="included"><span class="check-icon">✓</span> תמיכה בוואטסאפ (שבוע)</li>
+                    <li class="not-included">מעקב והמשך</li>
+                    <li class="not-included">חומרי עזר ותרגילים</li>
+                </ul>
+                <button class="pricing-cta">קבע פגישה</button>
+            </div>
+            <div class="pricing-card popular">
+                <div class="popular-badge">הכי פופולרי</div>
+                <h3>מסלול מנטור</h3>
+                <div class="price">₪1,200<span class="period">/חודש</span></div>
+                <p class="description">הכי משתלם - ליווי מלא</p>
+                <ul class="features-list">
+                    <li class="included"><span class="check-icon">✓</span> 4 פגישות אישיות בחודש</li>
+                    <li class="included"><span class="check-icon">✓</span> תוכנית עבודה מותאמת אישית</li>
+                    <li class="included"><span class="check-icon">✓</span> משימות ותרגילים מותאמים</li>
+                    <li class="included"><span class="check-icon">✓</span> תמיכה בוואטסאפ לאורך כל החודש</li>
+                    <li class="included"><span class="check-icon">✓</span> מעקב ודיווח התקדמות שבועי</li>
+                    <li class="included"><span class="check-icon">✓</span> חומרי עזר ותרגילים ייעודיים</li>
+                </ul>
+                <button class="pricing-cta">התחל מסלול</button>
+            </div>
+            <div class="pricing-card">
+                <h3>פריצה</h3>
+                <div class="price">₪3,000<span class="period">/3 חודשים</span></div>
+                <p class="description">תהליך מעמיק לשינוי</p>
+                <ul class="features-list">
+                    <li class="included"><span class="check-icon">✓</span> 12 פגישות אישיות</li>
+                    <li class="included"><span class="check-icon">✓</span> תוכנית עבודה מקיפה</li>
+                    <li class="included"><span class="check-icon">✓</span> מערכת כלים מלאה</li>
+                    <li class="included"><span class="check-icon">✓</span> תמיכה בוואטסאפ בלתי מוגבלת</li>
+                    <li class="included"><span class="check-icon">✓</span> מעקב צמוד והתאמות</li>
+                    <li class="included"><span class="check-icon">✓</span> סדנאות וחומרים מיוחדים</li>
+                </ul>
+                <button class="pricing-cta">התחל תהליך</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <h2>מה המתאמנים אומרים?</h2>
+            <p>סיפורי הצלחה אמיתיים של אנשים שעברו את התהליך</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-content">"הגעתי לשחר במצב של אי-ודאות בקריירה. אחרי 3 חודשים של ליווי, עשיתי מהפך בחשיבה שלי וקיבלתי קידום משמעותי. ממליצה בחום!"</p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>דנה לוי</h4>
+                        <p>מנהלת שיווק, תל אביב</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-content">"חיפשתי מישהו שיעזור לי לאזן בין עסקים למשפחה. שחר נתן לי את הכלים והפרספקטיבה שחיפשתי. החיים שלי השתנו לגמרי."</p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>יוסי כהן</h4>
+                        <p>יזם עצמאי, הרצליה</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-content">"אחרי שנים של חרדות וספקות, למדתי להאמין בעצמי וביכולות שלי. התהליך איתו שינה את חיי. אני עכשיו יותר משוחררת ומאושרת."</p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>מיכל רוזן</h4>
+                        <p>אדריכלית, ירושלים</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <h2>שאלות נפוצות</h2>
+            <p>כל מה שצריך לדעת לפני תחילת התהליך</p>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">מה זה לייף קואצ'ינג בדיוק?</button>
+            <div class="faq-answer">לייף קואצ'ינג הוא תהליך שבו אני מלווה אותך להגשים את המטרות שלך, להתגבר על מכשולים ולחיות חיים יותר מספקים. זה לא טיפול, אלא תהליך התפתחותי מוכוון מטרות.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">כמה זמן לוקח לראות תוצאות?</button>
+            <div class="faq-answer">כבר אחרי 3-4 פגישות תרגיש/י שינוי משמעותי. רוב המתאמנים מדווחים על שינויים ברורים תוך חודש, ושינויים משמעותיים בחיים תוך 3 חודשים.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">האם זה מתאים גם לי?</button>
+            <div class="faq-answer">אם את/ה מרגיש/ה שאת/ה רוצה/ה שינוי אבל לא יודע/ת איך להתחיל, או אם את/ה מרגיש/ה תקוע/ת במקום מסוים - אז זה בדיוק בשבילך. התהליך מותאם לכל אדם באופן פרטני.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">מה קורה בפגישה?</button>
+            <div class="faq-answer">כל פגישה אורכת 90 דקות. בהתחלה נדבר על השבוע שעבר, נזהה מה עבד ומה לא, ונעבור על משימות. אחר כך נתקדם לנושא החדש עם תרגולים מעשיים וכלים חדשים.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">האם זה מתאים לזוגות?</button>
+            <div class="faq-answer">בהחלט! אני מציע גם קואצ'ינג זוגי לזוגות שרוצים לשפר את התקשורת, להגדיר מטרות משותפות, או פשוט לצמוח ביחד.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">אפשר לעשות את זה גם בזום?</button>
+            <div class="faq-answer">כן! אני עובד/ה גם בזום עם מתאמנים מכל הארץ. הפגישות המקוונות יעילות באותה מידה ומאפשרות גמישות מקסימלית.</div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>מוכן/ה להתחיל את השינוי?</h2>
+        <p>החלפות בחיים מתחילות בהחלטה אחת. קבע/י עכשיו פגישת היכרות חינמית וגלה/י איך אפשר אחרת.</p>
+        <a href="#contact" class="btn-primary">קבע/י פגישת היכרות חינם</a>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>צר/י קשר</h2>
+            <p>מלא/י את הפרטים ואחזור אליך תוך 24 שעות</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">שם מלא</label>
+                <input type="text" id="name" name="name" required placeholder="הכנס/י את שמך המלא">
+            </div>
+            <div class="form-group">
+                <label for="email">אימייל</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">טלפון</label>
+                <input type="tel" id="phone" name="phone" required placeholder="050-0000000">
+            </div>
+            <div class="form-group">
+                <label for="message">הודעה</label>
+                <textarea id="message" name="message" required placeholder="ספר/י לי מעט על עצמך ומה את/ה מחפש/ת..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">שלח/י פנייה</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>קישורים מהירים</h4>
+                <ul>
+                    <li><a href="#about">אודות</a></li>
+                    <li><a href="#features">שיטת העבודה</a></li>
+                    <li><a href="#testimonials">המלצות</a></li>
+                    <li><a href="#faq">שאלות נפוצות</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>שירותים</h4>
+                <ul>
+                    <li><a href="#services">קואצ'ינג אישי</a></li>
+                    <li><a href="#services">קואצ'ינג עסקי</a></li>
+                    <li><a href="#services">קואצ'ינג זוגי</a></li>
+                    <li><a href="#services">סדנאות</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>פרטי קשר</h4>
+                <ul>
+                    <li><a href="mailto:shachar@lifecoach.co.il">shachar@lifecoach.co.il</a></li>
+                    <li><a href="tel:0501234567">050-1234567</a></li>
+                    <li><a href="https://wa.me/9501234567">וואטסאפ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>עקבו אחריי</h4>
+                <ul>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://linkedin.com">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 שחר שיאות אישית. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('תודה על פנייתך! אחזור אליך תוך 24 שעות.');
+            this.reset();
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on Scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .pricing-card, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

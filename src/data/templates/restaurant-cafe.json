@@ -1,0 +1,392 @@
+{
+    "id": "restaurant-cafe",
+    "name": "Restaurant & Cafe",
+    "description": "Elegant landing page for restaurants, cafes, and food businesses",
+    "category": "Food",
+    "thumbnail": "/templates/restaurant-cafe.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "La Maison",
+                        "he": "La Maison"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Menu",
+                                "he": "Menu"
+                            },
+                            "href": "#menu"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Gallery",
+                                "he": "Gallery"
+                            },
+                            "href": "#gallery"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Reserve Table",
+                        "he": "Reserve Table"
+                    },
+                    "ctaLink": "#reserve",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "A Culinary Experience Like No Other",
+                        "he": "A Culinary Experience Like No Other"
+                    },
+                    "subtitle": {
+                        "en": "Fine dining meets contemporary cuisine. Fresh ingredients, masterful preparation, unforgettable flavors.",
+                        "he": "Fine dining meets contemporary cuisine. Fresh ingredients, masterful preparation, unforgettable flavors."
+                    },
+                    "primaryButtonText": {
+                        "en": "Reserve Your Table",
+                        "he": "Reserve Your Table"
+                    },
+                    "primaryButtonLink": "#reserve",
+                    "secondaryButtonText": {
+                        "en": "View Menu",
+                        "he": "View Menu"
+                    },
+                    "secondaryButtonLink": "#menu"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "dark",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "15+",
+                            "label": {
+                                "en": "Years of Excellence",
+                                "he": "Years of Excellence"
+                            }
+                        },
+                        {
+                            "value": "50K+",
+                            "label": {
+                                "en": "Happy Guests",
+                                "he": "Happy Guests"
+                            }
+                        },
+                        {
+                            "value": "4.9★",
+                            "label": {
+                                "en": "Rating",
+                                "he": "דירוג"
+                            }
+                        },
+                        {
+                            "value": "2",
+                            "label": {
+                                "en": "Michelin Stars",
+                                "he": "Michelin Stars"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Our Specialties",
+                        "he": "Our Specialties"
+                    },
+                    "subtitle": {
+                        "en": "Signature dishes crafted with passion",
+                        "he": "Signature dishes crafted with passion"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🥩",
+                            "title": {
+                                "en": "Prime Steaks",
+                                "he": "Prime Steaks"
+                            },
+                            "description": {
+                                "en": "Dry-aged cuts cooked to perfection",
+                                "he": "Dry-aged cuts cooked to perfection"
+                            }
+                        },
+                        {
+                            "icon": "🦐",
+                            "title": {
+                                "en": "Fresh Seafood",
+                                "he": "Fresh Seafood"
+                            },
+                            "description": {
+                                "en": "Daily catches from local fishermen",
+                                "he": "Daily catches from local fishermen"
+                            }
+                        },
+                        {
+                            "icon": "🍝",
+                            "title": {
+                                "en": "Handmade Pasta",
+                                "he": "Handmade Pasta"
+                            },
+                            "description": {
+                                "en": "Traditional recipes with modern flair",
+                                "he": "Traditional recipes with modern flair"
+                            }
+                        },
+                        {
+                            "icon": "🍷",
+                            "title": {
+                                "en": "Wine Selection",
+                                "he": "Wine Selection"
+                            },
+                            "description": {
+                                "en": "Curated cellar with 500+ labels",
+                                "he": "Curated cellar with 500+ labels"
+                            }
+                        },
+                        {
+                            "icon": "🍰",
+                            "title": {
+                                "en": "Artisan Desserts",
+                                "he": "Artisan Desserts"
+                            },
+                            "description": {
+                                "en": "Sweet finales made in-house",
+                                "he": "Sweet finales made in-house"
+                            }
+                        },
+                        {
+                            "icon": "🥗",
+                            "title": {
+                                "en": "Farm to Table",
+                                "he": "Farm to Table"
+                            },
+                            "description": {
+                                "en": "Fresh produce from local farms",
+                                "he": "Fresh produce from local farms"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Our Guests Say",
+                        "he": "What Our Guests Say"
+                    },
+                    "subtitle": {
+                        "en": "Reviews from our valued customers",
+                        "he": "Reviews from our valued customers"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Sophie M.",
+                            "content": {
+                                "en": "The tasting menu was absolutely incredible. Every dish was a work of art. Will definitely return!",
+                                "he": "The tasting menu was absolutely incredible. Every dish was a work of art. Will definitely return!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Robert L.",
+                            "content": {
+                                "en": "Best anniversary dinner we've ever had. The service was impeccable and the food divine.",
+                                "he": "Best anniversary dinner we've ever had. The service was impeccable and the food divine."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Emma W.",
+                            "content": {
+                                "en": "Finally, a restaurant that lives up to the hype. The atmosphere is perfect for special occasions.",
+                                "he": "Finally, a restaurant that lives up to the hype. The atmosphere is perfect for special occasions."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Reserve Your Experience",
+                        "he": "Reserve Your Experience"
+                    },
+                    "subtitle": {
+                        "en": "Book your table and prepare for an unforgettable evening.",
+                        "he": "Book your table and prepare for an unforgettable evening."
+                    },
+                    "primaryButtonText": {
+                        "en": "Make a Reservation",
+                        "he": "Make a Reservation"
+                    },
+                    "primaryButtonLink": "#reserve",
+                    "secondaryButtonText": {
+                        "en": "Call Us",
+                        "he": "Call Us"
+                    },
+                    "secondaryButtonLink": "tel:+1234567890",
+                    "variant": "dark",
+                    "showIcon": false
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Contact Us",
+                        "he": "Contact Us"
+                    },
+                    "subtitle": {
+                        "en": "Questions or special requests? Get in touch.",
+                        "he": "Questions or special requests? Get in touch."
+                    },
+                    "backgroundColor": "white",
+                    "submitButtonText": {
+                        "en": "Send Message",
+                        "he": "Send Message"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "phone": true,
+                        "company": false,
+                        "subject": false,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "La Maison",
+                        "he": "La Maison"
+                    },
+                    "description": {
+                        "en": "Fine dining in the heart of the city.",
+                        "he": "Fine dining in the heart of the city."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Hours",
+                                "he": "Hours"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Mon-Thu: 5pm-10pm",
+                                        "he": "Mon-Thu: 5pm-10pm"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Fri-Sat: 5pm-11pm",
+                                        "he": "Fri-Sat: 5pm-11pm"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Sun: Closed",
+                                        "he": "Sun: Closed"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Contact",
+                                "he": "Contact"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "123 Gourmet Street",
+                                        "he": "123 Gourmet Street"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "+1 (555) 123-4567",
+                                        "he": "+1 (555) 123-4567"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "info@lamaison.com",
+                                        "he": "info@lamaison.com"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "facebook",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 La Maison. All rights reserved.",
+                        "he": "© 2024 La Maison. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

@@ -1,0 +1,298 @@
+{
+    "id": "consulting",
+    "name": "Business Consulting",
+    "description": "Professional landing page for consultants and business coaches",
+    "category": "Business",
+    "thumbnail": "/templates/consulting.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "StrategyPro",
+                        "he": "StrategyPro"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Services",
+                                "he": "שירותים"
+                            },
+                            "href": "#services"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Results",
+                                "he": "תוצאות"
+                            },
+                            "href": "#results"
+                        },
+                        {
+                            "label": {
+                                "en": "Book Call",
+                                "he": "קבע שיחה"
+                            },
+                            "href": "#book"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Free Strategy Call",
+                        "he": "Free Strategy Call"
+                    },
+                    "ctaLink": "#book",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Scale Your Business to 7 Figures",
+                        "he": "Scale Your Business to 7 Figures"
+                    },
+                    "subtitle": {
+                        "en": "Strategic consulting for ambitious entrepreneurs. Proven frameworks that have helped 200+ businesses grow.",
+                        "he": "Strategic consulting for ambitious entrepreneurs. Proven frameworks that have helped 200+ businesses grow."
+                    },
+                    "primaryButtonText": {
+                        "en": "Book Free Strategy Call",
+                        "he": "Book Free Strategy Call"
+                    },
+                    "primaryButtonLink": "#book",
+                    "secondaryButtonText": {
+                        "en": "See Results",
+                        "he": "See Results"
+                    },
+                    "secondaryButtonLink": "#results"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "200+",
+                            "label": {
+                                "en": "Clients Served",
+                                "he": "לקוחות ששרתו"
+                            }
+                        },
+                        {
+                            "value": "3x",
+                            "label": {
+                                "en": "Avg Revenue Growth",
+                                "he": "צמיחת הכנסות ממוצעת"
+                            }
+                        },
+                        {
+                            "value": "15+",
+                            "label": {
+                                "en": "Years Experience",
+                                "he": "שנות ניסיון"
+                            }
+                        },
+                        {
+                            "value": "95%",
+                            "label": {
+                                "en": "Client Retention",
+                                "he": "שימור לקוחות"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "How I Help You Grow",
+                        "he": "How I Help You Grow"
+                    },
+                    "subtitle": {
+                        "en": "Comprehensive consulting services",
+                        "he": "Comprehensive consulting services"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🎯",
+                            "title": {
+                                "en": "Strategy Development",
+                                "he": "פיתוח אסטרטגיה"
+                            },
+                            "description": {
+                                "en": "Clear roadmap to reach your goals",
+                                "he": "Clear roadmap to reach your goals"
+                            }
+                        },
+                        {
+                            "icon": "📈",
+                            "title": {
+                                "en": "Revenue Growth",
+                                "he": "צמיחת הכנסות"
+                            },
+                            "description": {
+                                "en": "Proven tactics to increase sales",
+                                "he": "Proven tactics to increase sales"
+                            }
+                        },
+                        {
+                            "icon": "⚙️",
+                            "title": {
+                                "en": "Operations",
+                                "he": "תפעול"
+                            },
+                            "description": {
+                                "en": "Streamline for efficiency",
+                                "he": "Streamline for efficiency"
+                            }
+                        },
+                        {
+                            "icon": "👥",
+                            "title": {
+                                "en": "Team Building",
+                                "he": "בניית צוות"
+                            },
+                            "description": {
+                                "en": "Build a winning team",
+                                "he": "Build a winning team"
+                            }
+                        },
+                        {
+                            "icon": "💡",
+                            "title": {
+                                "en": "Innovation",
+                                "he": "חדשנות"
+                            },
+                            "description": {
+                                "en": "Stay ahead of competition",
+                                "he": "Stay ahead of competition"
+                            }
+                        },
+                        {
+                            "icon": "🚀",
+                            "title": {
+                                "en": "Scaling",
+                                "he": "הרחבה"
+                            },
+                            "description": {
+                                "en": "Systems for sustainable growth",
+                                "he": "Systems for sustainable growth"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Client Success Stories",
+                        "he": "Client Success Stories"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 2,
+                    "testimonials": [
+                        {
+                            "name": "David R.",
+                            "role": {
+                                "en": "CEO",
+                                "he": "CEO"
+                            },
+                            "company": "TechVentures",
+                            "content": {
+                                "en": "Grew from $500K to $3M in 18 months following the strategy framework.",
+                                "he": "Grew from $500K to $3M in 18 months following the strategy framework."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Amanda L.",
+                            "role": {
+                                "en": "Founder",
+                                "he": "Founder"
+                            },
+                            "company": "GrowthCo",
+                            "content": {
+                                "en": "The clarity and focus I gained was transformational. Worth every penny.",
+                                "he": "The clarity and focus I gained was transformational. Worth every penny."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Ready to Transform Your Business?",
+                        "he": "Ready to Transform Your Business?"
+                    },
+                    "subtitle": {
+                        "en": "Let's discuss your goals in a free 30-minute strategy call.",
+                        "he": "Let's discuss your goals in a free 30-minute strategy call."
+                    },
+                    "primaryButtonText": {
+                        "en": "Book Your Free Call",
+                        "he": "Book Your Free Call"
+                    },
+                    "primaryButtonLink": "#book",
+                    "variant": "dark",
+                    "showIcon": false
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "StrategyPro",
+                        "he": "StrategyPro"
+                    },
+                    "description": {
+                        "en": "Business growth consulting.",
+                        "he": "Business growth consulting."
+                    },
+                    "backgroundColor": "dark",
+                    "socialLinks": [
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 StrategyPro. All rights reserved.",
+                        "he": "© 2024 StrategyPro. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

@@ -1,0 +1,645 @@
+{
+    "id": "mobile-app",
+    "name": "Mobile App Landing",
+    "description": "Modern landing page for mobile app downloads and features",
+    "category": "Mobile App",
+    "thumbnail": "/templates/mobile-app.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "FocusFlow",
+                        "he": "FocusFlow"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Features",
+                                "he": "תכונות"
+                            },
+                            "href": "#features"
+                        },
+                        {
+                            "label": {
+                                "en": "How It Works",
+                                "he": "איך זה עובד"
+                            },
+                            "href": "#how-it-works"
+                        },
+                        {
+                            "label": {
+                                "en": "Reviews",
+                                "he": "Reviews"
+                            },
+                            "href": "#reviews"
+                        },
+                        {
+                            "label": {
+                                "en": "Pricing",
+                                "he": "מחירים"
+                            },
+                            "href": "#pricing"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Download Free",
+                        "he": "Download Free"
+                    },
+                    "ctaLink": "#download",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Master Your Day with FocusFlow",
+                        "he": "Master Your Day with FocusFlow"
+                    },
+                    "subtitle": {
+                        "en": "The productivity app that helps you stay focused, track time, and achieve your goals without burnout.",
+                        "he": "The productivity app that helps you stay focused, track time, and achieve your goals without burnout."
+                    },
+                    "primaryButtonText": {
+                        "en": "Download for iOS",
+                        "he": "Download for iOS"
+                    },
+                    "primaryButtonLink": "#download",
+                    "secondaryButtonText": {
+                        "en": "Download for Android",
+                        "he": "Download for Android"
+                    },
+                    "secondaryButtonLink": "#download"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "1M+",
+                            "label": {
+                                "en": "Downloads",
+                                "he": "Downloads"
+                            }
+                        },
+                        {
+                            "value": "4.9",
+                            "label": {
+                                "en": "App Store Rating",
+                                "he": "App Store Rating"
+                            }
+                        },
+                        {
+                            "value": "10M+",
+                            "label": {
+                                "en": "Hours Tracked",
+                                "he": "Hours Tracked"
+                            }
+                        },
+                        {
+                            "value": "98%",
+                            "label": {
+                                "en": "User Satisfaction",
+                                "he": "User Satisfaction"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Everything You Need to Stay Productive",
+                        "he": "Everything You Need to Stay Productive"
+                    },
+                    "subtitle": {
+                        "en": "Powerful features designed for modern professionals",
+                        "he": "Powerful features designed for modern professionals"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🍅",
+                            "title": {
+                                "en": "Pomodoro Timer",
+                                "he": "Pomodoro Timer"
+                            },
+                            "description": {
+                                "en": "Built-in focus timer with customizable intervals",
+                                "he": "Built-in focus timer with customizable intervals"
+                            },
+                            "badge": "Essential",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "📊",
+                            "title": {
+                                "en": "Time Analytics",
+                                "he": "Time Analytics"
+                            },
+                            "description": {
+                                "en": "Detailed reports on how you spend your time",
+                                "he": "Detailed reports on how you spend your time"
+                            },
+                            "badge": "Insightful",
+                            "badgeVariant": "secondary"
+                        },
+                        {
+                            "icon": "✅",
+                            "title": {
+                                "en": "Task Management",
+                                "he": "Task Management"
+                            },
+                            "description": {
+                                "en": "Organize tasks with projects, tags, and priorities",
+                                "he": "Organize tasks with projects, tags, and priorities"
+                            },
+                            "badge": "Organized",
+                            "badgeVariant": "destructive"
+                        },
+                        {
+                            "icon": "🌙",
+                            "title": {
+                                "en": "Sleep Tracking",
+                                "he": "Sleep Tracking"
+                            },
+                            "description": {
+                                "en": "Understand your rest patterns and improve sleep",
+                                "he": "Understand your rest patterns and improve sleep"
+                            },
+                            "badge": "Health",
+                            "badgeVariant": "outline"
+                        },
+                        {
+                            "icon": "📱",
+                            "title": {
+                                "en": "Cross-Platform",
+                                "he": "Cross-Platform"
+                            },
+                            "description": {
+                                "en": "Sync seamlessly across iOS, Android, and web",
+                                "he": "Sync seamlessly across iOS, Android, and web"
+                            },
+                            "badge": "Connected",
+                            "badgeVariant": "default"
+                        },
+                        {
+                            "icon": "🔔",
+                            "title": {
+                                "en": "Smart Reminders",
+                                "he": "Smart Reminders"
+                            },
+                            "description": {
+                                "en": "Gentle nudges when you need them most",
+                                "he": "Gentle nudges when you need them most"
+                            },
+                            "badge": "Helpful",
+                            "badgeVariant": "secondary"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Start Your Productivity Journey",
+                        "he": "Start Your Productivity Journey"
+                    },
+                    "subtitle": {
+                        "en": "Join 1 million+ users who have transformed their daily routine",
+                        "he": "Join 1 million+ users who have transformed their daily routine"
+                    },
+                    "primaryButtonText": {
+                        "en": "Download Free",
+                        "he": "Download Free"
+                    },
+                    "primaryButtonLink": "#download",
+                    "secondaryButtonText": {
+                        "en": "Watch Demo Video",
+                        "he": "Watch Demo Video"
+                    },
+                    "secondaryButtonLink": "#demo",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Loved by Productive People",
+                        "he": "Loved by Productive People"
+                    },
+                    "subtitle": {
+                        "en": "See what our community says",
+                        "he": "See what our community says"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Alex Thompson",
+                            "role": {
+                                "en": "Software Developer",
+                                "he": "Software Developer"
+                            },
+                            "company": "Remote Worker",
+                            "content": {
+                                "en": "FocusFlow completely changed how I work. I'm so much more productive now!",
+                                "he": "FocusFlow completely changed how I work. I'm so much more productive now!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Maria Garcia",
+                            "role": {
+                                "en": "Student",
+                                "he": "Student"
+                            },
+                            "company": "University",
+                            "content": {
+                                "en": "The Pomodoro feature helped me survive finals week. Best study companion!",
+                                "he": "The Pomodoro feature helped me survive finals week. Best study companion!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "James Wilson",
+                            "role": {
+                                "en": "Entrepreneur",
+                                "he": "Entrepreneur"
+                            },
+                            "company": "Startup Founder",
+                            "content": {
+                                "en": "Finally an app that actually helps me get things done without feeling overwhelming.",
+                                "he": "Finally an app that actually helps me get things done without feeling overwhelming."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Pricing",
+                "props": {
+                    "title": {
+                        "en": "Simple, Transparent Pricing",
+                        "he": "Simple, Transparent Pricing"
+                    },
+                    "subtitle": {
+                        "en": "Start free, upgrade when you need more",
+                        "he": "Start free, upgrade when you need more"
+                    },
+                    "backgroundColor": "white",
+                    "tiers": [
+                        {
+                            "name": {
+                                "en": "Free",
+                                "he": "Free"
+                            },
+                            "price": "$0",
+                            "period": "/month",
+                            "description": {
+                                "en": "Perfect for getting started",
+                                "he": "Perfect for getting started"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Basic Pomodoro timer",
+                                        "he": "Basic Pomodoro timer"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Up to 5 projects",
+                                        "he": "Up to 5 projects"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "7-day history",
+                                        "he": "7-day history"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Basic analytics",
+                                        "he": "Basic analytics"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Cloud sync",
+                                        "he": "Cloud sync"
+                                    },
+                                    "included": false
+                                },
+                                {
+                                    "text": {
+                                        "en": "Priority support",
+                                        "he": "Priority support"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Get Started",
+                                "he": "התחל עכשיו"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Pro",
+                                "he": "Pro"
+                            },
+                            "price": "$4.99",
+                            "period": "/month",
+                            "description": {
+                                "en": "For serious productivity",
+                                "he": "For serious productivity"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Free",
+                                        "he": "Everything in Free"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Unlimited projects",
+                                        "he": "Unlimited projects"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Unlimited history",
+                                        "he": "Unlimited history"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Advanced analytics",
+                                        "he": "Advanced analytics"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Cloud sync",
+                                        "he": "Cloud sync"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Priority support",
+                                        "he": "Priority support"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Go Pro",
+                                "he": "Go Pro"
+                            },
+                            "popular": true,
+                            "badge": "Best Value"
+                        },
+                        {
+                            "name": {
+                                "en": "Team",
+                                "he": "Team"
+                            },
+                            "price": "$9.99",
+                            "period": "/user/month",
+                            "description": {
+                                "en": "For teams and businesses",
+                                "he": "For teams and businesses"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Pro",
+                                        "he": "Everything in Pro"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Team workspaces",
+                                        "he": "Team workspaces"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Shared goals",
+                                        "he": "Shared goals"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Admin dashboard",
+                                        "he": "Admin dashboard"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "API access",
+                                        "he": "API access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Dedicated support",
+                                        "he": "Dedicated support"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Start Team Trial",
+                                "he": "Start Team Trial"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "FocusFlow",
+                        "he": "FocusFlow"
+                    },
+                    "description": {
+                        "en": "Master your day, achieve your goals.",
+                        "he": "Master your day, achieve your goals."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Product",
+                                "he": "Product"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Features",
+                                        "he": "תכונות"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Pricing",
+                                        "he": "מחירים"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Changelog",
+                                        "he": "Changelog"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Roadmap",
+                                        "he": "Roadmap"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Resources",
+                                "he": "Resources"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Help Center",
+                                        "he": "Help Center"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Blog",
+                                        "he": "בלוג"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Productivity Tips",
+                                        "he": "Productivity Tips"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Community",
+                                        "he": "Community"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Company",
+                                "he": "Company"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "About",
+                                        "he": "אודות"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Careers",
+                                        "he": "Careers"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Privacy Policy",
+                                        "he": "Privacy Policy"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Terms of Service",
+                                        "he": "Terms of Service"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 FocusFlow. All rights reserved.",
+                        "he": "© 2024 FocusFlow. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

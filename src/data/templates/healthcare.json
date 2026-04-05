@@ -1,0 +1,329 @@
+{
+    "id": "healthcare",
+    "name": "Healthcare & Medical",
+    "description": "Professional landing page for healthcare providers and clinics",
+    "category": "Healthcare",
+    "thumbnail": "/templates/healthcare.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "MediCare Plus",
+                        "he": "MediCare Plus"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Services",
+                                "he": "שירותים"
+                            },
+                            "href": "#services"
+                        },
+                        {
+                            "label": {
+                                "en": "Doctors",
+                                "he": "Doctors"
+                            },
+                            "href": "#doctors"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Book Appointment",
+                        "he": "Book Appointment"
+                    },
+                    "ctaLink": "#book",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Your Health, Our Priority",
+                        "he": "Your Health, Our Priority"
+                    },
+                    "subtitle": {
+                        "en": "Comprehensive healthcare services with compassionate care. State-of-the-art facilities and expert physicians.",
+                        "he": "Comprehensive healthcare services with compassionate care. State-of-the-art facilities and expert physicians."
+                    },
+                    "primaryButtonText": {
+                        "en": "Book Appointment",
+                        "he": "Book Appointment"
+                    },
+                    "primaryButtonLink": "#book",
+                    "secondaryButtonText": {
+                        "en": "Our Services",
+                        "he": "Our Services"
+                    },
+                    "secondaryButtonLink": "#services"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "Specialists",
+                                "he": "Specialists"
+                            }
+                        },
+                        {
+                            "value": "100K+",
+                            "label": {
+                                "en": "Patients Treated",
+                                "he": "Patients Treated"
+                            }
+                        },
+                        {
+                            "value": "25+",
+                            "label": {
+                                "en": "Years Experience",
+                                "he": "שנות ניסיון"
+                            }
+                        },
+                        {
+                            "value": "4.9★",
+                            "label": {
+                                "en": "Patient Rating",
+                                "he": "Patient Rating"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Our Services",
+                        "he": "השירותים שלנו"
+                    },
+                    "subtitle": {
+                        "en": "Comprehensive care for your family",
+                        "he": "Comprehensive care for your family"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🩺",
+                            "title": {
+                                "en": "Primary Care",
+                                "he": "Primary Care"
+                            },
+                            "description": {
+                                "en": "Routine checkups and preventive care",
+                                "he": "Routine checkups and preventive care"
+                            }
+                        },
+                        {
+                            "icon": "❤️",
+                            "title": {
+                                "en": "Cardiology",
+                                "he": "Cardiology"
+                            },
+                            "description": {
+                                "en": "Heart health specialists",
+                                "he": "Heart health specialists"
+                            }
+                        },
+                        {
+                            "icon": "🦴",
+                            "title": {
+                                "en": "Orthopedics",
+                                "he": "Orthopedics"
+                            },
+                            "description": {
+                                "en": "Bone and joint care",
+                                "he": "Bone and joint care"
+                            }
+                        },
+                        {
+                            "icon": "👶",
+                            "title": {
+                                "en": "Pediatrics",
+                                "he": "Pediatrics"
+                            },
+                            "description": {
+                                "en": "Children's healthcare",
+                                "he": "Children's healthcare"
+                            }
+                        },
+                        {
+                            "icon": "🧠",
+                            "title": {
+                                "en": "Neurology",
+                                "he": "Neurology"
+                            },
+                            "description": {
+                                "en": "Brain and nervous system",
+                                "he": "Brain and nervous system"
+                            }
+                        },
+                        {
+                            "icon": "🔬",
+                            "title": {
+                                "en": "Lab Services",
+                                "he": "Lab Services"
+                            },
+                            "description": {
+                                "en": "On-site diagnostics",
+                                "he": "On-site diagnostics"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Patient Stories",
+                        "he": "Patient Stories"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 2,
+                    "testimonials": [
+                        {
+                            "name": "Jennifer L.",
+                            "content": {
+                                "en": "The staff is incredibly caring and professional. Best healthcare experience I've had.",
+                                "he": "The staff is incredibly caring and professional. Best healthcare experience I've had."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Robert M.",
+                            "content": {
+                                "en": "Short wait times and thorough examinations. I recommend them to everyone.",
+                                "he": "Short wait times and thorough examinations. I recommend them to everyone."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Schedule Your Visit Today",
+                        "he": "Schedule Your Visit Today"
+                    },
+                    "subtitle": {
+                        "en": "Same-day appointments available. Most insurance accepted.",
+                        "he": "Same-day appointments available. Most insurance accepted."
+                    },
+                    "primaryButtonText": {
+                        "en": "Book Online",
+                        "he": "Book Online"
+                    },
+                    "primaryButtonLink": "#book",
+                    "secondaryButtonText": {
+                        "en": "Call Us",
+                        "he": "Call Us"
+                    },
+                    "secondaryButtonLink": "tel:+1234567890",
+                    "variant": "simple",
+                    "showIcon": false
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "MediCare Plus",
+                        "he": "MediCare Plus"
+                    },
+                    "description": {
+                        "en": "Compassionate care, exceptional results.",
+                        "he": "Compassionate care, exceptional results."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Hours",
+                                "he": "Hours"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Mon-Fri: 8am-6pm",
+                                        "he": "Mon-Fri: 8am-6pm"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Sat: 9am-2pm",
+                                        "he": "Sat: 9am-2pm"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Contact",
+                                "he": "Contact"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "(555) 123-4567",
+                                        "he": "(555) 123-4567"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "info@medicare.com",
+                                        "he": "info@medicare.com"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 MediCare Plus. All rights reserved.",
+                        "he": "© 2024 MediCare Plus. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

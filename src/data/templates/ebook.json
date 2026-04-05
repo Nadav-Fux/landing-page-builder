@@ -1,0 +1,309 @@
+{
+    "id": "ebook",
+    "name": "Ebook & Lead Magnet",
+    "description": "Landing page for ebooks, guides, and lead magnets",
+    "category": "Marketing",
+    "thumbnail": "/templates/ebook.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "Marketing Pro",
+                        "he": "Marketing Pro"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "About the Guide",
+                                "he": "About the Guide"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Author",
+                                "he": "Author"
+                            },
+                            "href": "#author"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Get Free Guide",
+                        "he": "Get Free Guide"
+                    },
+                    "ctaLink": "#download",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "The Ultimate Guide to Digital Marketing in 2024",
+                        "he": "The Ultimate Guide to Digital Marketing in 2024"
+                    },
+                    "subtitle": {
+                        "en": "150+ pages of proven strategies, templates, and frameworks. Downloaded by 50,000+ marketers.",
+                        "he": "150+ pages of proven strategies, templates, and frameworks. Downloaded by 50,000+ marketers."
+                    },
+                    "primaryButtonText": {
+                        "en": "Download Free Guide",
+                        "he": "Download Free Guide"
+                    },
+                    "primaryButtonLink": "#download",
+                    "secondaryButtonText": {
+                        "en": "See What's Inside",
+                        "he": "See What's Inside"
+                    },
+                    "secondaryButtonLink": "#contents"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 3,
+                    "stats": [
+                        {
+                            "value": "50K+",
+                            "label": {
+                                "en": "Downloads",
+                                "he": "Downloads"
+                            }
+                        },
+                        {
+                            "value": "150+",
+                            "label": {
+                                "en": "Pages",
+                                "he": "Pages"
+                            }
+                        },
+                        {
+                            "value": "25+",
+                            "label": {
+                                "en": "Templates",
+                                "he": "Templates"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "What's Inside",
+                        "he": "What's Inside"
+                    },
+                    "subtitle": {
+                        "en": "Everything you need to master digital marketing",
+                        "he": "Everything you need to master digital marketing"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "📈",
+                            "title": {
+                                "en": "Growth Strategies",
+                                "he": "Growth Strategies"
+                            },
+                            "description": {
+                                "en": "Proven tactics to scale your audience",
+                                "he": "Proven tactics to scale your audience"
+                            }
+                        },
+                        {
+                            "icon": "📱",
+                            "title": {
+                                "en": "Social Media",
+                                "he": "Social Media"
+                            },
+                            "description": {
+                                "en": "Platform-specific playbooks",
+                                "he": "Platform-specific playbooks"
+                            }
+                        },
+                        {
+                            "icon": "✉️",
+                            "title": {
+                                "en": "Email Marketing",
+                                "he": "Email Marketing"
+                            },
+                            "description": {
+                                "en": "Templates that convert",
+                                "he": "Templates that convert"
+                            }
+                        },
+                        {
+                            "icon": "🔍",
+                            "title": {
+                                "en": "SEO",
+                                "he": "SEO"
+                            },
+                            "description": {
+                                "en": "Rank higher on Google",
+                                "he": "Rank higher on Google"
+                            }
+                        },
+                        {
+                            "icon": "💰",
+                            "title": {
+                                "en": "Paid Ads",
+                                "he": "Paid Ads"
+                            },
+                            "description": {
+                                "en": "ROI-focused campaigns",
+                                "he": "ROI-focused campaigns"
+                            }
+                        },
+                        {
+                            "icon": "📊",
+                            "title": {
+                                "en": "Analytics",
+                                "he": "Analytics"
+                            },
+                            "description": {
+                                "en": "Measure what matters",
+                                "he": "Measure what matters"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Readers Say",
+                        "he": "What Readers Say"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Jenny M.",
+                            "role": {
+                                "en": "Marketing Manager",
+                                "he": "Marketing Manager"
+                            },
+                            "content": {
+                                "en": "This guide helped me 3x our company's leads in just 2 months!",
+                                "he": "This guide helped me 3x our company's leads in just 2 months!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Alex T.",
+                            "role": {
+                                "en": "Entrepreneur",
+                                "he": "Entrepreneur"
+                            },
+                            "content": {
+                                "en": "The templates alone are worth 10x the price. Essential reading.",
+                                "he": "The templates alone are worth 10x the price. Essential reading."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Carlos R.",
+                            "role": {
+                                "en": "Agency Owner",
+                                "he": "Agency Owner"
+                            },
+                            "content": {
+                                "en": "I recommend this to all my clients. Comprehensive and actionable.",
+                                "he": "I recommend this to all my clients. Comprehensive and actionable."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Get Your Free Copy Now",
+                        "he": "Get Your Free Copy Now"
+                    },
+                    "subtitle": {
+                        "en": "No credit card required. Instant download.",
+                        "he": "No credit card required. Instant download."
+                    },
+                    "primaryButtonText": {
+                        "en": "Download Free Guide",
+                        "he": "Download Free Guide"
+                    },
+                    "primaryButtonLink": "#download",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Get Instant Access",
+                        "he": "Get Instant Access"
+                    },
+                    "subtitle": {
+                        "en": "Enter your email to download the guide",
+                        "he": "Enter your email to download the guide"
+                    },
+                    "backgroundColor": "white",
+                    "submitButtonText": {
+                        "en": "Send Me the Guide",
+                        "he": "Send Me the Guide"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "Marketing Pro",
+                        "he": "Marketing Pro"
+                    },
+                    "description": {
+                        "en": "Helping marketers succeed.",
+                        "he": "Helping marketers succeed."
+                    },
+                    "backgroundColor": "dark",
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 Marketing Pro.",
+                        "he": "© 2024 Marketing Pro."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

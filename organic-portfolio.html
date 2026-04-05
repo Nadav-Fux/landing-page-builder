@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נועה שחם | מעצבת עם נשמה</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family+Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #faf8f5;
+            --text: #2a2a2a;
+            --accent: #e63946;
+            --secondary: #457b9d;
+            --muted: #a8dadc;
+            --warm: #f4a261;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+            cursor: default;
+        }
+
+        /* Grainy Texture Overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* Hand-drawn borders */
+        .hand-drawn {
+            position: relative;
+            border: 3px solid var(--text);
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        }
+
+        /* Organic Navigation */
+        .nav {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            right: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        .nav-logo {
+            font-family: 'Assistant', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            transform: rotate(-2deg);
+            pointer-events: auto;
+            transition: transform 0.3s;
+        }
+
+        .nav-logo:hover {
+            transform: rotate(2deg) scale(1.05);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+            pointer-events: auto;
+        }
+
+        .nav-links li {
+            transform: rotate(1deg);
+            transition: transform 0.3s;
+        }
+
+        .nav-links li:nth-child(2) {
+            transform: rotate(-1.5deg);
+        }
+
+        .nav-links li:nth-child(3) {
+            transform: rotate(0.5deg);
+        }
+
+        .nav-links li:hover {
+            transform: rotate(0deg) translateX(-5px);
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.125rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 8rem 4rem 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+        }
+
+        .hero-title {
+            font-family: 'Assistant', sans-serif;
+            font-size: clamp(3rem, 7vw, 6rem);
+            font-weight: 700;
+            line-height: 0.95;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .hero-title .line {
+            display: block;
+            transform-origin: right center;
+        }
+
+        .hero-title .line:nth-child(1) {
+            transform: rotate(-1deg);
+        }
+
+        .hero-title .line:nth-child(2) {
+            transform: rotate(0.5deg) translateX(-20px);
+            color: var(--accent);
+        }
+
+        .hero-title .line:nth-child(3) {
+            transform: rotate(-0.3deg) translateX(10px);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: rgba(42, 42, 42, 0.8);
+            margin-bottom: 3rem;
+            max-width: 500px;
+            transform: rotate(0.5deg);
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--text);
+            color: var(--bg);
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transform: rotate(-2deg);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--accent);
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+        }
+
+        .hero-cta:hover::before {
+            transform: translateX(0);
+        }
+
+        .hero-cta span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-cta:hover {
+            transform: rotate(1deg) translateX(-5px);
+        }
+
+        /* Hero Image */
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image-main {
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(135deg, var(--muted), var(--secondary));
+            border-radius: 300px 50px 200px 80px / 80px 200px 50px 300px;
+            overflow: hidden;
+            transform: rotate(3deg);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10rem;
+            box-shadow: 20px 20px 0 rgba(42, 42, 42, 0.1);
+        }
+
+        .hero-image-main::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255,255,255,0.3), transparent 30%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero-floating-element {
+            position: absolute;
+            font-size: 4rem;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-floating-element:nth-child(1) {
+            top: 10%;
+            right: -10%;
+            animation-delay: 0s;
+        }
+
+        .hero-floating-element:nth-child(2) {
+            bottom: 20%;
+            left: -5%;
+            animation-delay: -2s;
+        }
+
+        .hero-floating-element:nth-child(3) {
+            top: 50%;
+            right: 5%;
+            animation-delay: -4s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        /* About Section */
+        .about {
+            padding: 8rem 4rem;
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        .about-title {
+            font-family: 'Assistant', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .about-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 120px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 4px;
+            transform: rotate(-1deg);
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            line-height: 2;
+            color: rgba(42, 42, 42, 0.85);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-right: 2rem;
+        }
+
+        .about-text p::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0.75rem;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .about-image-container {
+            position: relative;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, var(--warm), var(--accent));
+            border-radius: 200px 100px 150px 80px / 100px 150px 80px 200px;
+            transform: rotate(-2deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            box-shadow: -15px 15px 0 rgba(42, 42, 42, 0.1);
+        }
+
+        .about-sticker {
+            position: absolute;
+            background: var(--text);
+            color: var(--bg);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transform: rotate(12deg);
+            box-shadow: 5px 5px 0 rgba(42, 42, 42, 0.2);
+        }
+
+        .about-sticker:nth-child(1) {
+            top: -10%;
+            right: -5%;
+        }
+
+        .about-sticker:nth-child(2) {
+            bottom: 10%;
+            left: -10%;
+            transform: rotate(-8deg);
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Work Section */
+        .work {
+            padding: 8rem 4rem;
+            background: var(--text);
+            color: var(--bg);
+            position: relative;
+        }
+
+        .work-title {
+            font-family: 'Assistant', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 4rem;
+            transform: rotate(-1deg);
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            grid-auto-rows: minmax(300px, auto);
+        }
+
+        .work-item {
+            position: relative;
+            background: var(--bg);
+            border-radius: 30px 80px 40px 70px / 70px 40px 80px 30px;
+            overflow: hidden;
+            transform: rotate(calc(var(--rotation) * 1deg));
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .work-item:nth-child(1) { --rotation: -2; }
+        .work-item:nth-child(2) { --rotation: 1.5; }
+        .work-item:nth-child(3) { --rotation: -1; }
+        .work-item:nth-child(4) { --rotation: 2.5; }
+        .work-item:nth-child(5) { --rotation: -1.5; }
+        .work-item:nth-child(6) { --rotation: 1; }
+
+        .work-item:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 10;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .work-item:nth-child(4) {
+            grid-column: span 2;
+        }
+
+        .work-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, var(--muted), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work-image::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3), transparent 70%);
+            transition: all 0.5s;
+        }
+
+        .work-item:hover .work-image::before {
+            top: -50%;
+            left: -50%;
+        }
+
+        .work-content {
+            padding: 2rem;
+        }
+
+        .work-content h3 {
+            font-family: 'Assistant', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .work-content p {
+            font-size: 0.875rem;
+            color: rgba(42, 42, 42, 0.7);
+            line-height: 1.6;
+        }
+
+        .work-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .work-tag {
+            background: rgba(42, 42, 42, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 4rem;
+            position: relative;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-family: 'Assistant', sans-serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .contact-subtitle {
+            font-size: 1.25rem;
+            color: rgba(42, 42, 42, 0.7);
+            margin-bottom: 4rem;
+            line-height: 1.8;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--text);
+            color: var(--bg);
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transform: rotate(calc(var(--rotate) * 1deg));
+            transition: all 0.3s;
+        }
+
+        .contact-link:nth-child(1) { --rotate: -1.5; }
+        .contact-link:nth-child(2) { --rotate: 2; }
+        .contact-link:nth-child(3) { --rotate: -1; }
+
+        .contact-link:hover {
+            transform: rotate(0deg) translateX(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(42, 42, 42, 0.2);
+        }
+
+        .contact-link span {
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 3rem 4rem;
+            background: var(--text);
+            color: var(--bg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-text {
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            color: var(--bg);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .footer-social a:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        /* Marquee */
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 2rem 0;
+            background: var(--accent);
+            color: white;
+            transform: rotate(-2deg);
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee-content span {
+            font-family: 'Assistant', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0 2rem;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        /* Scroll animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 6rem 2rem 2rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .work-item:nth-child(4) {
+                grid-column: span 1;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title .line {
+                transform: none !important;
+            }
+
+            .hero-subtitle {
+                transform: none;
+            }
+
+            .hero-cta {
+                transform: none;
+            }
+
+            .contact-link {
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">נועה שחם</div>
+        <ul class="nav-links">
+            <li><a href="#about">אודות</a></li>
+            <li><a href="#work">עבודות</a></li>
+            <li><a href="#contact">צור קשר</a></li>
+        </ul>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>עיצוב</span>
+            <span>✦</span>
+            <span>יצירתיות</span>
+            <span>✦</span>
+            <span>אהבה</span>
+            <span>✦</span>
+            <span>דברים יפים</span>
+            <span>✦</span>
+            <span>עיצוב</span>
+            <span>✦</span>
+            <span>יצירתיות</span>
+            <span>✦</span>
+            <span>אהבה</span>
+            <span>✦</span>
+            <span>דברים יפים</span>
+            <span>✦</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">מעצבת</span>
+                <span class="line">עם נשמה</span>
+                <span class="line">ולב</span>
+            </h1>
+            <p class="hero-subtitle">
+                אני נועה, מעצבת גרפית עם תשוקה ליצירת דברים יפים שמשמחים אנשים וגורמים להם להרגיש משהו מיוחד.
+            </p>
+            <a href="#work" class="hero-cta">
+                <span>צפי בעבודות שלי</span>
+                <span>→</span>
+            </a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-main">🎨</div>
+            <div class="hero-floating-element">✨</div>
+            <div class="hero-floating-element">💫</div>
+            <div class="hero-floating-element">🌟</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="reveal">
+                <h2 class="about-title">קצת עליי</h2>
+                <div class="about-text">
+                    <p>היי! אני נועה, מעצבת גרפית מתל אביב. אני מאמינה שעיצוב טוב הוא כזה שיגרום לך להרגיש משהו – לא רק יפה, אלא משמעותי.</p>
+                    <p>לאורך השנים עבדתי עם מגוון רחב של לקוחות – מסטארטאפים קטנים ועד מותגים גדולים. כל פרויקט הוא הזדמנות ללמוד משהו חדש ולהשתפר.</p>
+                    <p>כשאני לא מעצבת, אפשר למצוא אותי מציירת, מטיילת בשוק הכרמל, או פשוט מנמנמת עם החתולה שלי.</p>
+                </div>
+            </div>
+            <div class="about-image-container reveal">
+                <div class="about-image">👩‍🎨</div>
+                <div class="about-sticker">זמינה לפרויקטים</div>
+                <div class="about-sticker">עיצוב מאושר</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <h2 class="work-title">עבודות נבחרות</h2>
+        <div class="work-grid">
+            <div class="work-item reveal">
+                <div class="work-image">🎯</div>
+                <div class="work-content">
+                    <h3>ברנדינג ממשלת</h3>
+                    <p>מיתוג מלא לסטארטאפ פינטק</h� – לוגו, שפה חזותית, ועוד המון דברים טובים</p>
+                    <div class="work-tags">
+                        <span class="work-tag">מיתוג</span>
+                        <span class="work-tag">לוגו</span>
+                        <span class="work-tag">שפה חזותית</span>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item reveal">
+                <div class="work-image">📱</div>
+                <div class="work-content">
+                    <h3>אפליקציית יוגה</h3>
+                    <p>עיצוב UI/UX לאפליקציית יוגה וכושר – מהממש ומעוררת השראה</p>
+                    <div class="work-tags">
+                        <span class="work-tag">UI</span>
+                        <span class="work-tag">UX</span>
+                        <span class="work-tag">אפליקציה</span>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item reveal">
+                <div class="work-image">🌐</div>
+                <div class="work-content">
+                    <h3>אתר תדמית</h3>
+                    <p>אתר תדמית למעצבת עצמאית – נקי, מודרני, ועושה את העבודה</p>
+                    <div class="work-tags">
+                        <span class="work-tag">ווב</span>
+                        <span class="work-tag">אתר</span>
+                        <span class="work-tag">תדמית</span>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item reveal">
+                <div class="work-image">📦</div>
+                <div class="work-content">
+                    <h3>אריזה למוצר יוקרתי</h3>
+                    <p>עיצוב אריזה לבושם יוקרתי – כזה שתרצי להחזיק בו גם אחרי שהשתמשת בו</p>
+                    <div class="work-tags">
+                        <span class="work-tag">אריזה</span>
+                        <span class="work-tag">מוצר</span>
+                        <span class="work-tag">הדפס</span>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item reveal">
+                <div class="work-image">🎪</div>
+                <div class="work-content">
+                    <h3>פוסטר פסטיבל</h3>
+                    <p>סדרת פוסטרים לפסטיבל מוזיקה – צבעוני, שמח, ומלא בחיים</p>
+                    <div class="work-tags">
+                        <span class="work-tag">פוסטר</span>
+                        <span class="work-tag">הדפס</span>
+                        <span class="work-tag">אירוע</span>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item reveal">
+                <div class="work-image">📧</div>
+                <div class="work-content">
+                    <h3>ניוזלטר מעוצב</h3>
+                    <p>עיצוב תבנית לניוזלטר שאנשים באמת רוצים לקרוא</p>
+                    <div class="work-tags">
+                        <span class="work-tag">אימייל</span>
+                        <span class="work-tag">תקשורת</span>
+                        <span class="work-tag">שיווק</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container reveal">
+            <h2 class="contact-title">בואו ניצור משהו יפה ביחד</h2>
+            <p class="contact-subtitle">
+                יש לכם פרויקט בראש? רוצים פשוט להכיר? אשמח מאוד לשמוע מכם.<br>
+                אני מבטיחה לענות תוך 24 שעות (בדרך כלל).
+            </p>
+            <div class="contact-links">
+                <a href="mailto:hello@noa.design" class="contact-link">
+                    <span>📧</span>
+                    hello@noa.design
+                </a>
+                <a href="https://instagram.com" class="contact-link">
+                    <span>📸</span>
+                    @noa.design
+                </a>
+                <a href="https://dribbble.com" class="contact-link">
+                    <span>🏀</span>
+                    Dribbble
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">© 2024 נועה שחם. עשיתי את זה באהבה ❤️</p>
+        <div class="footer-social">
+            <a href="https://instagram.com">📸</a>
+            <a href="https://dribbble.com">🏀</a>
+            <a href="https://linkedin.com">💼</a>
+        </div>
+    </footer>
+
+    <script>
+        // Reveal on scroll with random delays
+        const reveals = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add random delay for more organic feel
+                    const delay = Math.random() * 200;
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, delay);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        reveals.forEach(el => revealObserver.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add slight parallax effect to floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const floaters = document.querySelectorAll('.hero-floating-element');
+            floaters.forEach((floater, index) => {
+                const speed = 0.1 + (index * 0.05);
+                floater.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Mouse movement effect on hero
+        document.querySelector('.hero').addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            const { innerWidth, innerHeight } = window;
+
+            const xPos = (clientX / innerWidth - 0.5) * 20;
+            const yPos = (clientY / innerHeight - 0.5) * 20;
+
+            document.querySelector('.hero-title').style.transform =
+                `translate(${xPos}px, ${yPos}px) rotate(-1deg)`;
+        });
+
+        document.querySelector('.hero').addEventListener('mouseleave', () => {
+            document.querySelector('.hero-title').style.transform = 'rotate(-1deg)';
+        });
+    </script>
+</body>
+</html>

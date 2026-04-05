@@ -1,0 +1,362 @@
+{
+    "id": "portfolio-minimal",
+    "name": "Portfolio Minimal",
+    "description": "Clean minimal portfolio for designers and developers",
+    "category": "Portfolio",
+    "thumbnail": "/templates/portfolio-minimal.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "JD",
+                        "he": "JD"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Work",
+                                "he": "עבודות"
+                            },
+                            "href": "#work"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Hire Me",
+                        "he": "Hire Me"
+                    },
+                    "ctaLink": "#contact",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Hi, I'm John Designer",
+                        "he": "Hi, I'm John Designer"
+                    },
+                    "subtitle": {
+                        "en": "I create beautiful digital experiences that help businesses grow. Product Designer with 8+ years of experience working with startups and Fortune 500 companies.",
+                        "he": "I create beautiful digital experiences that help businesses grow. Product Designer with 8+ years of experience working with startups and Fortune 500 companies."
+                    },
+                    "primaryButtonText": {
+                        "en": "View My Work",
+                        "he": "View My Work"
+                    },
+                    "primaryButtonLink": "#work",
+                    "secondaryButtonText": {
+                        "en": "Download Resume",
+                        "he": "Download Resume"
+                    },
+                    "secondaryButtonLink": "#resume"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gray",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "8+",
+                            "label": {
+                                "en": "Years Experience",
+                                "he": "שנות ניסיון"
+                            }
+                        },
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "Projects Completed",
+                                "he": "פרויקטים הושלמו"
+                            }
+                        },
+                        {
+                            "value": "30+",
+                            "label": {
+                                "en": "Happy Clients",
+                                "he": "לקוחות מרוצים"
+                            }
+                        },
+                        {
+                            "value": "5",
+                            "label": {
+                                "en": "Design Awards",
+                                "he": "Design Awards"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "What I Do",
+                        "he": "What I Do"
+                    },
+                    "subtitle": {
+                        "en": "Services that bring your ideas to life",
+                        "he": "Services that bring your ideas to life"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🎨",
+                            "title": {
+                                "en": "UI/UX Design",
+                                "he": "UI/UX Design"
+                            },
+                            "description": {
+                                "en": "User-centered design that converts visitors into customers",
+                                "he": "User-centered design that converts visitors into customers"
+                            }
+                        },
+                        {
+                            "icon": "💻",
+                            "title": {
+                                "en": "Web Development",
+                                "he": "Web Development"
+                            },
+                            "description": {
+                                "en": "Clean, fast, and responsive websites built with modern tech",
+                                "he": "Clean, fast, and responsive websites built with modern tech"
+                            }
+                        },
+                        {
+                            "icon": "📱",
+                            "title": {
+                                "en": "Mobile Design",
+                                "he": "Mobile Design"
+                            },
+                            "description": {
+                                "en": "Native and cross-platform app designs that users love",
+                                "he": "Native and cross-platform app designs that users love"
+                            }
+                        },
+                        {
+                            "icon": "🔍",
+                            "title": {
+                                "en": "User Research",
+                                "he": "User Research"
+                            },
+                            "description": {
+                                "en": "Data-driven insights to inform design decisions",
+                                "he": "Data-driven insights to inform design decisions"
+                            }
+                        },
+                        {
+                            "icon": "✏️",
+                            "title": {
+                                "en": "Brand Identity",
+                                "he": "זהות מותג"
+                            },
+                            "description": {
+                                "en": "Logos, colors, and visual systems that stand out",
+                                "he": "Logos, colors, and visual systems that stand out"
+                            }
+                        },
+                        {
+                            "icon": "🚀",
+                            "title": {
+                                "en": "Product Strategy",
+                                "he": "Product Strategy"
+                            },
+                            "description": {
+                                "en": "From concept to launch, I help shape your product vision",
+                                "he": "From concept to launch, I help shape your product vision"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Clients Say",
+                        "he": "What Clients Say"
+                    },
+                    "subtitle": {
+                        "en": "Feedback from people I've worked with",
+                        "he": "Feedback from people I've worked with"
+                    },
+                    "backgroundColor": "white",
+                    "columns": 2,
+                    "testimonials": [
+                        {
+                            "name": "Sarah Chen",
+                            "role": {
+                                "en": "CEO",
+                                "he": "CEO"
+                            },
+                            "company": "TechStartup",
+                            "content": {
+                                "en": "John transformed our product completely. His design elevated our user engagement by 200%. Highly recommend!",
+                                "he": "John transformed our product completely. His design elevated our user engagement by 200%. Highly recommend!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Mark Peterson",
+                            "role": {
+                                "en": "Product Manager",
+                                "he": "Product Manager"
+                            },
+                            "company": "Enterprise Corp",
+                            "content": {
+                                "en": "Working with John was a pleasure. He understood our needs and delivered beyond expectations. True professional.",
+                                "he": "Working with John was a pleasure. He understood our needs and delivered beyond expectations. True professional."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Let's Work Together",
+                        "he": "Let's Work Together"
+                    },
+                    "subtitle": {
+                        "en": "I'm always open to discussing new projects and creative ideas.",
+                        "he": "I'm always open to discussing new projects and creative ideas."
+                    },
+                    "primaryButtonText": {
+                        "en": "Get In Touch",
+                        "he": "Get In Touch"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "secondaryButtonText": {
+                        "en": "View Resume",
+                        "he": "View Resume"
+                    },
+                    "secondaryButtonLink": "#resume",
+                    "variant": "simple",
+                    "showIcon": false
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Send Me a Message",
+                        "he": "Send Me a Message"
+                    },
+                    "subtitle": {
+                        "en": "Have a project in mind? Let's chat.",
+                        "he": "Have a project in mind? Let's chat."
+                    },
+                    "backgroundColor": "gray",
+                    "submitButtonText": {
+                        "en": "Send Message",
+                        "he": "Send Message"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "phone": false,
+                        "company": true,
+                        "subject": false,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "John Designer",
+                        "he": "John Designer"
+                    },
+                    "description": {
+                        "en": "Product Designer based in San Francisco.",
+                        "he": "Product Designer based in San Francisco."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Quick Links",
+                                "he": "Quick Links"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Work",
+                                        "he": "עבודות"
+                                    },
+                                    "href": "#work"
+                                },
+                                {
+                                    "label": {
+                                        "en": "About",
+                                        "he": "אודות"
+                                    },
+                                    "href": "#about"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Contact",
+                                        "he": "צור קשר"
+                                    },
+                                    "href": "#contact"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "github",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 John Designer. All rights reserved.",
+                        "he": "© 2024 John Designer. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

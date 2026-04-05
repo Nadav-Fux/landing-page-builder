@@ -1,0 +1,332 @@
+{
+    "id": "crypto-web3",
+    "name": "Crypto & Web3",
+    "description": "Modern landing page for crypto projects and Web3 products",
+    "category": "Crypto",
+    "thumbnail": "/templates/crypto-web3.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "NexusDAO",
+                        "he": "NexusDAO"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Features",
+                                "he": "תכונות"
+                            },
+                            "href": "#features"
+                        },
+                        {
+                            "label": {
+                                "en": "Tokenomics",
+                                "he": "Tokenomics"
+                            },
+                            "href": "#tokenomics"
+                        },
+                        {
+                            "label": {
+                                "en": "Roadmap",
+                                "he": "Roadmap"
+                            },
+                            "href": "#roadmap"
+                        },
+                        {
+                            "label": {
+                                "en": "Community",
+                                "he": "Community"
+                            },
+                            "href": "#community"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Launch App",
+                        "he": "Launch App"
+                    },
+                    "ctaLink": "#app",
+                    "sticky": true
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "The Future of Decentralized Finance",
+                        "he": "The Future of Decentralized Finance"
+                    },
+                    "subtitle": {
+                        "en": "Earn, stake, and govern in the next-generation DeFi ecosystem. Join 100K+ members building the future of finance.",
+                        "he": "Earn, stake, and govern in the next-generation DeFi ecosystem. Join 100K+ members building the future of finance."
+                    },
+                    "primaryButtonText": {
+                        "en": "Launch App",
+                        "he": "Launch App"
+                    },
+                    "primaryButtonLink": "#app",
+                    "secondaryButtonText": {
+                        "en": "Read Whitepaper",
+                        "he": "Read Whitepaper"
+                    },
+                    "secondaryButtonLink": "#whitepaper"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "dark",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "$500M+",
+                            "label": {
+                                "en": "TVL",
+                                "he": "TVL"
+                            }
+                        },
+                        {
+                            "value": "100K+",
+                            "label": {
+                                "en": "Holders",
+                                "he": "Holders"
+                            }
+                        },
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "Integrations",
+                                "he": "Integrations"
+                            }
+                        },
+                        {
+                            "value": "12%",
+                            "label": {
+                                "en": "APY",
+                                "he": "APY"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Protocol Features",
+                        "he": "Protocol Features"
+                    },
+                    "subtitle": {
+                        "en": "Built for the future of finance",
+                        "he": "Built for the future of finance"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🔒",
+                            "title": {
+                                "en": "Secure",
+                                "he": "Secure"
+                            },
+                            "description": {
+                                "en": "Audited by top security firms",
+                                "he": "Audited by top security firms"
+                            }
+                        },
+                        {
+                            "icon": "⚡",
+                            "title": {
+                                "en": "Fast",
+                                "he": "Fast"
+                            },
+                            "description": {
+                                "en": "Sub-second transaction finality",
+                                "he": "Sub-second transaction finality"
+                            }
+                        },
+                        {
+                            "icon": "💰",
+                            "title": {
+                                "en": "High Yields",
+                                "he": "High Yields"
+                            },
+                            "description": {
+                                "en": "Optimized yield strategies",
+                                "he": "Optimized yield strategies"
+                            }
+                        },
+                        {
+                            "icon": "🗳️",
+                            "title": {
+                                "en": "Governance",
+                                "he": "Governance"
+                            },
+                            "description": {
+                                "en": "Community-driven decisions",
+                                "he": "Community-driven decisions"
+                            }
+                        },
+                        {
+                            "icon": "🌐",
+                            "title": {
+                                "en": "Cross-chain",
+                                "he": "Cross-chain"
+                            },
+                            "description": {
+                                "en": "Multi-chain compatibility",
+                                "he": "Multi-chain compatibility"
+                            }
+                        },
+                        {
+                            "icon": "🤖",
+                            "title": {
+                                "en": "Automated",
+                                "he": "Automated"
+                            },
+                            "description": {
+                                "en": "Smart contract automation",
+                                "he": "Smart contract automation"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "FAQ",
+                        "he": "FAQ"
+                    },
+                    "backgroundColor": "gray",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "How do I get started?",
+                                "he": "How do I get started?"
+                            },
+                            "answer": {
+                                "en": "Connect your wallet (MetaMask, WalletConnect, etc.) and start earning immediately.",
+                                "he": "Connect your wallet (MetaMask, WalletConnect, etc.) and start earning immediately."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Is the protocol safe?",
+                                "he": "Is the protocol safe?"
+                            },
+                            "answer": {
+                                "en": "Yes! We've been audited by Certik and Trail of Bits. Code is open source.",
+                                "he": "Yes! We've been audited by Certik and Trail of Bits. Code is open source."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "What chains are supported?",
+                                "he": "What chains are supported?"
+                            },
+                            "answer": {
+                                "en": "Ethereum, Polygon, Arbitrum, and Optimism with more coming soon.",
+                                "he": "Ethereum, Polygon, Arbitrum, and Optimism with more coming soon."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Join the Revolution",
+                        "he": "Join the Revolution"
+                    },
+                    "subtitle": {
+                        "en": "Start earning in the decentralized economy today.",
+                        "he": "Start earning in the decentralized economy today."
+                    },
+                    "primaryButtonText": {
+                        "en": "Connect Wallet",
+                        "he": "Connect Wallet"
+                    },
+                    "primaryButtonLink": "#app",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "NexusDAO",
+                        "he": "NexusDAO"
+                    },
+                    "description": {
+                        "en": "Decentralizing finance, one block at a time.",
+                        "he": "Decentralizing finance, one block at a time."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Resources",
+                                "he": "Resources"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Docs",
+                                        "he": "Docs"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Whitepaper",
+                                        "he": "Whitepaper"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "GitHub",
+                                        "he": "GitHub"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "github",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 NexusDAO.",
+                        "he": "© 2024 NexusDAO."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

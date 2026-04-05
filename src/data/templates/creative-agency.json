@@ -1,0 +1,399 @@
+{
+    "id": "creative-agency",
+    "name": "Creative Agency",
+    "description": "Bold landing page for creative agencies and studios",
+    "category": "Agency",
+    "thumbnail": "/templates/creative-agency.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "STUDIO",
+                        "he": "STUDIO"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Work",
+                                "he": "עבודות"
+                            },
+                            "href": "#work"
+                        },
+                        {
+                            "label": {
+                                "en": "Services",
+                                "he": "שירותים"
+                            },
+                            "href": "#services"
+                        },
+                        {
+                            "label": {
+                                "en": "About",
+                                "he": "אודות"
+                            },
+                            "href": "#about"
+                        },
+                        {
+                            "label": {
+                                "en": "Contact",
+                                "he": "צור קשר"
+                            },
+                            "href": "#contact"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Let's Talk",
+                        "he": "Let's Talk"
+                    },
+                    "ctaLink": "#contact",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "We Create Digital Experiences",
+                        "he": "We Create Digital Experiences"
+                    },
+                    "subtitle": {
+                        "en": "Award-winning creative agency helping brands tell their stories through stunning design and innovative technology.",
+                        "he": "Award-winning creative agency helping brands tell their stories through stunning design and innovative technology."
+                    },
+                    "primaryButtonText": {
+                        "en": "View Our Work",
+                        "he": "View Our Work"
+                    },
+                    "primaryButtonLink": "#work",
+                    "secondaryButtonText": {
+                        "en": "Get in Touch",
+                        "he": "Get in Touch"
+                    },
+                    "secondaryButtonLink": "#contact"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "dark",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "200+",
+                            "label": {
+                                "en": "Projects Completed",
+                                "he": "פרויקטים הושלמו"
+                            }
+                        },
+                        {
+                            "value": "50+",
+                            "label": {
+                                "en": "Happy Clients",
+                                "he": "לקוחות מרוצים"
+                            }
+                        },
+                        {
+                            "value": "15",
+                            "label": {
+                                "en": "Awards Won",
+                                "he": "פרסים הושגו"
+                            }
+                        },
+                        {
+                            "value": "8",
+                            "label": {
+                                "en": "Years Experience",
+                                "he": "שנות ניסיון"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Our Services",
+                        "he": "השירותים שלנו"
+                    },
+                    "subtitle": {
+                        "en": "We offer a full range of creative services",
+                        "he": "We offer a full range of creative services"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "🎨",
+                            "title": {
+                                "en": "Brand Identity",
+                                "he": "זהות מותג"
+                            },
+                            "description": {
+                                "en": "Creating memorable brands that resonate with your audience",
+                                "he": "Creating memorable brands that resonate with your audience"
+                            },
+                            "badge": "Popular"
+                        },
+                        {
+                            "icon": "💻",
+                            "title": {
+                                "en": "Web Design",
+                                "he": "עיצוב אתרים"
+                            },
+                            "description": {
+                                "en": "Beautiful, responsive websites that convert visitors into customers",
+                                "he": "Beautiful, responsive websites that convert visitors into customers"
+                            }
+                        },
+                        {
+                            "icon": "📱",
+                            "title": {
+                                "en": "App Design",
+                                "he": "עיצוב אפליקציות"
+                            },
+                            "description": {
+                                "en": "Intuitive mobile experiences that users love",
+                                "he": "Intuitive mobile experiences that users love"
+                            }
+                        },
+                        {
+                            "icon": "🎬",
+                            "title": {
+                                "en": "Motion Design",
+                                "he": "עיצוב תנועה"
+                            },
+                            "description": {
+                                "en": "Dynamic animations that bring your brand to life",
+                                "he": "Dynamic animations that bring your brand to life"
+                            }
+                        },
+                        {
+                            "icon": "📸",
+                            "title": {
+                                "en": "Photography",
+                                "he": "צילום"
+                            },
+                            "description": {
+                                "en": "Professional photography for campaigns and products",
+                                "he": "Professional photography for campaigns and products"
+                            }
+                        },
+                        {
+                            "icon": "✏️",
+                            "title": {
+                                "en": "Illustration",
+                                "he": "איור"
+                            },
+                            "description": {
+                                "en": "Custom illustrations that tell your unique story",
+                                "he": "Custom illustrations that tell your unique story"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Clients Say",
+                        "he": "What Clients Say"
+                    },
+                    "subtitle": {
+                        "en": "Don't just take our word for it",
+                        "he": "Don't just take our word for it"
+                    },
+                    "backgroundColor": "dark",
+                    "columns": 2,
+                    "testimonials": [
+                        {
+                            "name": "Alexandra Moore",
+                            "role": {
+                                "en": "Marketing Director",
+                                "he": "Marketing Director"
+                            },
+                            "company": "Fashion House",
+                            "content": {
+                                "en": "STUDIO transformed our brand identity completely. Their creativity and attention to detail is unmatched.",
+                                "he": "STUDIO transformed our brand identity completely. Their creativity and attention to detail is unmatched."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "James Wilson",
+                            "role": {
+                                "en": "CEO",
+                                "he": "CEO"
+                            },
+                            "company": "Tech Innovate",
+                            "content": {
+                                "en": "Working with STUDIO was an incredible experience. They understood our vision and executed it perfectly.",
+                                "he": "Working with STUDIO was an incredible experience. They understood our vision and executed it perfectly."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Let's Create Something Amazing",
+                        "he": "Let's Create Something Amazing"
+                    },
+                    "subtitle": {
+                        "en": "Ready to transform your brand? We'd love to hear from you.",
+                        "he": "Ready to transform your brand? We'd love to hear from you."
+                    },
+                    "primaryButtonText": {
+                        "en": "Start a Project",
+                        "he": "Start a Project"
+                    },
+                    "primaryButtonLink": "#contact",
+                    "secondaryButtonText": {
+                        "en": "View Portfolio",
+                        "he": "View Portfolio"
+                    },
+                    "secondaryButtonLink": "#work",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "ContactForm",
+                "props": {
+                    "title": {
+                        "en": "Get in Touch",
+                        "he": "Get in Touch"
+                    },
+                    "subtitle": {
+                        "en": "Tell us about your project",
+                        "he": "Tell us about your project"
+                    },
+                    "backgroundColor": "gray",
+                    "submitButtonText": {
+                        "en": "Send Message",
+                        "he": "Send Message"
+                    },
+                    "fields": {
+                        "name": true,
+                        "email": true,
+                        "phone": false,
+                        "company": true,
+                        "subject": false,
+                        "message": true
+                    }
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "STUDIO",
+                        "he": "STUDIO"
+                    },
+                    "description": {
+                        "en": "Award-winning creative agency based in New York.",
+                        "he": "Award-winning creative agency based in New York."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Services",
+                                "he": "Services"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Branding",
+                                        "he": "Branding"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Web Design",
+                                        "he": "Web Design"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "App Design",
+                                        "he": "App Design"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Company",
+                                "he": "Company"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "About",
+                                        "he": "אודות"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Team",
+                                        "he": "Team"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Careers",
+                                        "he": "Careers"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 STUDIO. All rights reserved.",
+                        "he": "© 2024 STUDIO. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

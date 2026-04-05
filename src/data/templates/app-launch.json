@@ -1,0 +1,427 @@
+{
+    "id": "app-launch",
+    "name": "App Launch",
+    "description": "Mobile app launch landing page with download CTAs",
+    "category": "Mobile",
+    "thumbnail": "/templates/app-launch.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "AppName",
+                        "he": "AppName"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Features",
+                                "he": "תכונות"
+                            },
+                            "href": "#features"
+                        },
+                        {
+                            "label": {
+                                "en": "How It Works",
+                                "he": "איך זה עובד"
+                            },
+                            "href": "#how-it-works"
+                        },
+                        {
+                            "label": {
+                                "en": "Reviews",
+                                "he": "Reviews"
+                            },
+                            "href": "#reviews"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Download Now",
+                        "he": "Download Now"
+                    },
+                    "ctaLink": "#download",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Your Life, Simplified",
+                        "he": "Your Life, Simplified"
+                    },
+                    "subtitle": {
+                        "en": "The app that helps you stay organized, focused, and productive. Available on iOS and Android.",
+                        "he": "The app that helps you stay organized, focused, and productive. Available on iOS and Android."
+                    },
+                    "primaryButtonText": {
+                        "en": "Download for iOS",
+                        "he": "Download for iOS"
+                    },
+                    "primaryButtonLink": "#ios",
+                    "secondaryButtonText": {
+                        "en": "Get it on Android",
+                        "he": "Get it on Android"
+                    },
+                    "secondaryButtonLink": "#android"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "1M+",
+                            "label": {
+                                "en": "Downloads",
+                                "he": "Downloads"
+                            }
+                        },
+                        {
+                            "value": "4.9",
+                            "label": {
+                                "en": "App Store Rating",
+                                "he": "App Store Rating"
+                            }
+                        },
+                        {
+                            "value": "100+",
+                            "label": {
+                                "en": "Countries",
+                                "he": "מדינות"
+                            }
+                        },
+                        {
+                            "value": "500K",
+                            "label": {
+                                "en": "Active Users",
+                                "he": "משתמשים פעילים"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "Why You'll Love It",
+                        "he": "Why You'll Love It"
+                    },
+                    "subtitle": {
+                        "en": "Features designed to make your life easier",
+                        "he": "Features designed to make your life easier"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "📝",
+                            "title": {
+                                "en": "Smart Lists",
+                                "he": "Smart Lists"
+                            },
+                            "description": {
+                                "en": "Organize tasks with AI-powered categorization",
+                                "he": "Organize tasks with AI-powered categorization"
+                            }
+                        },
+                        {
+                            "icon": "🔔",
+                            "title": {
+                                "en": "Smart Reminders",
+                                "he": "Smart Reminders"
+                            },
+                            "description": {
+                                "en": "Never miss important deadlines again",
+                                "he": "Never miss important deadlines again"
+                            }
+                        },
+                        {
+                            "icon": "📊",
+                            "title": {
+                                "en": "Progress Tracking",
+                                "he": "Progress Tracking"
+                            },
+                            "description": {
+                                "en": "Visualize your productivity over time",
+                                "he": "Visualize your productivity over time"
+                            }
+                        },
+                        {
+                            "icon": "🔄",
+                            "title": {
+                                "en": "Sync Everywhere",
+                                "he": "Sync Everywhere"
+                            },
+                            "description": {
+                                "en": "Access your data on all devices",
+                                "he": "Access your data on all devices"
+                            }
+                        },
+                        {
+                            "icon": "🌙",
+                            "title": {
+                                "en": "Dark Mode",
+                                "he": "Dark Mode"
+                            },
+                            "description": {
+                                "en": "Easy on the eyes, day or night",
+                                "he": "Easy on the eyes, day or night"
+                            }
+                        },
+                        {
+                            "icon": "🔒",
+                            "title": {
+                                "en": "Privacy First",
+                                "he": "Privacy First"
+                            },
+                            "description": {
+                                "en": "Your data stays yours, always",
+                                "he": "Your data stays yours, always"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "What Users Are Saying",
+                        "he": "What Users Are Saying"
+                    },
+                    "subtitle": {
+                        "en": "Join millions of happy users",
+                        "he": "Join millions of happy users"
+                    },
+                    "backgroundColor": "gray",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Jessica M.",
+                            "role": {
+                                "en": "Product Designer",
+                                "he": "Product Designer"
+                            },
+                            "content": {
+                                "en": "Finally an app that actually helps me stay organized. The interface is beautiful and intuitive!",
+                                "he": "Finally an app that actually helps me stay organized. The interface is beautiful and intuitive!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "David K.",
+                            "role": {
+                                "en": "Entrepreneur",
+                                "he": "Entrepreneur"
+                            },
+                            "content": {
+                                "en": "I've tried dozens of productivity apps. This is the only one that stuck. Highly recommend!",
+                                "he": "I've tried dozens of productivity apps. This is the only one that stuck. Highly recommend!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Lisa T.",
+                            "role": {
+                                "en": "Student",
+                                "he": "Student"
+                            },
+                            "content": {
+                                "en": "Perfect for managing my coursework and personal life. The smart reminders are a game changer.",
+                                "he": "Perfect for managing my coursework and personal life. The smart reminders are a game changer."
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "Questions?",
+                        "he": "Questions?"
+                    },
+                    "subtitle": {
+                        "en": "We've got answers",
+                        "he": "We've got answers"
+                    },
+                    "backgroundColor": "white",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "Is the app free?",
+                                "he": "Is the app free?"
+                            },
+                            "answer": {
+                                "en": "Yes! The core features are completely free. We offer a Pro version with advanced features for power users.",
+                                "he": "Yes! The core features are completely free. We offer a Pro version with advanced features for power users."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Which platforms are supported?",
+                                "he": "Which platforms are supported?"
+                            },
+                            "answer": {
+                                "en": "The app is available on iOS (iPhone and iPad) and Android. We also have a web version coming soon!",
+                                "he": "The app is available on iOS (iPhone and iPad) and Android. We also have a web version coming soon!"
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Is my data backed up?",
+                                "he": "Is my data backed up?"
+                            },
+                            "answer": {
+                                "en": "Absolutely! Your data is automatically synced to the cloud and encrypted for your security.",
+                                "he": "Absolutely! Your data is automatically synced to the cloud and encrypted for your security."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Can I use it offline?",
+                                "he": "Can I use it offline?"
+                            },
+                            "answer": {
+                                "en": "Yes! The app works fully offline. Your changes sync automatically when you're back online.",
+                                "he": "Yes! The app works fully offline. Your changes sync automatically when you're back online."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Ready to Get Started?",
+                        "he": "Ready to Get Started?"
+                    },
+                    "subtitle": {
+                        "en": "Download for free and see why millions of users love our app.",
+                        "he": "Download for free and see why millions of users love our app."
+                    },
+                    "primaryButtonText": {
+                        "en": "Download Now",
+                        "he": "Download Now"
+                    },
+                    "primaryButtonLink": "#download",
+                    "secondaryButtonText": {
+                        "en": "",
+                        "he": ""
+                    },
+                    "secondaryButtonLink": "",
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "AppName",
+                        "he": "AppName"
+                    },
+                    "description": {
+                        "en": "Making life simpler, one task at a time.",
+                        "he": "Making life simpler, one task at a time."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Product",
+                                "he": "Product"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Features",
+                                        "he": "תכונות"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Pricing",
+                                        "he": "מחירים"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Download",
+                                        "he": "Download"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Support",
+                                "he": "Support"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Help Center",
+                                        "he": "Help Center"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Contact",
+                                        "he": "צור קשר"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Privacy",
+                                        "he": "Privacy"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "instagram",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 AppName. All rights reserved.",
+                        "he": "© 2024 AppName. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}

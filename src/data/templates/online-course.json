@@ -1,0 +1,614 @@
+{
+    "id": "online-course",
+    "name": "Online Course",
+    "description": "Landing page for selling online courses and educational content",
+    "category": "Education",
+    "thumbnail": "/templates/online-course.png",
+    "puckData": {
+        "content": [
+            {
+                "type": "Header",
+                "props": {
+                    "logoText": {
+                        "en": "MasterClass",
+                        "he": "MasterClass"
+                    },
+                    "links": [
+                        {
+                            "label": {
+                                "en": "Curriculum",
+                                "he": "Curriculum"
+                            },
+                            "href": "#curriculum"
+                        },
+                        {
+                            "label": {
+                                "en": "Instructor",
+                                "he": "Instructor"
+                            },
+                            "href": "#instructor"
+                        },
+                        {
+                            "label": {
+                                "en": "Testimonials",
+                                "he": "המלצות"
+                            },
+                            "href": "#testimonials"
+                        },
+                        {
+                            "label": {
+                                "en": "FAQ",
+                                "he": "שאלות נפוצות"
+                            },
+                            "href": "#faq"
+                        }
+                    ],
+                    "ctaText": {
+                        "en": "Enroll Now",
+                        "he": "Enroll Now"
+                    },
+                    "ctaLink": "#enroll",
+                    "sticky": true,
+                    "transparent": false
+                }
+            },
+            {
+                "type": "Hero",
+                "props": {
+                    "title": {
+                        "en": "Master Web Development in 12 Weeks",
+                        "he": "Master Web Development in 12 Weeks"
+                    },
+                    "subtitle": {
+                        "en": "Go from zero to job-ready developer. Learn React, Node.js, and modern web development from industry experts.",
+                        "he": "Go from zero to job-ready developer. Learn React, Node.js, and modern web development from industry experts."
+                    },
+                    "primaryButtonText": {
+                        "en": "Enroll Now - $299",
+                        "he": "Enroll Now - $299"
+                    },
+                    "primaryButtonLink": "#enroll",
+                    "secondaryButtonText": {
+                        "en": "Watch Free Preview",
+                        "he": "Watch Free Preview"
+                    },
+                    "secondaryButtonLink": "#preview"
+                }
+            },
+            {
+                "type": "Stats",
+                "props": {
+                    "backgroundColor": "gradient",
+                    "columns": 4,
+                    "stats": [
+                        {
+                            "value": "50K+",
+                            "label": {
+                                "en": "Students Enrolled",
+                                "he": "Students Enrolled"
+                            }
+                        },
+                        {
+                            "value": "4.9",
+                            "label": {
+                                "en": "Course Rating",
+                                "he": "Course Rating"
+                            }
+                        },
+                        {
+                            "value": "120+",
+                            "label": {
+                                "en": "Video Lessons",
+                                "he": "Video Lessons"
+                            }
+                        },
+                        {
+                            "value": "95%",
+                            "label": {
+                                "en": "Completion Rate",
+                                "he": "Completion Rate"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FeatureList",
+                "props": {
+                    "title": {
+                        "en": "What You'll Learn",
+                        "he": "What You'll Learn"
+                    },
+                    "subtitle": {
+                        "en": "Comprehensive curriculum designed by industry experts",
+                        "he": "Comprehensive curriculum designed by industry experts"
+                    },
+                    "columns": 3,
+                    "features": [
+                        {
+                            "icon": "⚛️",
+                            "title": {
+                                "en": "React & Next.js",
+                                "he": "React & Next.js"
+                            },
+                            "description": {
+                                "en": "Build modern, interactive user interfaces",
+                                "he": "Build modern, interactive user interfaces"
+                            }
+                        },
+                        {
+                            "icon": "🟢",
+                            "title": {
+                                "en": "Node.js & Express",
+                                "he": "Node.js & Express"
+                            },
+                            "description": {
+                                "en": "Create scalable backend applications",
+                                "he": "Create scalable backend applications"
+                            }
+                        },
+                        {
+                            "icon": "🗄️",
+                            "title": {
+                                "en": "Databases",
+                                "he": "Databases"
+                            },
+                            "description": {
+                                "en": "Work with SQL and NoSQL databases",
+                                "he": "Work with SQL and NoSQL databases"
+                            }
+                        },
+                        {
+                            "icon": "🔐",
+                            "title": {
+                                "en": "Authentication",
+                                "he": "Authentication"
+                            },
+                            "description": {
+                                "en": "Implement secure user auth systems",
+                                "he": "Implement secure user auth systems"
+                            }
+                        },
+                        {
+                            "icon": "☁️",
+                            "title": {
+                                "en": "Deployment",
+                                "he": "Deployment"
+                            },
+                            "description": {
+                                "en": "Deploy apps to AWS, Vercel & more",
+                                "he": "Deploy apps to AWS, Vercel & more"
+                            }
+                        },
+                        {
+                            "icon": "💼",
+                            "title": {
+                                "en": "Portfolio Project",
+                                "he": "Portfolio Project"
+                            },
+                            "description": {
+                                "en": "Build a real-world project for your portfolio",
+                                "he": "Build a real-world project for your portfolio"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Pricing",
+                "props": {
+                    "title": {
+                        "en": "Investment Options",
+                        "he": "Investment Options"
+                    },
+                    "subtitle": {
+                        "en": "Choose the plan that works for you",
+                        "he": "Choose the plan that works for you"
+                    },
+                    "backgroundColor": "gray",
+                    "tiers": [
+                        {
+                            "name": {
+                                "en": "Self-Paced",
+                                "he": "Self-Paced"
+                            },
+                            "price": "$299",
+                            "period": "one-time",
+                            "description": {
+                                "en": "Learn at your own speed",
+                                "he": "Learn at your own speed"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "120+ video lessons",
+                                        "he": "120+ video lessons"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Downloadable resources",
+                                        "he": "Downloadable resources"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Community access",
+                                        "he": "Community access"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "1-on-1 mentorship",
+                                        "he": "1-on-1 mentorship"
+                                    },
+                                    "included": false
+                                },
+                                {
+                                    "text": {
+                                        "en": "Career coaching",
+                                        "he": "Career coaching"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Get Started",
+                                "he": "התחל עכשיו"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Premium",
+                                "he": "Premium"
+                            },
+                            "price": "$599",
+                            "period": "one-time",
+                            "description": {
+                                "en": "Accelerated learning",
+                                "he": "Accelerated learning"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Self-Paced",
+                                        "he": "Everything in Self-Paced"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "4 mentorship sessions",
+                                        "he": "4 mentorship sessions"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Code reviews",
+                                        "he": "Code reviews"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Career coaching",
+                                        "he": "Career coaching"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Job placement support",
+                                        "he": "Job placement support"
+                                    },
+                                    "included": false
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Enroll Now",
+                                "he": "Enroll Now"
+                            },
+                            "popular": true,
+                            "badge": "Most Popular"
+                        },
+                        {
+                            "name": {
+                                "en": "VIP",
+                                "he": "VIP"
+                            },
+                            "price": "$1,299",
+                            "period": "one-time",
+                            "description": {
+                                "en": "Complete transformation",
+                                "he": "Complete transformation"
+                            },
+                            "features": [
+                                {
+                                    "text": {
+                                        "en": "Everything in Premium",
+                                        "he": "Everything in Premium"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Unlimited mentorship",
+                                        "he": "Unlimited mentorship"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Resume review",
+                                        "he": "Resume review"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Interview prep",
+                                        "he": "Interview prep"
+                                    },
+                                    "included": true
+                                },
+                                {
+                                    "text": {
+                                        "en": "Job guarantee*",
+                                        "he": "Job guarantee*"
+                                    },
+                                    "included": true
+                                }
+                            ],
+                            "buttonText": {
+                                "en": "Go VIP",
+                                "he": "Go VIP"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "Testimonials",
+                "props": {
+                    "title": {
+                        "en": "Student Success Stories",
+                        "he": "Student Success Stories"
+                    },
+                    "subtitle": {
+                        "en": "See what our graduates are saying",
+                        "he": "See what our graduates are saying"
+                    },
+                    "backgroundColor": "white",
+                    "columns": 3,
+                    "testimonials": [
+                        {
+                            "name": "Alex J.",
+                            "role": {
+                                "en": "Now at Google",
+                                "he": "Now at Google"
+                            },
+                            "content": {
+                                "en": "This course changed my career. I went from marketing to a junior dev role in 4 months!",
+                                "he": "This course changed my career. I went from marketing to a junior dev role in 4 months!"
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "Maria S.",
+                            "role": {
+                                "en": "Freelance Developer",
+                                "he": "Freelance Developer"
+                            },
+                            "content": {
+                                "en": "The projects are real-world and the mentorship is invaluable. Worth every penny.",
+                                "he": "The projects are real-world and the mentorship is invaluable. Worth every penny."
+                            },
+                            "rating": 5
+                        },
+                        {
+                            "name": "James L.",
+                            "role": {
+                                "en": "Startup Founder",
+                                "he": "Startup Founder"
+                            },
+                            "content": {
+                                "en": "I built my SaaS product using skills from this course. Now making $10K/month!",
+                                "he": "I built my SaaS product using skills from this course. Now making $10K/month!"
+                            },
+                            "rating": 5
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "FAQ",
+                "props": {
+                    "title": {
+                        "en": "Frequently Asked Questions",
+                        "he": "Frequently Asked Questions"
+                    },
+                    "subtitle": {
+                        "en": "Got questions? We've got answers.",
+                        "he": "Got questions? We've got answers."
+                    },
+                    "backgroundColor": "gray",
+                    "items": [
+                        {
+                            "question": {
+                                "en": "Do I need prior experience?",
+                                "he": "Do I need prior experience?"
+                            },
+                            "answer": {
+                                "en": "No! This course is designed for complete beginners. We start from the basics and build up.",
+                                "he": "No! This course is designed for complete beginners. We start from the basics and build up."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "How long do I have access?",
+                                "he": "How long do I have access?"
+                            },
+                            "answer": {
+                                "en": "You get lifetime access to all course materials, including future updates.",
+                                "he": "You get lifetime access to all course materials, including future updates."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Is there a refund policy?",
+                                "he": "Is there a refund policy?"
+                            },
+                            "answer": {
+                                "en": "Yes! We offer a 30-day money-back guarantee. If you're not satisfied, we'll refund you in full.",
+                                "he": "Yes! We offer a 30-day money-back guarantee. If you're not satisfied, we'll refund you in full."
+                            }
+                        },
+                        {
+                            "question": {
+                                "en": "Will I get a certificate?",
+                                "he": "Will I get a certificate?"
+                            },
+                            "answer": {
+                                "en": "Yes! Upon completion, you'll receive a verified certificate to showcase on LinkedIn and your resume.",
+                                "he": "Yes! Upon completion, you'll receive a verified certificate to showcase on LinkedIn and your resume."
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CTA",
+                "props": {
+                    "title": {
+                        "en": "Start Your Developer Journey Today",
+                        "he": "Start Your Developer Journey Today"
+                    },
+                    "subtitle": {
+                        "en": "Join 50,000+ students who have transformed their careers.",
+                        "he": "Join 50,000+ students who have transformed their careers."
+                    },
+                    "primaryButtonText": {
+                        "en": "Enroll Now",
+                        "he": "Enroll Now"
+                    },
+                    "primaryButtonLink": "#enroll",
+                    "secondaryButtonText": {
+                        "en": "",
+                        "he": ""
+                    },
+                    "variant": "gradient",
+                    "showIcon": true
+                }
+            },
+            {
+                "type": "Footer",
+                "props": {
+                    "logoText": {
+                        "en": "MasterClass",
+                        "he": "MasterClass"
+                    },
+                    "description": {
+                        "en": "Making world-class education accessible to everyone.",
+                        "he": "Making world-class education accessible to everyone."
+                    },
+                    "backgroundColor": "dark",
+                    "columns": [
+                        {
+                            "title": {
+                                "en": "Course",
+                                "he": "Course"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "Curriculum",
+                                        "he": "Curriculum"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Instructor",
+                                        "he": "Instructor"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "FAQ",
+                                        "he": "שאלות נפוצות"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        },
+                        {
+                            "title": {
+                                "en": "Company",
+                                "he": "Company"
+                            },
+                            "links": [
+                                {
+                                    "label": {
+                                        "en": "About",
+                                        "he": "אודות"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Blog",
+                                        "he": "בלוג"
+                                    },
+                                    "href": "#"
+                                },
+                                {
+                                    "label": {
+                                        "en": "Contact",
+                                        "he": "צור קשר"
+                                    },
+                                    "href": "#"
+                                }
+                            ]
+                        }
+                    ],
+                    "socialLinks": [
+                        {
+                            "platform": "twitter",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "youtube",
+                            "href": "#"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "href": "#"
+                        }
+                    ],
+                    "copyright": {
+                        "en": "© 2024 MasterClass. All rights reserved.",
+                        "he": "© 2024 MasterClass. All rights reserved."
+                    }
+                }
+            }
+        ],
+        "root": {
+            "props": {
+                "dir": {
+                    "en": "ltr",
+                    "he": "ltr"
+                },
+                "lang": {
+                    "en": "en",
+                    "he": "en"
+                }
+            }
+        },
+        "zones": {}
+    }
+}
